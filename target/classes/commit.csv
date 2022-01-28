@@ -1,0 +1,1355 @@
+’057c97cd,“lazyr”,2021-05-12 21:32:01 +0800,=测试2’
+’6f496b03,“lazyr”,2021-05-12 21:28:57 +0800,=测试’
+’1a0c90a4,“lazyr”,2021-05-12 16:12:51 +0800,=更新harbor域名为ip’
+’58293193,“lazyr”,2021-05-08 20:52:07 +0800,=更新内部域名’
+’e7704e04,“lazyr”,2021-05-08 16:00:51 +0800,=更新eureak节点2’
+’0cd9df2a,“lazyr”,2021-05-08 15:40:08 +0800,=更新eureak节点’
+’10d22d6c,“lazyr”,2021-05-07 19:46:38 +0800,=login-server 更新4’
+’20a26a4e,“lazyr”,2021-05-07 19:00:21 +0800,=login-server 更新3’
+’67f33f8f,“lazyr”,2021-05-07 18:52:51 +0800,=login-server 更新2’
+’b0c8d708,“lazyr”,2021-05-07 18:46:34 +0800,=login-server 更新’
+’17496ec1,“lazyr”,2021-05-07 17:02:43 +0800,=更新域名2’
+’eeab8f29,“lazyr”,2021-05-07 16:23:58 +0800,=更新域名’
+’9479054f,lazy-r,2021-01-28 13:00:25 +0800,update message-server/src/main/resources/application.yml.’
+’ae58d055,panboo,2021-01-28 11:58:39 +0800,update README.md.’
+’9d36fa08,zhangfuli,2020-11-06 10:26:32 +0800,Merge pull request #423 from doporg/wjr-branch’
+’66ddf2d0,lazy-r,2020-11-05 21:12:44 +0800,=fix permissionService’
+’02c56a90,zhangfuli,2020-10-09 14:45:03 +0800,Merge pull request #422 from doporg/wjr-branch’
+’44515ec3,lazy-r,2020-10-09 11:11:53 +0800,fix bugs in project creation, displaying projects list, adding members to project’
+’2974d62d,zhangfuli,2020-09-24 17:14:04 +0800,Merge pull request #421 from doporg/wjr-branch’
+’7a82c661,张富利,2020-09-23 15:47:20 +0800,discovery-server’
+’c757b7b1,lazy-r,2020-09-22 23:18:25 +0800,delete the code of authorization’
+’532c8c78,zhangfuli,2020-08-19 10:48:30 +0800,Merge pull request #411 from doporg/dependabot/maven/gateway-server/mysql-mysql-connector-java-8.0.16’
+’976c1802,zhangfuli,2020-08-19 10:48:14 +0800,Merge pull request #418 from doporg/bugfix_code_readme’
+’7dcd2088,waszqt,2020-08-18 15:58:53 +0800,增加readme选项’
+’a53214fb,zhangfuli,2020-08-08 10:04:47 +0800,Merge pull request #417 from doporg/bugfix_code_emptyproject’
+’80d60e96,waszqt,2020-08-07 17:07:21 +0800,默认分支参数’
+’0f352957,张富利,2020-07-26 15:03:52 +0800,messageserver’
+’2999c154,zhangfuli,2020-07-21 16:31:13 +0800,Merge pull request #416 from doporg/bugfix_code’
+’eacd520b,waszqt,2020-07-17 15:37:58 +0800,修复无法创建项目的bug’
+’e7f6a455,张富利,2020-07-11 09:48:17 +0800,rocketmq’
+’21db7318,张富利,2020-07-05 12:20:59 +0800,rocketmq’
+’244e559e,张富利,2020-07-05 12:17:41 +0800,rocketmq’
+’217fb77e,张富利,2020-07-05 11:15:47 +0800,rocketmq’
+’ed873fb0,张富利,2020-07-05 10:38:15 +0800,rocketmq’
+’3eb8b89a,zhangfuli,2020-07-04 18:15:30 +0800,Merge pull request #407 from doporg/teach-test’
+’9c139fe9,dependabot[bot],2020-07-01 22:21:30 +0000,Bump mysql-connector-java from 8.0.13 to 8.0.16 in /gateway-server’
+’9838330a,zhangfuli,2020-07-01 14:50:31 +0800,Merge pull request #410 from doporg/user-server-debug’
+’088cf525,张富利,2020-07-01 14:49:49 +0800,rocketmq’
+’9124c069,zhangfuli,2020-07-01 14:43:21 +0800,Merge pull request #408 from doporg/user-server-debug’
+’93ecb04a,张富利,2020-07-01 14:42:40 +0800,注册不发邮件的bug’
+’5ba90552,张富利,2020-06-24 11:11:43 +0800,user-server’
+’b86b9112,张富利,2020-06-24 09:03:40 +0800,user-server’
+’bda545a0,张富利,2020-06-20 23:08:54 +0800,分支’
+’d475c98a,张富利,2020-06-19 17:08:31 +0800,整理前端’
+’8c840104,张富利,2020-06-16 16:49:43 +0800,no message’
+’0f49a924,Zyriix,2020-03-19 18:02:53 +0800,Merge pull request #405 from doporg/bugFix1_codeAndRegister’
+’e1f0fe67,Zyriix,2020-03-19 17:58:48 +0800,重新部署mongodb 解決註冊問題 解決code-server的使用問題’
+’d1871975,张富利,2020-03-14 10:36:05 +0800,no message’
+’baf66ca8,zhangfuli,2020-03-03 20:59:46 +0800,Merge pull request #404 from doporg/pipeline’
+’20c87390,张富利,2020-03-03 20:55:24 +0800,修改pipeline bug’
+’4bc24dfe,Jerry1ee,2020-02-29 18:09:56 +0800,Done:     调整分页查询接口的返回值’
+’4c5555e0,Jerry1ee,2020-02-29 16:56:10 +0800,Done:     优化查询SQL语句     把feign调用user-server获得用户名过程取消’
+’f73d8556,Jerry1ee,2020-02-27 12:59:08 +0800,Done:     修改数据库新建表规则，引擎改为InnoDB’
+’3e056491,Zyriix,2020-02-21 13:58:32 +0800,上传最新网络结构文件’
+’b7f793de,Zyriix,2020-02-09 11:49:38 +0800,Update k8s.yaml’
+’fe266b96,张富利,2020-02-08 12:13:12 +0800,pipeline’
+’80a786ab,张富利,2020-02-08 12:10:20 +0800,Merge remote-tracking branch 'origin/master'’
+’ac96c62e,张富利,2020-02-08 12:09:16 +0800,eureka’
+’e0f72faf,Zyriix,2020-02-08 12:02:12 +0800,Update application.yml’
+’045e3e50,Zyriix,2020-02-08 12:01:21 +0800,Update application-production.yml’
+’5422a5da,Zyriix,2020-02-08 11:56:07 +0800,Update k8s.yaml’
+’8d0df9d0,Zyriix,2020-02-08 11:55:10 +0800,Update k8s.yaml’
+’bd86012f,Zyriix,2020-02-08 11:47:13 +0800,Update application.yml’
+’80b2e7d8,Zyriix,2020-02-08 11:46:27 +0800,Update application-production.yml’
+’85593c22,Zyriix,2020-02-08 11:25:57 +0800,Update application.yml’
+’98a770e9,Zyriix,2020-02-08 11:25:24 +0800,Update application-production.yml’
+’e2c2b97a,Zyriix,2020-02-08 11:02:20 +0800,Update k8s.yaml’
+’d6c37be4,Zyriix,2020-02-08 11:00:55 +0800,Update application-production.yml’
+’eb2258a5,Zyriix,2020-02-08 11:00:14 +0800,Update application.yml’
+’7d8c526f,Zyriix,2020-02-08 10:56:39 +0800,Update k8s.yaml’
+’82c77425,Zyriix,2020-02-08 10:49:11 +0800,Update k8s.yaml’
+’8d2ca6e3,Jerry,2020-01-14 10:42:50 +0800,Update application-production.yml’
+’96d2a35b,张富利,2020-01-13 19:04:40 +0800,pipeline-eureka’
+’87aeb372,张富利,2020-01-13 19:02:32 +0800,pipeline-mongo’
+’610aed7f,张富利,2020-01-11 17:11:42 +0800,spring-plugin-core’
+’7fafaa05,Zyriix,2020-01-10 19:18:29 +0800,Merge pull request #403 from doporg/pomChange’
+’fd3ad0ae,Zyriix,2020-01-10 19:16:27 +0800,移除gateway的spring-plugin依赖’
+’31d93f8b,Zyriix,2020-01-10 18:38:00 +0800,Merge pull request #402 from doporg/pomChange’
+’b911f809,Zyriix,2020-01-10 18:36:55 +0800,修改javaconnector’
+’f58443e8,Zyriix,2020-01-10 18:21:01 +0800,Update k8s.yaml’
+’612baf71,Zyriix,2020-01-10 17:41:18 +0800,Update k8s.yaml’
+’9665c8b3,Zyriix,2020-01-07 19:07:04 +0800,Merge pull request #401 from doporg/dependencyAdd’
+’9d14d4e2,Zyriix,2020-01-07 19:02:06 +0800,添加依赖，更新文档’
+’72dac406,zhangfuli,2020-01-07 17:37:41 +0800,Merge pull request #400 from doporg/dependency’
+’23335048,张富利,2020-01-07 17:37:00 +0800,spring-plugin-core’
+’21f594dc,552000264,2020-01-07 16:20:45 +0800,改回 mysql版本’
+’1a68f7a1,552000264,2020-01-07 15:39:09 +0800,修改 sql-connector的版本’
+’e0ba3a5d,552000264,2020-01-07 14:26:48 +0800,修改API host为 "http://open.dop.clsaa.com"’
+’b550adb7,552000264,2020-01-07 13:20:55 +0800,Merge remote-tracking branch 'origin/master'’
+’286abf28,552000264,2020-01-07 13:20:37 +0800,修改 服务发现地址’
+’d6bbe07e,zhangfuli,2019-12-30 19:52:13 +0800,Merge pull request #399 from doporg/works’
+’a88f4f0e,张富利,2019-12-30 19:51:16 +0800,工作分配’
+’66405750,张富利,2019-12-30 19:50:30 +0800,工作分配’
+’6a1e2933,Jerry,2019-12-30 12:22:29 +0800,add mysql and mongoDB script’
+’3e116e51,552000264,2019-12-28 16:38:20 +0800,将 extension/v1beta1 改为 apps/v1’
+’48a81220,552000264,2019-12-28 11:26:16 +0800,修改 k8s.yml deployment 配置’
+’558552c3,552000264,2019-12-28 10:55:23 +0800,修改 k8s.yml deployment 配置 apiVersion 改为 v1 ，尝试能否部署’
+’3228fff1,Jerry,2019-12-27 17:30:37 +0800,auto script’
+’4c78552e,Zyriix,2019-12-26 15:20:56 +0800,Merge pull request #398 from doporg/urlChange’
+’bf8aa6ae,Zyriix,2019-12-26 15:19:50 +0800,服务发现地址改为ip:port’
+’7918a301,Zyriix,2019-12-26 15:09:36 +0800,Merge pull request #397 from doporg/urlChange’
+’c91eb047,Zyriix,2019-12-26 15:08:30 +0800,服务发现地址改为ip:port’
+’8ad7becd,Zyriix,2019-12-26 13:40:18 +0800,Merge pull request #396 from doporg/pomChange’
+’c5edb78c,Zyriix,2019-12-26 13:33:17 +0800,修改依赖版本’
+’b70038c6,Zyriix,2019-12-26 12:18:12 +0800,discovery-server,url地址修改’
+’94f92cb6,552000264,2019-12-26 12:11:55 +0800,Merge remote-tracking branch 'origin/master'’
+’acda7b83,552000264,2019-12-26 12:11:24 +0800,修改 k8s.yml deployment 配置’
+’b2102ac9,Zyriix,2019-12-26 12:05:48 +0800,Merge pull request #395 from doporg/urlChange’
+’392752d2,Zyriix,2019-12-26 11:54:55 +0800,discovery-server,url地址修改’
+’a4b58364,552000264,2019-12-26 11:31:12 +0800,修改 k8s.yml deployment 配置’
+’da10ec2f,Zyriix,2019-12-26 11:19:55 +0800,Merge pull request #394 from doporg/discoveryTest’
+’dd625892,Zyriix,2019-12-26 11:16:45 +0800,修改message Server、rocketMQ相关配置，启动邮件发送服务 添加rocketMQ的部署文档’
+’023f6ad0,552000264,2019-12-25 15:01:46 +0800,修改 k8s.yml deployment 配置’
+’e42f7384,552000264,2019-12-25 14:28:05 +0800,修改 k8s.yml deployment 配置’
+’d4b011c1,552000264,2019-12-25 11:28:04 +0800,修改 k8s.yml deployment 配置’
+’ad481789,552000264,2019-12-24 10:36:35 +0800,修改 k8s.yml deployment 配置’
+’6bd41395,Zyriix,2019-12-22 13:40:56 +0800,Merge pull request #393 from doporg/apiChange’
+’c5c83744,Zyriix,2019-12-22 13:36:09 +0800,修改message Server、rocketMQ相关配置，启动邮件发送服务 添加rocketMQ的部署文档’
+’888f725d,Zyriix,2019-12-21 18:24:33 +0800,Merge pull request #392 from doporg/rocketMQandMail’
+’7c08cf33,Zyriix,2019-12-21 18:22:41 +0800,修改message Server、rocketMQ相关配置，启动邮件发送服务 添加rocketMQ的部署文档’
+’79c81b3f,Jerry,2019-12-18 16:15:04 +0800,Update application-local.yml’
+’9a68fa32,Jerry,2019-12-18 16:01:02 +0800,Update application-local.yml’
+’9d25603b,Zyriix,2019-12-18 11:37:41 +0800,Merge pull request #391 from doporg/updateOauth’
+’86671ff7,Zyriix,2019-12-18 11:36:39 +0800,修改oauth2.0认证相关配置’
+’13e9f057,zhangfuli,2019-12-16 21:29:55 +0800,Merge pull request #390 from doporg/v1-fixBug’
+’e5d3a0f2,张富利,2019-12-16 21:28:01 +0800,新需求确定’
+’dbec095e,zhangfuli,2019-12-16 21:26:48 +0800,Merge pull request #389 from doporg/v1-fixBug’
+’90e4056b,张富利,2019-12-16 21:25:30 +0800,新需求确定’
+’f3da69d3,552000264,2019-12-16 16:18:27 +0800,修改 k8s.yml deployment 配置’
+’38f207f4,zhangfuli,2019-12-16 15:35:59 +0800,Merge pull request #388 from doporg/v1-fixBug’
+’c13b2ea7,张富利,2019-12-16 15:35:07 +0800,mongo与docker凭证’
+’35ad13f4,Jerry,2019-12-16 09:31:05 +0800,Update k8s.yaml’
+’99372c9d,Jerry,2019-12-14 14:32:17 +0800,Update k8s.yaml’
+’d86ff523,552000264,2019-12-14 12:04:57 +0800,修改 k8s.yml deployment 配置’
+’fbeaa007,Jerry,2019-12-14 11:56:21 +0800,Update application-production.yml’
+’a556e315,Jerry,2019-12-14 11:55:44 +0800,Update application.yml’
+’c8042266,Jerry,2019-12-14 11:49:00 +0800,Update k8s.yaml’
+’ef561c2c,Jerry,2019-12-14 11:38:37 +0800,Update k8s.yaml’
+’9f91c5bd,Jerry,2019-12-14 11:24:58 +0800,Update k8s.yaml’
+’9e29a3de,Jerry,2019-12-13 18:13:55 +0800,Update k8s.yaml’
+’14bd3c89,552000264,2019-12-13 18:12:18 +0800,修改 k8s.yml deployment 配置’
+’253ff5ad,552000264,2019-12-13 17:59:43 +0800,Merge remote-tracking branch 'origin/master'’
+’b60a314d,552000264,2019-12-13 17:59:16 +0800,修改 k8s.yml deployment 配置’
+’317b250b,Jerry,2019-12-12 20:08:41 +0800,Update application-production.yml’
+’2fc8f6cf,Jerry,2019-12-12 20:07:54 +0800,Update application.yml’
+’c6204e5b,Jerry,2019-12-12 20:01:31 +0800,Update application.yml’
+’b939f1f8,Jerry,2019-12-12 20:00:58 +0800,Update application-production.yml’
+’9a1ab2f8,552000264,2019-12-12 19:16:43 +0800,Merge remote-tracking branch 'origin/master'’
+’7c68477d,552000264,2019-12-12 19:16:08 +0800,修改 k8s.yml deployment 配置’
+’558fe022,张富利,2019-12-12 17:23:48 +0800,micro-services’
+’304c0ed2,552000264,2019-12-12 16:56:19 +0800,修改 k8s.yml deployment 配置’
+’06d0ed90,张富利,2019-12-11 20:13:39 +0800,误删public’
+’c80a945e,张富利,2019-12-11 19:52:06 +0800,Merge remote-tracking branch 'origin/master'’
+’ca8df9ab,张富利,2019-12-11 19:51:23 +0800,redis’
+’43ee3615,552000264,2019-12-11 19:47:14 +0800,修改 k8s.yml deployment 配置’
+’0663f932,张富利,2019-12-11 18:42:04 +0800,Merge remote-tracking branch 'origin/master'’
+’8506d93e,张富利,2019-12-11 18:41:37 +0800,com.mysql.cj.jdbc.Driver’
+’b4ec89c0,Zyriix,2019-12-11 18:37:00 +0800,Merge pull request #387 from doporg/newChange’
+’7c2a5302,Zyriix,2019-12-11 18:28:37 +0800,Merge branch 'master' of https://github.com/clsaa/dop’
+’214a5c08,张富利,2019-12-11 18:24:46 +0800,apiVersion’
+’5be2772a,张富利,2019-12-11 18:23:04 +0800,apiVersion’
+’aad250a1,张富利,2019-12-11 17:55:55 +0800,apiVersion’
+’714d7718,张富利,2019-12-11 17:38:43 +0800,ambassador’
+’af903123,zhangfuli,2019-12-11 17:19:20 +0800,Merge pull request #386 from doporg/newChange’
+’67cc667c,Jerry,2019-12-11 15:02:12 +0800,Update k8s.yaml’
+’97a553c9,Jerry,2019-12-11 14:52:03 +0800,Update k8s.yaml’
+’b005681b,Jerry,2019-12-11 14:40:47 +0800,Update Jenkinsfile’
+’3d962dae,张富利,2019-12-11 13:28:08 +0800,ambassador’
+’b8a48838,Zyriix,2019-12-11 13:11:57 +0800,Merge branch 'master' of https://github.com/clsaa/dop’
+’0b436ac0,张富利,2019-12-11 13:03:10 +0800,测试修改 yaml’
+’324c8009,张富利,2019-12-11 12:53:55 +0800,测试修改 yaml’
+’63d817e3,张富利,2019-12-11 12:38:51 +0800,修改registry’
+’26fb939e,Zyriix,2019-12-11 11:00:17 +0800,该版本增加： 1.修改代码中mysql的地址 用户名 密码 2.修改代码中的harbor地址 3.增加 jenkins mysql部署文档中的细节’
+’3272fd3d,张富利,2019-12-10 14:15:52 +0800,k8s’
+’af546b9c,张富利,2019-12-10 14:02:58 +0800,k8s’
+’553c3d51,zhangfuli,2019-12-09 16:49:53 +0800,Merge pull request #384 from doporg/pipeline-server’
+’54951139,张富利,2019-12-09 16:48:15 +0800,Jenkinsfile-将中文stage修改成英文’
+’11a39c54,zhangfuli,2019-12-09 16:39:45 +0800,Merge pull request #383 from doporg/pipeline-server’
+’74557545,张富利,2019-12-09 16:39:13 +0800,Jenkinsfile-2’
+’ad6e0946,zhangfuli,2019-12-09 14:31:37 +0800,Merge pull request #382 from doporg/pipeline-server’
+’e9f6ab1d,张富利,2019-12-09 14:28:55 +0800,Jenkinsfile-2’
+’e6123965,zhangfuli,2019-12-09 11:29:05 +0800,Merge pull request #381 from doporg/pipeline-server’
+’73e3ac98,张富利,2019-12-09 11:28:19 +0800,Jenkinsfile’
+’61b9f8b9,张富利,2019-12-08 16:38:08 +0800,replace git url’
+’684beb43,Zyriix,2019-12-08 11:06:53 +0800,Merge pull request #380 from doporg/urlChange’
+’e7a835d9,Zyriix,2019-12-08 10:51:44 +0800,该版本增加： 1.修改代码中mysql的地址 用户名 密码 2.修改代码中的harbor地址’
+’f0f2f511,Zyriix,2019-11-24 10:50:34 +0800,Merge pull request #379 from doporg/docHarbor’
+’2aad77b9,Zyriix,2019-11-24 10:49:22 +0800,Add files via upload’
+’be1ed5b4,Jerry,2019-11-17 13:48:12 +0800,Update 5-Jenkins.md’
+’e917404b,Zyriix,2019-11-08 11:37:43 +0800,Merge pull request #378 from doporg/docHelmAndJenkins’
+’bd21b5aa,Bob,2019-11-08 11:34:31 +0800,增加helm和Jenkins的安装文档’
+’4c2e5755,Jerry,2019-11-08 10:11:19 +0800,Create 3-mysql持久化部署.md’
+’9246d03a,552000264,2019-11-02 16:42:08 +0800,Merge remote-tracking branch 'origin/master'’
+’6095ddb5,552000264,2019-11-02 16:41:25 +0800,2-server.md 文件更新 部署flannel遇到问题’
+’ebbbf60c,zhangfuli,2019-11-01 23:09:53 +0800,Merge pull request #377 from doporg/v2-server’
+’30f42ae3,张富利,2019-11-01 23:09:07 +0800,v2版本-三台服务器部署docker’
+’f6de945d,zhangfuli,2019-10-30 10:10:31 +0800,Merge pull request #376 from doporg/v2-deploy’
+’565929f2,张富利,2019-10-30 10:09:20 +0800,v2版本-三台服务器部署docker’
+’2f50e458,zhangfuli,2019-10-29 15:28:00 +0800,Merge pull request #375 from doporg/v2-server’
+’87de1115,张富利,2019-10-29 15:27:05 +0800,v2版本-服务器’
+’422a1dfd,zhangfuli,2019-10-28 20:05:31 +0800,Merge pull request #374 from doporg/v2-server’
+’375a1f35,张富利,2019-10-28 20:04:53 +0800,v2版本-收集需求’
+’1af54e13,zhangfuli,2019-10-26 12:54:07 +0800,Merge pull request #373 from doporg/v2-server’
+’cac65087,张富利,2019-10-26 12:53:27 +0800,v2版本-服务器价格’
+’00071882,zhangfuli,2019-10-26 11:23:04 +0800,Merge pull request #372 from doporg/v2-server’
+’1f7658f5,张富利,2019-10-26 11:22:21 +0800,v2版本’
+’07c192e5,Jerry,2019-10-23 15:42:38 +0800,Merge pull request #371 from doporg/monitor_requirement’
+’3be50fce,Jerry,2019-10-23 12:58:50 +0800,Update 2019-10-19.md’
+’7134e398,zhangfuli,2019-10-22 23:05:36 +0800,Merge pull request #370 from doporg/dopv2.0-doc’
+’427f3654,Zyriix,2019-10-22 22:56:23 +0800,Update 2019-10-19.md’
+’f422d613,zhangfuli,2019-10-22 14:57:41 +0800,Merge pull request #369 from doporg/monitor_requirement_update’
+’0882e7e8,Jerry,2019-10-22 11:19:37 +0800,insert images’
+’874d8888,zhangfuli,2019-10-22 10:42:12 +0800,Merge pull request #368 from doporg/monitor_requirement_update’
+’fad75f84,Jerry,2019-10-20 19:01:03 +0800,Update 2019-10-19.md’
+’3fba04f0,Jerry,2019-10-20 17:00:01 +0800,Update 2019-10-19.md’
+’46dfbc9c,Jerry,2019-10-20 16:57:40 +0800,Update 2019-10-19.md’
+’11d18558,Jerry,2019-10-20 14:42:10 +0800,monitor_requirement_update’
+’08b09801,zhangfuli,2019-10-19 12:07:44 +0800,Merge pull request #367 from doporg/v2_meeting_20191019’
+’0e8fff29,张富利,2019-10-19 12:06:57 +0800,v2版本’
+’5729c0fd,zhangfuli,2019-09-08 10:41:01 +0800,Merge pull request #366 from doporg/v2’
+’703c8508,MrZhangfuli,2019-09-08 10:39:13 +0800,v2版本’
+’3cc51931,zhangfuli,2019-09-03 20:51:06 +0800,Merge pull request #365 from doporg/v2’
+’c11b4146,MrZhangfuli,2019-09-03 20:48:51 +0800,v2版本’
+’46d2a92e,zhangfuli,2019-09-02 20:41:48 +0800,Merge pull request #364 from doporg/v2’
+’add952e8,MrZhangfuli,2019-09-02 16:11:09 +0800,v2版本’
+’d2ecfac3,zhangfuli,2019-09-02 15:05:52 +0800,Merge pull request #363 from doporg/v2’
+’f96dec15,MrZhangfuli,2019-09-02 15:05:22 +0800,v2版本’
+’e37dbb33,MrZhangfuli,2019-09-02 13:46:39 +0800,v2版本’
+’d00f8555,zhangfuli,2019-07-09 11:36:22 +0800,Merge pull request #362 from doporg/zhangfuli-patch-12’
+’aff8d5b2,zhangfuli,2019-07-09 11:36:06 +0800,Update server.md’
+’826fc1ef,zhangfuli,2019-07-09 11:35:24 +0800,Merge pull request #361 from doporg/zhangfuli-patch-11’
+’9496d3d0,zhangfuli,2019-07-09 11:34:24 +0800,Update server.md’
+’3028dd0e,zhangfuli,2019-07-09 11:14:56 +0800,Merge pull request #360 from doporg/zhangfuli-patch-10’
+’cd4bcf93,zhangfuli,2019-07-09 11:14:41 +0800,Update server.md’
+’01654156,zhangfuli,2019-06-25 00:34:40 +0800,Merge pull request #359 from doporg/dop’
+’fab6c4c0,MrZhangfuli,2019-06-25 00:33:42 +0800,old introduce’
+’ba7260f9,zhangfuli,2019-06-25 00:32:18 +0800,Merge pull request #358 from doporg/zhangfuli-patch-9’
+’edb232b2,zhangfuli,2019-06-25 00:30:42 +0800,Merge pull request #357 from doporg/zhangfuli-patch-9-1’
+’723c952e,zhangfuli,2019-06-25 00:30:28 +0800,Update README.md’
+’53da7ca5,zhangfuli,2019-06-25 00:30:25 +0800,Update README.md’
+’f3fd8aef,zhangfuli,2019-06-25 00:29:19 +0800,Merge pull request #356 from doporg/zhangfuli-patch-8’
+’3b597e39,zhangfuli,2019-06-25 00:29:07 +0800,Update mind-map.md’
+’438d988f,zhangfuli,2019-06-25 00:23:02 +0800,Merge pull request #355 from doporg/zhangfuli-patch-7’
+’f364adcc,zhangfuli,2019-06-25 00:22:48 +0800,Update README.md’
+’b50fdde2,zhangfuli,2019-06-25 00:13:29 +0800,Merge pull request #354 from doporg/zhangfuli-patch-6’
+’bc7ec306,zhangfuli,2019-06-25 00:13:11 +0800,Update README.md’
+’d9005d89,zhangfuli,2019-06-25 00:09:23 +0800,Merge pull request #353 from doporg/zhangfuli-patch-5’
+’aa4b9feb,zhangfuli,2019-06-25 00:08:53 +0800,Update README.md’
+’f5ceedde,zhangfuli,2019-06-25 00:07:52 +0800,Merge pull request #352 from doporg/zhangfuli-patch-4’
+’ccba8cb3,zhangfuli,2019-06-25 00:07:38 +0800,Update README.md’
+’4c7e715b,zhangfuli,2019-06-25 00:02:01 +0800,Merge pull request #351 from doporg/zhangfuli-patch-3’
+’9680f351,zhangfuli,2019-06-25 00:01:45 +0800,Update README.md’
+’75897109,zhangfuli,2019-06-20 20:26:10 +0800,Merge pull request #350 from doporg/zhangfuli-patch-2’
+’de275e5a,zhangfuli,2019-06-20 20:25:55 +0800,Update README.md’
+’a8bc509a,zhangfuli,2019-06-20 20:22:50 +0800,Merge pull request #349 from doporg/zhangfuli-patch-1’
+’caaa1656,zhangfuli,2019-06-20 20:22:36 +0800,Update README.md’
+’e7e11cc8,zhangfuli,2019-06-20 19:03:13 +0800,Merge pull request #348 from doporg/mind-map’
+’08961e2d,zhangfuli,2019-06-20 19:02:13 +0800,mind-map’
+’204993b6,zhangfuli,2019-06-20 19:00:22 +0800,Merge pull request #347 from doporg/mind-map’
+’9f3ff701,zhangfuli,2019-06-20 18:59:23 +0800,mind-map’
+’4e608b77,zhangfuli,2019-06-20 18:59:10 +0800,mind-map’
+’a16d21c4,zhangfuli,2019-06-18 21:13:22 +0800,Merge pull request #346 from doporg/zhangfuli-patch-5’
+’9261092c,zhangfuli,2019-06-18 21:12:29 +0800,Update README.md’
+’21bc193b,zhangfuli,2019-06-18 20:39:48 +0800,Merge pull request #344 from doporg/zhangfuli-patch-3’
+’06e813da,zhangfuli,2019-06-18 20:39:34 +0800,Update README.md’
+’17c1133c,zhangfuli,2019-06-18 20:37:23 +0800,Merge pull request #343 from doporg/zhangfuli-patch-2’
+’22dd02a0,zhangfuli,2019-06-18 20:37:08 +0800,Update README.md’
+’67a66311,zhangfuli,2019-06-18 20:35:52 +0800,Merge pull request #342 from doporg/zhangfuli-patch-1’
+’7ecf8b04,zhangfuli,2019-06-18 20:35:40 +0800,Update README.md’
+’889f9cf2,zhangfuli,2019-06-18 19:26:38 +0800,Merge pull request #341 from doporg/IDP’
+’9d258987,zhangfuli,2019-06-18 19:25:55 +0800,compare with IDP’
+’4da85cf9,zhangfuli,2019-06-18 09:49:02 +0800,Merge pull request #340 from doporg/user’
+’ff1733a8,zhangfuli,2019-06-18 09:48:06 +0800,delete img’
+’f4d48bdb,zhangfuli,2019-06-18 09:46:12 +0800,Merge pull request #339 from doporg/user’
+’0e49ef79,zhangfuli,2019-06-18 09:44:51 +0800,usage’
+’52d265d4,zhangfuli,2019-06-18 09:36:57 +0800,Merge pull request #338 from doporg/user’
+’809b6492,zhangfuli,2019-06-18 09:35:59 +0800,no message’
+’51d65eb6,zhangfuli,2019-06-17 23:48:14 +0800,Merge pull request #337 from doporg/user’
+’83663ba6,zhangfuli,2019-06-17 23:46:27 +0800,readme2’
+’61387d5c,zhangfuli,2019-06-17 23:45:42 +0800,readme2’
+’3b760aac,zhangfuli,2019-06-17 23:44:36 +0800,Merge pull request #336 from doporg/user’
+’48521b44,zhangfuli,2019-06-17 23:43:01 +0800,readme’
+’45f4ed0d,zhangfuli,2019-06-16 20:14:09 +0800,Merge pull request #335 from doporg/logo’
+’d56b85bc,zhangfuli,2019-06-16 20:12:31 +0800,logo’
+’017dcc1a,zhangfuli,2019-06-15 21:56:15 +0800,Merge pull request #334 from doporg/server-md’
+’36e4042b,zhangfuli,2019-06-15 21:54:54 +0800,server-md’
+’ac6b990e,zhangfuli,2019-06-15 21:54:41 +0800,server-md’
+’d6f100b4,zhangfuli,2019-06-15 19:34:46 +0800,Merge pull request #333 from doporg/zhangfuli-patch-7’
+’13f688f3,zhangfuli,2019-06-15 19:34:34 +0800,fix bug’
+’e946710e,zhangfuli,2019-06-15 19:33:53 +0800,Merge pull request #332 from doporg/zhangfuli-patch-6’
+’2915726d,zhangfuli,2019-06-15 19:33:41 +0800,feign’
+’1af3d642,zhangfuli,2019-06-15 19:32:56 +0800,Merge pull request #331 from doporg/zhangfuli-patch-5’
+’a2a48b75,zhangfuli,2019-06-15 19:02:50 +0800,Time format tweaks fix deserialization failure’
+’961b35b4,zhangfuli,2019-06-15 19:02:19 +0800,Merge pull request #330 from doporg/zhangfuli-patch-4’
+’94527a55,zhangfuli,2019-06-15 19:01:55 +0800,Time format tweaks fix deserialization failure’
+’2a3e1f64,zhangfuli,2019-06-15 19:00:56 +0800,Merge pull request #329 from doporg/zhangfuli-patch-3’
+’7191a81e,zhangfuli,2019-06-15 18:59:29 +0800,Modify the image warehouse address fetch method’
+’0f22206d,zhangfuli,2019-06-15 18:57:58 +0800,Merge pull request #328 from doporg/zhangfuli-patch-2’
+’2f054599,zhangfuli,2019-06-15 18:57:19 +0800,fix bug’
+’07e98854,zhangfuli,2019-06-15 18:56:09 +0800,Merge pull request #327 from doporg/zhangfuli-patch-1’
+’0dbe3917,zhangfuli,2019-06-15 18:55:26 +0800,internationalization’
+’d5acbac6,zhangfuli,2019-06-15 18:43:02 +0800,Merge pull request #326 from doporg/audit’
+’b442b6fe,zhangfuli,2019-06-15 18:37:26 +0800,Time format tweaks fix deserialization failure’
+’e4e1be2c,zhangfuli,2019-06-15 18:28:37 +0800,Merge pull request #325 from doporg/manual’
+’62dfea82,zhangfuli,2019-06-15 18:27:16 +0800,Improve the manual’
+’ce9bfba9,zhangfuli,2019-06-15 18:12:58 +0800,Merge pull request #324 from doporg/logo’
+’45c248ba,zhangfuli,2019-06-15 18:11:50 +0800,logo’
+’4b39a937,zhangfuli,2019-06-15 18:07:59 +0800,logo’
+’7ac71c64,zhangfuli,2019-06-14 10:19:14 +0800,Merge pull request #322 from doporg/zhangfuli-patch-2’
+’6dbc8e02,zhangfuli,2019-06-14 10:18:57 +0800,Merge pull request #323 from doporg/zhangfuli-patch-3’
+’0bb6cca7,zhangfuli,2019-06-14 10:18:35 +0800,Update index.js’
+’ff305286,zhangfuli,2019-06-14 10:17:24 +0800,Update index.js’
+’3bbb78cd,zhangfuli,2019-06-13 22:35:21 +0800,Merge pull request #321 from doporg/zhangfuli-patch-1’
+’890eb5dc,zhangfuli,2019-06-13 22:35:00 +0800,Update PipelineProject.js’
+’48dd3d35,zhangfuli,2019-06-13 16:40:16 +0800,Merge pull request #319 from doporg/fix_case_param_length’
+’720d2633,zhangfuli,2019-06-13 16:40:00 +0800,Merge pull request #320 from doporg/dop’
+’d65c7882,zhangfuli,2019-06-13 16:38:35 +0800,mvn’
+’13eba46d,151250010,2019-06-12 19:18:05 +0800,fix bug’
+’3f0c1a3e,151250010,2019-06-12 18:02:38 +0800,修复结果展示bug’
+’48449a49,zhangfuli,2019-06-11 20:51:39 +0800,Merge pull request #318 from doporg/pipeline’
+’960aed87,zhangfuli,2019-06-11 20:47:56 +0800,mvn’
+’95e4660a,zhangfuli,2019-06-09 11:12:28 +0800,Merge pull request #317 from doporg/pipeline’
+’72990de7,zhangfuli,2019-06-09 11:11:48 +0800,mvn’
+’56a78cdf,zhangfuli,2019-06-09 10:41:37 +0800,Merge pull request #315 from doporg/Zyriix-patch-5’
+’6c5d2f35,zhangfuli,2019-06-09 10:41:21 +0800,Merge pull request #316 from doporg/Zyriix-patch-6’
+’02443522,Zyriix,2019-06-09 10:25:24 +0800,Update CreateApplicationEnvironment.scss’
+’f8c60fe7,Zyriix,2019-06-09 10:24:23 +0800,Update CreateApplicationEnvironmentForm.scss’
+’5ac420ad,zhangfuli,2019-06-09 10:14:41 +0800,Merge pull request #314 from doporg/Zyriix-patch-3’
+’98d70d70,Zyriix,2019-06-09 10:10:22 +0800,Update CreateApplicationEnvironment.scss’
+’bffd3ea4,zhangfuli,2019-06-08 17:51:50 +0800,Merge pull request #313 from doporg/Zyriix-patch-2’
+’80e382ab,Zyriix,2019-06-08 17:51:03 +0800,Update ProjectService.java’
+’b0b1166c,zhangfuli,2019-06-06 15:17:57 +0800,Merge pull request #312 from doporg/Zyriix-patch-1’
+’951db692,Zyriix,2019-06-06 15:16:47 +0800,Update AppEnvService.java’
+’5c26fe1f,任贵杰,2019-06-02 19:56:16 +0800,test’
+’4713267e,任贵杰,2019-06-02 19:53:05 +0800,hello’
+’cb6b6b0f,guijie.rgj,2019-06-02 09:22:21 +0800,Merge remote-tracking branch 'origin/master'’
+’defc0b63,任贵杰,2019-06-02 09:18:36 +0800,document’
+’2b6d70aa,zhangfuli,2019-05-29 16:15:59 +0800,Merge pull request #309 from doporg/bugFix_newProject’
+’c2845fc5,zhangfuli,2019-05-29 16:15:38 +0800,Merge pull request #310 from doporg/552000264-patch-1’
+’60146ef0,zhangfuli,2019-05-29 16:15:24 +0800,Merge pull request #311 from doporg/pipeline-bug’
+’06124eb4,zhangfuli,2019-05-29 16:14:13 +0800,id获取bug’
+’ad3b9023,Jerry,2019-05-27 16:15:05 +0800,Update 权限接入.md’
+’d675d9e6,waszqt,2019-05-26 11:46:15 +0800,默认不创建readme’
+’1efd798a,zhangfuli,2019-05-24 12:30:22 +0800,Merge pull request #308 from doporg/pipeline-page’
+’aa326a05,zhangfuli,2019-05-24 12:30:12 +0800,Merge branch 'master' into pipeline-page’
+’0a05ea12,zhangfuli,2019-05-24 12:21:41 +0800,分页’
+’680275d3,任贵杰,2019-05-24 11:05:10 +0800,logo max width’
+’4331027e,任贵杰,2019-05-24 11:03:51 +0800,doc tmp’
+’6266594c,zhangfuli,2019-05-24 09:24:04 +0800,Merge pull request #307 from doporg/pipelinepage’
+’554e9d82,zhangfuli,2019-05-24 09:22:54 +0800,test报的bug’
+’231c1ae9,任贵杰,2019-05-23 23:45:25 +0800,Merge pull request #306 from clsaa/pipelinepage’
+’8dcb6a8a,zhangfuli,2019-05-23 21:37:47 +0800,南京大学DevOps学生实践平台’
+’5a9efca4,任贵杰,2019-05-17 12:31:42 +0800,fix host’
+’40934731,任贵杰,2019-05-17 12:26:28 +0800,Merge pull request #303 from clsaa/create-pipeline-stage’
+’200c94a8,任贵杰,2019-05-17 12:26:12 +0800,Merge pull request #302 from clsaa/fix_webPageAndAddMemberList’
+’33126484,zhangfuli,2019-05-17 11:55:36 +0800,流水线stage中间插入’
+’2c66f417,zhangfuli,2019-05-17 10:59:00 +0800,创建流水线的时候没法点之前的阶段’
+’126f8cd1,Zyriix,2019-05-17 09:58:43 +0800,该版本增加： 1.修复前段显示BUG 2.修复添加成员搜索BUG’
+’b28fb0b1,任贵杰,2019-05-17 05:01:33 +0800,fix dialog width’
+’231f47e9,任贵杰,2019-05-16 23:24:28 +0800,Merge pull request #301 from clsaa/fix_import_api’
+’98953925,151250010,2019-05-16 21:58:44 +0800,修复app id bug’
+’8e3dd2d7,任贵杰,2019-05-16 21:54:32 +0800,Merge pull request #300 from clsaa/pipeline-fix-bug’
+’fe2fbf17,zhangfuli,2019-05-16 21:44:50 +0800,自带Jenkinsfile git权限提示’
+’ca7ab092,151250010,2019-05-16 21:41:22 +0800,fix search bug’
+’d0179b39,151250010,2019-05-16 21:37:40 +0800,增加功能：编辑分组的相关用例时，只能选择该分组的应用下的用例’
+’e587a4db,任贵杰,2019-05-16 20:44:36 +0800,Merge pull request #298 from clsaa/fix_import_api’
+’530275ba,任贵杰,2019-05-16 20:38:30 +0800,Merge pull request #299 from clsaa/feature_permission_fix’
+’5027a16d,Jerry,2019-05-16 15:11:37 +0800,2019.5.16  前端BUG 修改， 验证改为调用接口’
+’a957f311,151250010,2019-05-16 14:48:40 +0800,支持导入文件后选择需要导入的接口，去除全量导入’
+’d9395dac,任贵杰,2019-05-16 11:05:18 +0800,Merge pull request #297 from clsaa/fix_appEnvLogRunningLog’
+’4fc6d0bd,Zyriix,2019-05-16 10:57:38 +0800,该版本增加： 1.添加日志流水线日志功能’
+’9913a475,任贵杰,2019-05-16 10:15:32 +0800,fix host’
+’f91fc1ce,任贵杰,2019-05-16 10:13:11 +0800,Merge pull request #296 from clsaa/pipeline-fix-bug’
+’392aa400,zhangfuli,2019-05-16 07:51:17 +0800,编辑，保存’
+’3a8b37dd,zhangfuli,2019-05-16 06:52:22 +0800,获取时间’
+’f3d2f080,zhangfuli,2019-05-16 06:37:39 +0800,获取不到yaml提示bug’
+’d5683157,任贵杰,2019-05-16 00:32:42 +0800,application image build tag’
+’f45dccda,任贵杰,2019-05-15 23:57:59 +0800,deployment为空 报错’
+’4f4c6339,任贵杰,2019-05-15 23:52:28 +0800,Merge pull request #294 from clsaa/pipeline-edit’
+’e312e2e0,zhangfuli,2019-05-15 23:51:02 +0800,获取不到yaml提示bug’
+’39b54bf6,任贵杰,2019-05-15 22:58:14 +0800,fix host’
+’9ac36704,任贵杰,2019-05-15 22:49:50 +0800,fix bug logo image’
+’491be762,任贵杰,2019-05-15 22:21:33 +0800,Merge pull request #293 from clsaa/pipeline-edit’
+’b9cd285c,zhangfuli,2019-05-15 22:10:00 +0800,自动触发’
+’249e7de9,任贵杰,2019-05-15 19:10:10 +0800,Merge pull request #292 from clsaa/pipeline-edit’
+’93c3c994,zhangfuli,2019-05-15 18:59:31 +0800,编辑’
+’d79e681c,任贵杰,2019-05-15 18:18:19 +0800,Merge pull request #290 from clsaa/feature_permission_fix’
+’e29111f3,任贵杰,2019-05-15 18:18:02 +0800,Merge pull request #289 from clsaa/fix_image_digest’
+’f949d295,任贵杰,2019-05-15 18:17:38 +0800,Merge pull request #291 from clsaa/fix_appPermission’
+’02f09308,Zyriix,2019-05-15 16:23:16 +0800,该版本增加： 1.修改app权限功能’
+’2fd72b91,zhangfuli,2019-05-15 16:18:40 +0800,国际化2’
+’9891aeb0,zhangfuli,2019-05-15 15:15:01 +0800,国际化’
+’ecd62c9b,Jerry,2019-05-15 14:19:42 +0800,2019.5.15 权限模块 前端组件的显示与隐藏，调整标签位置，解决bug’
+’a24744ee,ZhiTingXin,2019-05-15 13:46:03 +0800,修改摘要显示的问题’
+’dad5acf2,任贵杰,2019-05-15 11:45:30 +0800,Merge pull request #288 from clsaa/feature_permission_fix’
+’7ad39809,Jerry,2019-05-15 11:25:49 +0800,2019.5.15  修改 check函数’
+’345ac46b,任贵杰,2019-05-15 00:24:25 +0800,Merge pull request #287 from clsaa/feature_permission_fix’
+’288ebc63,Jerry,2019-05-15 00:00:16 +0800,2019.5.14  sql 删除语句 bug’
+’74936077,Jerry,2019-05-14 23:59:03 +0800,2019.5.14 修改sql 删除bug’
+’f67fe9c8,zhangfuli,2019-05-14 23:05:39 +0800,commitId’
+’927abf67,任贵杰,2019-05-14 22:49:23 +0800,Merge pull request #285 from clsaa/fix_image_bug’
+’0b7de14e,任贵杰,2019-05-14 22:48:26 +0800,Merge pull request #286 from clsaa/fix_memberManageMent’
+’74649c98,Zyriix,2019-05-14 22:38:37 +0800,该版本增加： 1.修复删除项目的权限问题，修复成员管理页面的一些bug’
+’83f3593f,ZhitingXin,2019-05-14 22:08:08 +0800,添加pull命令复制，增加应用层访问界面’
+’edca6903,151250010,2019-05-14 20:44:33 +0800,fix npe during importing’
+’ef0d2e7a,Zyriix,2019-05-14 20:09:58 +0800,该版本增加： 1.修复前端显示问题，去除无用私有变量’
+’8750d55b,任贵杰,2019-05-14 11:10:44 +0800,Merge pull request #280 from clsaa/feature_international_test’
+’e3ef033c,任贵杰,2019-05-14 11:10:06 +0800,Merge pull request #281 from clsaa/zhangfuli-patch-1’
+’e4aed579,zhangfuli,2019-05-14 09:38:28 +0800,Update API.js’
+’2b0f80d7,151250010,2019-05-14 00:25:02 +0800,国际化支持’
+’b9da1d49,任贵杰,2019-05-13 21:26:14 +0800,Merge pull request #279 from clsaa/feature_pipeline’
+’8de7bb35,zhangfuli,2019-05-13 21:19:10 +0800,git地址正则匹配’
+’4364d03a,zhangfuli,2019-05-13 19:36:59 +0800,隐藏token’
+’4287aca6,zhangfuli,2019-05-13 19:34:19 +0800,update’
+’f3ce741b,任贵杰,2019-05-13 16:32:04 +0800,Merge pull request #278 from clsaa/feature_pipeline’
+’60720300,任贵杰,2019-05-13 16:29:23 +0800,Merge pull request #277 from clsaa/fix_appEnvLog’
+’ceb4e66b,zhangfuli,2019-05-13 16:21:47 +0800,日志换行’
+’d7709be0,zhangfuli,2019-05-13 13:56:47 +0800,日志不更新bug’
+’e532606e,zhangfuli,2019-05-13 13:47:03 +0800,日志不更新bug’
+’c30ac061,zhangfuli,2019-05-13 12:06:13 +0800,隐藏accesstoken’
+’06ead783,Zyriix,2019-05-13 11:15:13 +0800,该版本增加： 1.修复日志功能，修改前端日志界面bug’
+’61522fd6,任贵杰,2019-05-13 10:07:46 +0800,Merge pull request #276 from clsaa/pipeline-django’
+’23f1edf0,zhangfuli,2019-05-13 10:05:07 +0800,Merge branch 'master' into pipeline-django’
+’73da6fba,zhangfuli,2019-05-13 09:59:27 +0800,test’
+’fbffe654,任贵杰,2019-05-13 03:24:54 +0800,feedback&mailto’
+’6e4aaace,任贵杰,2019-05-13 03:04:45 +0800,application-server yaml fix’
+’7b972f43,任贵杰,2019-05-13 02:48:24 +0800,UI国际化调整’
+’17e4e885,任贵杰,2019-05-13 02:40:05 +0800,API JS’
+’7ecc6aa2,任贵杰,2019-05-12 23:19:42 +0800,Merge pull request #270 from clsaa/fix_nodePortInfo’
+’70aca480,任贵杰,2019-05-12 23:18:28 +0800,Merge pull request #269 from clsaa/feature_code_intl’
+’20688930,Zyriix,2019-05-12 23:00:32 +0800,该版本增加： 1.增加nodeport协议设置’
+’559297b5,waszqt,2019-05-12 20:42:00 +0800,菜单栏国际化’
+’f9e2c49e,Zyriix,2019-05-12 17:12:31 +0800,该版本增加： 1.修改前端显示BUG 2.修改ingress和NodePort的创建bug’
+’4d8c22c9,任贵杰,2019-05-12 17:00:17 +0800,Merge pull request #267 from clsaa/feature_permission_fix’
+’039854e5,Jerry,2019-05-12 15:17:23 +0800,Update 权限接入.md’
+’ce3ba823,552000264,2019-05-12 15:08:11 +0800,2019.5.12 权限模块 前端组件的显示与隐藏’
+’14f2eee0,Zyriix,2019-05-12 13:57:23 +0800,该版本增加： 1.修改AppEnvLog数据表的结构’
+’e0649059,任贵杰,2019-05-12 13:09:14 +0800,Merge pull request #264 from clsaa/feature_menuLocalization’
+’aa254109,Zyriix,2019-05-12 12:52:12 +0800,该版本添加： 1.导航栏国际化’
+’b6f7388a,任贵杰,2019-05-12 12:46:26 +0800,删除自调节模块’
+’ab0f169a,任贵杰,2019-05-12 12:33:04 +0800,Merge pull request #263 from clsaa/feature_permission_fix’
+’561ac370,任贵杰,2019-05-12 12:32:52 +0800,Merge pull request #262 from clsaa/fix_imageCheck’
+’56603285,552000264,2019-05-12 11:03:22 +0800,2019.5.12 权限模块 前端国际化’
+’51078408,Zyriix,2019-05-12 09:38:42 +0800,该版本增加： 1.修改镜像地址检查的BUG’
+’cc6fbf3b,任贵杰,2019-05-12 00:55:40 +0800,base intl’
+’7a349621,任贵杰,2019-05-11 23:58:28 +0800,API.js’
+’934b8da6,clsaa,2019-05-11 18:28:34 +0800,Merge remote-tracking branch 'origin/fix_imageAPI'’
+’412fc3c3,Zyriix,2019-05-11 09:58:38 +0800,该版本增加： 1.同步镜像地址修改的API接口’
+’308ab623,任贵杰,2019-05-10 23:19:09 +0800,Merge pull request #256 from clsaa/fix_image_search1’
+’0395b8e1,任贵杰,2019-05-10 23:18:37 +0800,Merge pull request #257 from clsaa/fix_imageAndWebpage’
+’cfeb1e27,ZhiTingXin,2019-05-10 11:57:22 +0800,修改镜像仓库地址获取方法’
+’db35c48b,Zyriix,2019-05-10 11:14:59 +0800,该版本增加： 1.修改镜像地址检测方法 2.修复前端显示bug’
+’8481b659,151250170,2019-05-10 11:06:59 +0800,Merge branch 'master' into fix_image_search1’
+’30d2fd8e,ZhitingXin,2019-05-10 11:00:01 +0800,添加代码’
+’d814f5db,任贵杰,2019-05-10 10:33:09 +0800,Merge pull request #255 from clsaa/fix_image_search’
+’d803073c,任贵杰,2019-05-10 10:32:39 +0800,Merge pull request #254 from clsaa/feature_interegrate_and_search’
+’5a0beb0a,151250170,2019-05-10 10:31:23 +0800,修改错误’
+’31cc4fe2,任贵杰,2019-05-10 09:46:57 +0800,Merge pull request #253 from clsaa/fix_image_search’
+’30bb002d,任贵杰,2019-05-10 01:41:13 +0800,Merge pull request #252 from clsaa/fix_resourceRead’
+’6748cbb3,151250010,2019-05-09 22:44:14 +0800,integrate with other server’
+’4c24eef6,Zyriix,2019-05-09 17:58:12 +0800,该版本增加： 1.修改resource文件读取方法’
+’91340c14,ZhitingXin,2019-05-09 16:23:44 +0800,将不是命名空间管理员的状态修改为不可修改’
+’0bf6409b,zhangfuli,2019-05-09 11:09:39 +0800,header菜单国际化’
+’643a5003,151250010,2019-05-09 10:09:32 +0800,Merge branch 'master' into feature_interegrate_and_search’
+’061e91f8,151250010,2019-05-09 10:08:59 +0800,integrate with appserver’
+’b2d8d382,任贵杰,2019-05-09 10:02:45 +0800,Merge pull request #251 from clsaa/fix_miss_file’
+’7bb1345e,151250010,2019-05-09 07:41:38 +0800,add miss files’
+’561a0002,151250010,2019-05-08 23:35:37 +0800,front end optimize’
+’62e0adc9,zhangfuli,2019-05-08 22:41:10 +0800,django’
+’18fda659,任贵杰,2019-05-08 22:40:09 +0800,Merge pull request #239 from clsaa/feature_execute_group’
+’5cf57e7a,任贵杰,2019-05-08 22:39:02 +0800,Merge pull request #240 from clsaa/fix_image_search’
+’38a5d3a4,ZhitingXin,2019-05-08 21:52:46 +0800,修复添加成员到项目失败后没有提醒的bug’
+’66199eb9,ZhitingXin,2019-05-08 21:09:35 +0800,增加命名空间的检索条件’
+’7c793c00,151250010,2019-05-08 20:55:27 +0800,支持分组执行测试用例，查看执行日志，前端部分’
+’d06693f9,ZhiTingXin,2019-05-08 16:53:36 +0800,增加删除成员功能’
+’4181092d,151250010,2019-05-08 16:20:00 +0800,支持执行测试分组，后端API’
+’b52cbd0e,任贵杰,2019-05-08 14:43:57 +0800,Merge pull request #238 from clsaa/fix_webpage’
+’2640e9ba,ZhiTingXin,2019-05-08 11:35:01 +0800,修改新增用户dialog显示问题’
+’2d60fb52,ZhiTingXin,2019-05-08 11:19:14 +0800,修复镜像检索条件bug’
+’8a150427,Zyriix,2019-05-08 09:47:20 +0800,Merge remote-tracking branch 'origin/fix_webpage' into fix_webpage’
+’4299745c,Zyriix,2019-05-08 09:42:54 +0800,该版本增加： 1.修改前端页面显示bug’
+’b7b922e8,Zyriix,2019-05-08 09:42:54 +0800,该版本增加： 1.修改前端页面显示bug’
+’de171e77,任贵杰,2019-05-07 22:57:11 +0800,Merge pull request #235 from clsaa/feature_image_international’
+’202323a7,151250170,2019-05-07 22:47:44 +0800,Merge branch 'master' into feature_image_international’
+’308d70e6,ZhiTingXin,2019-05-07 22:42:35 +0800,修复冲突’
+’2c88198e,ZhiTingXin,2019-05-07 22:37:04 +0800,修改部分issue’
+’41357ba1,任贵杰,2019-05-07 21:29:05 +0800,Merge pull request #232 from clsaa/feature_group_testcases’
+’832c972d,151250010,2019-05-07 21:19:40 +0800,use server api’
+’a479d9e7,151250010,2019-05-07 21:17:19 +0800,1，前端布局重构，支持新建编辑查看测试分组 2，后端API支持’
+’bfb19ba9,任贵杰,2019-05-07 20:18:55 +0800,Merge pull request #223 from clsaa/feature_permission_optimize’
+’39095e1b,任贵杰,2019-05-07 20:18:38 +0800,Merge pull request #222 from clsaa/pipeline’
+’eafb1863,ZhitingXin,2019-05-07 19:39:44 +0800,国际化部分遗漏，补充’
+’022e546b,ZhitingXin,2019-05-07 19:33:29 +0800,完成容器镜像前端的国际化’
+’2e61f4d3,552000264,2019-05-07 16:23:54 +0800,2019.5.7  优化接口’
+’bd8d22b3,ZhiTingXin,2019-05-07 16:11:52 +0800,修改按钮统一问题’
+’6b264363,zhangfuli,2019-05-07 10:49:37 +0800,国际化bug’
+’eb085b92,任贵杰,2019-05-07 00:48:22 +0800,国际化配置文件修复’
+’a2e9d1d7,clsaa,2019-05-07 00:20:50 +0800,Merge remote-tracking branch 'origin/feature_code_intl'’
+’29878ed6,clsaa,2019-05-07 00:19:55 +0800,Merge remote-tracking branch 'origin/feature_permission_optimize'’
+’c4495c61,clsaa,2019-05-07 00:18:15 +0800,Merge remote-tracking branch 'origin/pipline-rebuild'’
+’502c1944,任贵杰,2019-05-07 00:08:06 +0800,Merge pull request #219 from clsaa/feature_import_openapi’
+’0f9893fa,任贵杰,2019-05-07 00:07:36 +0800,Merge pull request #221 from clsaa/appWithPermissionAndLog3’
+’c45040f9,151250010,2019-05-06 22:59:39 +0800,测试用例分组修改，分页查询后端’
+’6c250474,zhangfuli,2019-05-06 22:20:59 +0800,登录国际化’
+’bb9163c0,151250010,2019-05-06 21:46:09 +0800,测试用例分组支持，支持创建分组’
+’fd9232e9,151250010,2019-05-06 18:06:15 +0800,前端优化，对json文件进行校验’
+’cfee4b2e,ZhiTingXin,2019-05-06 17:33:05 +0800,Merge remote-tracking branch 'origin/feature_image_international' into repo’
+’0dcea1a1,ZhiTingXin,2019-05-06 17:32:54 +0800,删除无用导包’
+’cd70f2cf,zhangfuli,2019-05-06 16:05:39 +0800,流水线管理模块——前端问题——创建流水线时选中一个任务到stage中,现在都要点一下新建的任务才能出现一个填写具体信息的表单. 不可以自动显示出来吗’
+’f64b15fc,zhangfuli,2019-05-06 15:59:56 +0800,流水线管理模块——设计实现问题——创建流水线时stage中的任务被删除后任务旁边填具体信息的表单不会消失’
+’9a4e03e4,Zyriix,2019-05-06 14:32:19 +0800,该版本增加： 1.完成了国际化 2.测试并修复了日志管理的bug 3.修复了一些其他bug 4.接入了数据权限’
+’91468aa8,Zyriix,2019-05-06 14:31:42 +0800,该版本增加： 1.完成了国际化 2.测试并修复了日志管理的bug 3.修复了一些其他bug 4.接入了数据权限’
+’6a961f5b,151250010,2019-05-06 13:21:24 +0800,fix some bugs’
+’06b22915,151250010,2019-05-06 09:24:08 +0800,skip body param during resolving OpenApi docs’
+’d3ed32b7,151250010,2019-05-06 00:39:37 +0800,fix npe’
+’5e8fb712,151250010,2019-05-06 00:21:05 +0800,1，导入api前后端完整支持 2，请求url支持使用 {} 以及 ${} 引用不同的参数’
+’ce3fc787,552000264,2019-05-06 00:04:58 +0800,2019.5.6 权限模块 前端国际化’
+’6ff17c94,waszqt,2019-05-05 23:40:29 +0800,国际化2’
+’e0aa02fa,zhangfuli,2019-05-05 23:23:52 +0800,国际化之后修复bug2’
+’61a4d9f7,zhangfuli,2019-05-05 23:10:02 +0800,国际化之后修复bug’
+’af76d725,任贵杰,2019-05-05 22:32:02 +0800,Merge pull request #215 from clsaa/feature_permission_optimize’
+’865858bb,任贵杰,2019-05-05 22:31:26 +0800,Merge pull request #216 from clsaa/pipline-rebuild’
+’a2e54f85,waszqt,2019-05-05 21:21:11 +0800,国际化1’
+’2e09b03e,zhangfuli,2019-05-05 20:31:39 +0800,流水线管理模块——设计实现问题——流水线不一定要绑定一个应用’
+’61cf8c0e,552000264,2019-05-05 17:44:28 +0800,2019.5.5  优化接口，取消jar包的引用’
+’53b24fec,552000264,2019-05-05 15:18:44 +0800,2019.5.5  优化接口，改为原生 sql todo: 优化 用户数据的一些接口，控制前端界面’
+’7eeefdcb,zhangfuli,2019-05-05 14:36:53 +0800,创建流水线阶段设置国际化’
+’503389be,任贵杰,2019-05-05 13:06:02 +0800,image-server’
+’be2e634c,clsaa,2019-05-05 09:53:21 +0800,Merge remote-tracking branch 'origin/feature_permission_annotation'’
+’4b19e002,552000264,2019-05-05 00:10:21 +0800,2019.5.5  优化接口，改为原生 sql todo: 优化 用户数据的一些接口，控制前端界面’
+’1c72e289,151250010,2019-05-04 19:43:53 +0800,导入api后端’
+’61e8ceb9,任贵杰,2019-05-04 14:22:20 +0800,Merge pull request #209 from clsaa/feature_code’
+’75fcb7d4,任贵杰,2019-05-04 14:21:35 +0800,Merge pull request #210 from clsaa/pipeline-trigger’
+’a81cd95f,151250010,2019-05-04 13:15:30 +0800,前端支持传递参数’
+’bd3cd1f7,151250010,2019-05-04 12:43:30 +0800,日期格式化fix, 请求GET, PATH参数支持后端1’
+’78f006da,zhangfuli,2019-05-03 21:09:33 +0800,djanggo’
+’779652b5,zhangfuli,2019-05-01 23:21:04 +0800,密码暴露问题’
+’4dd5d917,zhangfuli,2019-05-01 22:22:20 +0800,定时触发-bug’
+’4ca32990,zhangfuli,2019-05-01 20:11:32 +0800,定时触发’
+’5c30fec4,waszqt,2019-05-01 19:28:54 +0800,解决了一些显示问题’
+’1a609aae,waszqt,2019-05-01 00:17:22 +0800,处理mr’
+’f92ce4da,zhangfuli,2019-04-30 14:58:07 +0800,自动触发-补充’
+’1ae50cdc,zhangfuli,2019-04-30 14:57:19 +0800,自动触发-补充’
+’a07f4646,zhangfuli,2019-04-30 14:56:02 +0800,自动触发’
+’a194f791,任贵杰,2019-04-30 13:24:40 +0800,Merge pull request #206 from clsaa/feature_permission_annotation’
+’11d11670,任贵杰,2019-04-30 13:24:07 +0800,Merge pull request #207 from clsaa/feature_code_access’
+’782145e4,任贵杰,2019-04-30 13:23:33 +0800,Merge pull request #208 from clsaa/pipeline-trigger’
+’877270f8,clsaa,2019-04-30 13:22:06 +0800,Merge remote-tracking branch 'origin/master'’
+’b99f60f8,任贵杰,2019-04-30 13:21:54 +0800,时间格式微调修复反序列化失败问题’
+’27c0247a,zhangfuli,2019-04-30 13:14:05 +0800,Merge branch 'master' into pipeline-trigger’
+’4e4a3e5f,waszqt,2019-04-30 01:30:17 +0800,MR列表和新建MR功能’
+’433c0e51,zhangfuli,2019-04-29 22:40:58 +0800,流水线启动运行bug’
+’b9d5f525,zhangfuli,2019-04-29 19:37:18 +0800,流水线管理模块——设计实现问题——创建流水线时, 很多数据的获取都有问题, 你应该在你的服务端去获取而非直接通过前端调用其他服务的接口,最后一起再丢给你的接口.’
+’93e2dd1f,waszqt,2019-04-29 14:38:35 +0800,code权限的前端控制’
+’a5222326,552000264,2019-04-29 13:53:16 +0800,2019.4.27 添加一些feign调用接口。’
+’e187cef8,552000264,2019-04-29 13:04:55 +0800,2019.4.29 前端可以查询到用户数据’
+’431c8c39,任贵杰,2019-04-29 11:04:02 +0800,Merge pull request #205 from clsaa/feature_appWithPermissionAndRunningLog’
+’04ed8e0a,zhangfuli,2019-04-28 23:07:14 +0800,你直接从前端查出了 用户凭证 然后调用流水线接口 一股脑都丢给你的接口, 所有的东西都要放到你的服务端去请求’
+’76af6f93,clsaa,2019-04-28 18:01:27 +0800,Merge remote-tracking branch 'origin/master'’
+’cc25fbc4,任贵杰,2019-04-28 18:01:05 +0800,fix bug  search user when key=null’
+’2f3f9bcb,Zyriix,2019-04-28 15:19:47 +0800,该版本增加： 1.修复了一些BUG’
+’edd59b38,Zyriix,2019-04-28 15:19:32 +0800,该版本增加： 1.修复了一些BUG’
+’3a2bcb61,Zyriix,2019-04-28 14:47:46 +0800,该版本增加： 1.deployment的构建方式改为使用文件导入 2.完成了版本管理的功能 3.接入了数据权限 4.新增了项目用户管理的页面和对应功能 5.现在用户可以选择已有的镜像仓库、代码仓库地址或自己填写 6.修复了前端显示的一些BUG’
+’9a51a6b4,Zyriix,2019-04-28 09:20:22 +0800,Merge branch 'master' into feature_appManagementWithLogManagement’
+’cc15a872,zhangfuli,2019-04-27 21:17:11 +0800,创建流水线部分国际化’
+’71aa5d30,任贵杰,2019-04-27 18:01:41 +0800,Merge pull request #204 from clsaa/feature_permission_annotation’
+’3c6b9631,552000264,2019-04-27 17:58:11 +0800,Merge branch 'feature_permission_annotation' of https://github.com/clsaa/dop into feature_permission_annotation’
+’47580981,Jerry,2019-04-27 17:57:28 +0800,2019.4.27 添加一些feign调用接口。’
+’07172887,Jerry,2019-04-27 17:45:38 +0800,Update 权限接入.md’
+’c728001e,Jerry,2019-04-27 17:40:41 +0800,2019.4.27 自定义注解fix，使用@PermissionName注解修饰方法，使用@GetUserId 注解修饰用户ID参数’
+’e131ccb7,clsaa,2019-04-27 16:07:32 +0800,Merge branch 'feature_user_management'’
+’2150cd99,任贵杰,2019-04-27 16:06:54 +0800,api of user management’
+’44786e4f,Zyriix,2019-04-27 15:20:11 +0800,Merge branch 'master' into feature_appManagementWithLogManagement’
+’4bd00659,Jerry,2019-04-27 14:46:56 +0800,Update 权限接入.md’
+’0cbe64ff,任贵杰,2019-04-27 14:38:09 +0800,Merge pull request #190 from clsaa/feature_permission_annotation’
+’998280df,任贵杰,2019-04-27 00:44:53 +0800,fix some bug’
+’92d816e9,zhangfuli,2019-04-26 21:46:45 +0800,no message’
+’f0c3e78f,zhangfuli,2019-04-26 20:02:27 +0800,新建流水线重构’
+’dcd70b13,552000264,2019-04-26 17:53:35 +0800,Merge branch 'feature_permission_fix' into feature_permission_annotation’
+’8f60fea7,552000264,2019-04-26 17:52:21 +0800,Merge branch 'feature_permission' into feature_permission_annotation’
+’7cea477a,552000264,2019-04-26 17:45:41 +0800,2019.4.26 自定义注解’
+’810d3c26,任贵杰,2019-04-26 11:34:34 +0800,Merge pull request #187 from clsaa/fix-issues’
+’fd7a4f10,任贵杰,2019-04-26 11:25:17 +0800,Merge pull request #188 from clsaa/feature_test_front_end_refactor’
+’8401026f,任贵杰,2019-04-26 11:24:49 +0800,Merge pull request #186 from clsaa/feature_code’
+’fb9f581f,任贵杰,2019-04-26 11:16:38 +0800,Merge pull request #189 from clsaa/feature_fix_image’
+’eacf46a2,Zyriix,2019-04-24 12:23:10 +0800,该版本增加： 1.deployment的构建方式改为使用文件导入 2.完成了版本管理的功能 3.在服务器上部署了Istio’
+’f4a1185c,Zyriix,2019-04-24 12:22:11 +0800,该版本增加： 1.deployment的构建方式改为使用文件导入 2.完成了版本管理的功能 3.在服务器上部署了Istio’
+’82b9c975,zhangfuli,2019-04-23 13:10:42 +0800,流水线管理模块——设计实现问题——查看流水线,如果流水线没有运行过那么界面什么都没有,很尬, 能否在运行结果上边添加一个流水线的视图’
+’f83a55e1,waszqt,2019-04-23 11:40:56 +0800,成员管理功能’
+’4789ae44,zhangfuli,2019-04-23 10:32:44 +0800,流水线国家化bug’
+’1bf0bebc,ZhiTingXin,2019-04-22 14:07:39 +0800,修改因为修改后端api后引发的bug’
+’d8ca3ffd,ZhiTingXin,2019-04-22 13:40:00 +0800,向应用管理提供镜像仓库地址接口’
+’6e7cdb50,552000264,2019-04-22 11:28:04 +0800,2019.4.22 自定义注解 直接写在服务里的，没打成包 ，用的话复制一下annotation里的文件和 Authentication.java 就能用，注意注解函数的第一个参数必须是用户ID’
+’d6097026,151250010,2019-04-21 15:21:22 +0800,add help info’
+’8e758032,waszqt,2019-04-21 14:18:54 +0800,项目成员设置 server’
+’6cd9b03b,151250010,2019-04-21 13:19:52 +0800,support adding result of request as params’
+’535568ef,waszqt,2019-04-21 11:52:23 +0800,用户所有项目地址的接口’
+’20bb56ab,waszqt,2019-04-20 23:18:09 +0800,分支保护功能’
+’bcdd9f49,151250010,2019-04-20 17:43:28 +0800,perfectly support editing interface cases’
+’993a2414,zhangfuli,2019-04-20 17:13:47 +0800,流水线管理模块——设计实现问题——所有的请求重试或轮询都要有超时机制不应无限请求并且界面一直处于loading状态’
+’2872f7bf,zhangfuli,2019-04-20 16:56:55 +0800,流水线管理模块——设计实现问题——查看流水线时页面一直在loading2’
+’e7a44368,zhangfuli,2019-04-20 16:56:12 +0800,流水线管理模块——设计实现问题——查看流水线时页面一直在loading’
+’868158dd,zhangfuli,2019-04-20 14:41:29 +0800,运行完成向应用管理填写数据’
+’d03ce51d,151250010,2019-04-19 23:30:56 +0800,support editing case desc’
+’7fdc751a,waszqt,2019-04-19 20:53:25 +0800,tag功能’
+’71d5bd96,151250010,2019-04-19 19:59:31 +0800,perfectly support editing test cases’
+’e30273b4,ZhitingXin,2019-04-19 18:10:37 +0800,修改镜像版本分页信息显示不正常的bug’
+’777ef1bd,waszqt,2019-04-19 15:26:15 +0800,tag server’
+’2dafb324,151250010,2019-04-19 14:21:00 +0800,fill info for easy displaying’
+’c087fc51,waszqt,2019-04-19 14:06:41 +0800,commit diff内容显示功能’
+’e60aaff2,552000264,2019-04-19 13:29:06 +0800,2019.4.16 自定义注解组件’
+’2d065d14,waszqt,2019-04-19 00:48:38 +0800,commit diff 1’
+’d7f6b56b,151250010,2019-04-18 23:52:02 +0800,support edit interface case info’
+’011fd419,任贵杰,2019-04-18 20:48:44 +0800,Merge pull request #185 from clsaa/fix_appEnvLogApi’
+’f729bf73,任贵杰,2019-04-18 20:48:03 +0800,Merge pull request #184 from clsaa/pipeline-repaire-issue’
+’eddc7496,Zyriix,2019-04-18 19:04:49 +0800,该版本增加： 1.紧急修复api’
+’c06532fc,151250010,2019-04-18 19:02:03 +0800,support displaying certain interface cases info’
+’95eb451b,ZhitingXin,2019-04-18 18:57:57 +0800,添加项目用户列表’
+’eb779980,zhangfuli,2019-04-18 18:46:54 +0800,设计实现问题——创建流水线时自带jenkinsfile默认路径应该为./Jenkinsfile’
+’634b17c1,zhangfuli,2019-04-18 18:38:33 +0800,应用管理所需接口’
+’de3cb6a6,zhangfuli,2019-04-18 17:00:13 +0800,流水线运行结果界面国际化’
+’b4a3a276,zhangfuli,2019-04-18 16:50:46 +0800,api’
+’623a9ef6,zhangfuli,2019-04-18 16:49:24 +0800,保存流水线后不应立即运行流水线,流水线什么时候被触发运行由用户自身决’
+’b250616e,任贵杰,2019-04-18 16:09:36 +0800,Merge pull request #182 from clsaa/fix-bug’
+’18044268,任贵杰,2019-04-18 16:09:14 +0800,Merge pull request #183 from clsaa/rebuild_appManagement3’
+’098066af,Zyriix,2019-04-18 16:03:55 +0800,该版本增加： 1.现在数据加密在服务端进行，移除SQL语句的加密 2.后端校验字符串形式的输入’
+’5513a431,151250010,2019-04-18 15:32:09 +0800,Merge branch 'master' into feature_test_front_end_refactor’
+’cc71a452,151250010,2019-04-18 15:30:59 +0800,use props to replace state of StepForm’
+’8b379df2,zhangfuli,2019-04-18 15:20:39 +0800,流水线展示部分国际化’
+’678b17f9,zhangfuli,2019-04-18 14:29:10 +0800,根据runningid查询信息’
+’6c04c02e,Zyriix,2019-04-18 12:37:13 +0800,该版本增加： 1.版本管理后端代码 2.增加了前端所有的输入校验 3.删除了应用管理图标 4.填写集群url和token时会验证是否可以连接，若无法连接返回错误’
+’121a2ce8,waszqt,2019-04-18 11:21:47 +0800,增加markdown 样式’
+’2ebe6472,ZhiTingXin,2019-04-18 10:23:23 +0800,修改界面显示错误bug’
+’193fb26c,zhangfuli,2019-04-18 10:01:53 +0800,构建失败bug’
+’8a078742,任贵杰,2019-04-17 20:39:22 +0800,Merge pull request #179 from clsaa/feature_code_branch’
+’39212b36,任贵杰,2019-04-17 20:37:16 +0800,Merge pull request #181 from clsaa/intl’
+’9327c13b,ZhitingXin,2019-04-17 17:14:17 +0800,增加镜像仓库搜索’
+’62898e15,zhangfuli,2019-04-17 16:04:36 +0800,国际化’
+’74f7a901,waszqt,2019-04-17 15:03:27 +0800,增加项目设置的边栏’
+’9d494b38,waszqt,2019-04-17 14:26:23 +0800,项目列表描述过长省略’
+’9fa939a0,ZhitingXin,2019-04-17 13:56:16 +0800,修改界面’
+’7fc651b9,151250010,2019-04-17 13:36:27 +0800,support editting last step during creating interface case scripts’
+’eff872b6,ZhiTingXin,2019-04-17 10:01:13 +0800,修改分页方法’
+’c25015ce,151250010,2019-04-16 21:25:31 +0800,support common update service’
+’b2f3f18d,Jerry,2019-04-16 21:06:28 +0800,2019.4.16 自定义注解组件’
+’8d854d99,151250010,2019-04-16 19:17:16 +0800,Merge branch 'master' into feature_test_front_end_refactor’
+’d3d7111c,151250010,2019-04-16 19:15:47 +0800,rename method name of setting user id’
+’ee81897c,任贵杰,2019-04-16 17:22:49 +0800,Merge pull request #180 from clsaa/fix-bug’
+’8a2297ba,zhangfuli,2019-04-16 17:01:05 +0800,fix-bug’
+’df363735,ZhiTingXin,2019-04-16 15:02:27 +0800,Merge remote-tracking branch 'origin/feature_fix_image' into repo’
+’910e4072,ZhiTingXin,2019-04-16 15:01:55 +0800,创建日志界面’
+’336a39fb,ZhiTingXin,2019-04-16 14:05:08 +0800,修改镜像的url’
+’22488c8f,151250010,2019-04-15 21:50:21 +0800,use ThreadPoolExecutor to execute scripts async’
+’5606fd13,waszqt,2019-04-15 19:51:37 +0800,分支功能完成’
+’2c5586f8,151250010,2019-04-15 16:40:33 +0800,Merge branch 'master' into feature_fix_test_frontend’
+’bac0d78b,151250010,2019-04-15 16:27:26 +0800,support passing params of result during each result’
+’2a4911a8,任贵杰,2019-04-15 16:13:02 +0800,Merge pull request #178 from clsaa/feature_appManagementWithRunningLog’
+’6a2d2b81,Zyriix,2019-04-15 14:54:04 +0800,该版本添加： 1.增加了部署历史的前端代码’
+’f4dd1e93,Zyriix,2019-04-15 12:21:53 +0800,该版本添加： 1.增加ingress和nodeport的选择’
+’1cb174ba,Zyriix,2019-04-15 10:28:19 +0800,该版本添加： 1.修复后台分页的实现问题’
+’e18c6d38,Jerry,2019-04-14 23:15:40 +0800,Update 权限接入.md’
+’958b227a,552000264,2019-04-14 23:07:40 +0800,2019.4.14 修复分页查询’
+’d3166079,Zyriix,2019-04-14 19:22:36 +0800,Merge branch 'rebuild_appManagement2'’
+’13bf76b7,Zyriix,2019-04-14 19:21:41 +0800,该版本添加： 1.接入服务权限’
+’bc45f7e0,waszqt,2019-04-14 17:08:12 +0800,branch server’
+’a8e2a96c,waszqt,2019-04-14 15:10:02 +0800,添加tag和list的边栏’
+’8a352ba9,waszqt,2019-04-14 13:50:25 +0800,项目列表加上加载动画’
+’e667d04e,Zyriix,2019-04-14 11:19:00 +0800,该版本添加： 1.重构了pipeline和user信息的获取方式 2.修改了配置文件的装载方式 3.解决了前端的warning 4.修复了一些前端的bug’
+’fc05be5c,任贵杰,2019-04-13 14:13:05 +0800,Merge pull request #139 from clsaa/feature_code_ssh’
+’d357d705,任贵杰,2019-04-13 13:10:54 +0800,host’
+’6e52cc0c,任贵杰,2019-04-13 13:09:30 +0800,docker image name’
+’479fc118,任贵杰,2019-04-13 12:37:42 +0800,Merge pull request #130 from clsaa/rebuild_appManagement’
+’43400c58,任贵杰,2019-04-13 12:20:31 +0800,Merge pull request #131 from clsaa/feature_fix_image’
+’b745ecdf,任贵杰,2019-04-13 12:20:00 +0800,Merge pull request #135 from clsaa/feature_fix_test_frontend’
+’85ff45f9,151250010,2019-04-12 20:46:53 +0800,Merge branch 'master' into feature_fix_test_frontend’
+’d9bf4254,ZhitingXin,2019-04-12 19:41:31 +0800,修改命名空间界面’
+’0d0a53f4,151250010,2019-04-12 17:42:28 +0800,support use ${} to import params in request url and request header value’
+’571195a8,waszqt,2019-04-12 16:56:31 +0800,将id改成username+projectname’
+’194b742a,waszqt,2019-04-12 11:05:58 +0800,server id改为username+projectname’
+’ed3c7900,151250010,2019-04-11 17:35:09 +0800,webapi of binding case params for Interface Case’
+’317cde8b,waszqt,2019-04-11 14:14:47 +0800,前端projectid改成path_with_namespace’
+’4d9f2874,waszqt,2019-04-10 18:07:33 +0800,增加CodeProjectLayout’
+’a771e371,waszqt,2019-04-10 17:39:00 +0800,code主界面’
+’290c9ea1,waszqt,2019-04-10 10:18:55 +0800,server id urlencode’
+’5319d46f,ZhitingXin,2019-04-09 21:34:49 +0800,添加日期转化格式和镜像大小转化’
+’cbbb4519,waszqt,2019-04-09 17:47:59 +0800,server改为使用path_with_namespace’
+’9da9ae44,任贵杰,2019-04-09 09:45:25 +0800,Merge pull request #134 from clsaa/feature_permission’
+’f9e5b11a,Jerry,2019-04-09 09:40:03 +0800,2019.4.9 更新用户假数据’
+’3ef151b6,Jerry,2019-04-09 09:22:15 +0800,Update 权限接入.md’
+’a7c78cfc,552000264,2019-04-09 09:10:08 +0800,2019.4.9 修复URL路径BUG’
+’a5d3de97,任贵杰,2019-04-08 20:48:07 +0800,Merge pull request #129 from clsaa/feature_permission’
+’4b3d4b53,任贵杰,2019-04-08 16:31:04 +0800,迭代3任务 初版’
+’02344390,waszqt,2019-04-08 10:36:40 +0800,用户唯一性的处理’
+’0e8fb02b,waszqt,2019-04-07 22:51:48 +0800,项目总览 加载动画’
+’5151de31,waszqt,2019-04-07 22:25:11 +0800,增加加载动画’
+’9ed492cc,waszqt,2019-04-07 19:55:38 +0800,tree功能改进 server’
+’decc40e8,552000264,2019-04-07 12:54:25 +0800,Merge branch 'feature_permission' of https://github.com/clsaa/dop into feature_permission_fix’
+’2fef8b72,Jerry,2019-04-07 10:56:32 +0800,2019.4.7 删除一些代码’
+’fe33c30f,Jerry,2019-04-07 10:55:25 +0800,2019.4.6 删除一些代码’
+’1e92a548,Jerry,2019-04-07 10:54:18 +0800,2019.4.7 调用user-server接口 后端’
+’f2862185,ZhitingXin,2019-04-06 21:43:44 +0800,增加了镜像的显示界面和删除镜像操作’
+’e4b69f2b,Jerry,2019-04-06 17:39:47 +0800,2019.4.6 修改请求的URL’
+’303faf36,Jerry,2019-04-06 17:22:31 +0800,权限接入说明的更改’
+’3735d31f,Bob,2019-04-06 17:00:10 +0800,Merge branch 'feature_appWebDesignUpdate' into rebuild_appManagement’
+’6f069c19,Zyriix,2019-04-06 16:57:29 +0800,该版本增加： 1.重构后端函数 2.为默认值添加配置文件 3.修改接口为API.JS中的变量 4.重构前端代码，为每个js文件新建了scss文件 5.增加了一些注释’
+’b6fb66be,Jerry,2019-04-06 16:56:18 +0800,2019.4.6 feign 调用权限管理接口后端’
+’453ac261,Jerry,2019-04-06 12:23:59 +0800,2019.4.6 添加搜索框’
+’b9b2c01c,Jerry,2019-04-06 12:23:07 +0800,2019.4.6 添加功能点，角色的搜索功能 在查询展示和分配功能点，角色时 均可以搜索和分页’
+’d76665b2,waszqt,2019-04-06 10:35:24 +0800,ssh readme’
+’4d3d8797,waszqt,2019-04-05 23:47:20 +0800,ssh 功能’
+’30b53d57,ZhiTingXin,2019-04-05 22:16:45 +0800,将本地的url改为服务器url’
+’063bfe2d,ZhiTingXin,2019-04-05 21:37:47 +0800,完成命名空间的分页，以及删除功能’
+’a2e23f50,waszqt,2019-04-05 21:02:06 +0800,ssh server’
+’4807641c,ZhiTingXin,2019-04-05 14:45:25 +0800,完成命名空间的删除功能’
+’d21d9334,151250010,2019-04-05 09:45:57 +0800,refactor and optimize front-end table of test cases’
+’fa038223,任贵杰,2019-04-04 16:26:29 +0800,Merge pull request #124 from clsaa/feature_intergrate_with_app,pipeline’
+’115b3962,任贵杰,2019-04-04 16:26:07 +0800,Merge pull request #125 from clsaa/feature_permission_fix’
+’7534ec59,ZhitingXin,2019-04-04 15:53:16 +0800,添加删除命名空间’
+’84e81a19,ZhitingXin,2019-04-04 14:04:27 +0800,修改前端bug’
+’cae05ca3,Zyriix,2019-04-04 11:18:31 +0800,该版本增加： 1.增加校验 2.修改表单提交逻辑’
+’6b012b80,Jerry,2019-04-04 10:27:55 +0800,2019.4.4 修改无权限用户查询数据产生空指针的BUG’
+’4d549673,Bob,2019-04-04 10:14:08 +0800,Merge branch 'fix_yaml' into feature_appWebDesignUpdate’
+’a632ae53,ZhitingXin,2019-04-03 19:46:55 +0800,修改userid，创建日志展示页面’
+’71a1a807,ZhitingXin,2019-04-03 13:50:56 +0800,修改userId的bug’
+’c203118f,151250010,2019-04-03 13:40:49 +0800,use feign to integrate with User-Server’
+’7119c8de,Zyriix,2019-04-03 10:19:32 +0800,该版本增加： 1.修改Yaml文件的内容’
+’cc2cfba0,Zyriix,2019-04-03 10:17:54 +0800,该版本增加： 1.增加Yaml文件的内容’
+’c7a23084,Bob,2019-04-03 09:58:51 +0800,Merge branch 'feature_appEnvWithPipeline6' into fix_yaml’
+’52cbd3ee,任贵杰,2019-04-03 03:46:21 +0800,docker image name’
+’e0b64738,任贵杰,2019-04-03 03:41:39 +0800,docker default repo’
+’0a68c108,任贵杰,2019-04-03 03:31:26 +0800,docker repo’
+’41053c33,任贵杰,2019-04-03 02:51:33 +0800,password2’
+’5707c2e1,任贵杰,2019-04-03 02:38:08 +0800,password’
+’f975640e,任贵杰,2019-04-03 02:17:31 +0800,install -g’
+’49c0a511,任贵杰,2019-04-03 02:12:18 +0800,install -g’
+’6d754a38,任贵杰,2019-04-03 02:09:44 +0800,fixbug’
+’ffd73a00,151250010,2019-04-02 23:42:14 +0800,use interceptor to supply global user info’
+’c026261c,任贵杰,2019-04-02 22:09:51 +0800,Merge pull request #123 from clsaa/feature_permission_fix’
+’a5244481,Jerry,2019-04-02 19:32:10 +0800,2019.4.2 修改分页方法’
+’c2184a96,任贵杰,2019-04-02 18:48:33 +0800,Merge pull request #122 from clsaa/feature_appEnvWithPipeline6’
+’04cce609,任贵杰,2019-04-02 18:47:54 +0800,Merge branch 'master' into feature_appEnvWithPipeline6’
+’acf85a1e,Zyriix,2019-04-02 18:43:02 +0800,该版本增加： 1.修改Yaml文件的内容 2.修复流水线获取的bug’
+’3c9aec66,Zyriix,2019-04-02 17:54:02 +0800,该版本增加： 1.修改Yaml文件的内容’
+’4a1b5266,任贵杰,2019-04-02 16:33:02 +0800,Merge pull request #121 from clsaa/zhangfuli-patch-1’
+’63302e5f,任贵杰,2019-04-02 16:32:43 +0800,Merge pull request #120 from clsaa/zhangfuli-patch-2’
+’654c1ba8,zhangfuli,2019-04-02 10:01:04 +0800,Update ModifyPwd.js’
+’4b7df183,zhangfuli,2019-04-02 09:58:02 +0800,Update Register.js’
+’53687065,任贵杰,2019-04-02 02:03:05 +0800,Merge pull request #119 from clsaa/feature_code’
+’681ba756,waszqt,2019-04-02 01:48:22 +0800,前端改为使用user-id’
+’332a7f88,waszqt,2019-04-02 01:05:42 +0800,server改为使用userId’
+’db3a0fe9,clsaa,2019-04-02 00:05:57 +0800,Merge branch 'feature_appEnvWithPipeline6'’
+’d2b4d3c0,任贵杰,2019-04-01 23:27:42 +0800,密码最低长度调整为8位’
+’5fc88fc5,waszqt,2019-04-01 23:25:52 +0800,新建用户同时增加用户凭证’
+’e15e7d61,Bob,2019-04-01 21:56:48 +0800,Merge branch 'feature_appEnvWithPipeline5'’
+’088c1ffb,Zyriix,2019-04-01 21:55:59 +0800,该版本增加： 1.增加Yaml文件的内容 2.增加了Ingress创建 3.Bug修复’
+’d77f163a,任贵杰,2019-04-01 19:32:05 +0800,Merge pull request #117 from clsaa/final-test’
+’d0a3af9c,zhangfuli,2019-04-01 19:31:03 +0800,localhost’
+’eed901f9,任贵杰,2019-04-01 19:21:13 +0800,Merge pull request #115 from clsaa/feature_front_repo’
+’4a0414f0,任贵杰,2019-04-01 19:20:58 +0800,Merge pull request #116 from clsaa/final-test’
+’b1765441,zhangfuli,2019-04-01 19:19:34 +0800,docker host’
+’99371b0f,waszqt,2019-04-01 15:59:54 +0800,组件使用默认分支’
+’b2a7c14b,ZhitingXin,2019-04-01 15:07:54 +0800,添加镜像仓库展示和创建命名空间’
+’ab1cf5c2,waszqt,2019-04-01 14:32:21 +0800,显示readme 下载zip’
+’46215466,任贵杰,2019-04-01 12:45:21 +0800,Merge pull request #113 from clsaa/feature_appEnvWithPipeline5’
+’27b9c5a8,任贵杰,2019-04-01 12:44:57 +0800,Merge pull request #114 from clsaa/zhangfuli-patch-1’
+’87bfd30c,zhangfuli,2019-04-01 11:17:28 +0800,Update API.js’
+’f8dc0afe,Zyriix,2019-04-01 09:05:30 +0800,该版本增加： 1.Bug修复’
+’270498e2,任贵杰,2019-03-31 23:49:19 +0800,Merge pull request #112 from clsaa/pipeline’
+’1cf60ff1,任贵杰,2019-03-31 23:49:07 +0800,Merge pull request #111 from clsaa/feature_image_front’
+’50978a53,zhangfuli,2019-03-31 23:43:13 +0800,deployment apiVersion: apps/v1beta1’
+’5a947309,ZhiTingXin,2019-03-31 23:26:11 +0800,Merge branch 'master' into feature_image_front’
+’a283923c,ZhiTingXin,2019-03-31 23:20:27 +0800,修改image-server的bug，添加命名空间前端’
+’20b78122,任贵杰,2019-03-31 22:38:49 +0800,Merge pull request #110 from clsaa/feature_appEnvWithPipeline5’
+’b53e0359,zhangfuli,2019-03-31 22:38:39 +0800,外部访问k8s’
+’06e7202b,waszqt,2019-03-31 22:34:35 +0800,文本输入框不自动换行’
+’6726373f,Bob,2019-03-31 20:09:56 +0800,Merge remote-tracking branch 'origin/feature_appEnvWithPipeline5' into feature_appEnvWithPipeline5’
+’1c844942,Zyriix,2019-03-31 20:07:42 +0800,该版本增加： 1.修复大量bug’
+’0309871b,Zyriix,2019-03-31 20:07:42 +0800,该版本增加： 1.修复大量bug’
+’5d7c4e7c,Zyriix,2019-03-31 19:39:19 +0800,该版本增加： 1.修复大量bug’
+’3368e3c9,任贵杰,2019-03-31 18:35:24 +0800,Merge pull request #108 from clsaa/feature_appEnvWithPipeline5’
+’4c47bf6e,任贵杰,2019-03-31 18:35:13 +0800,Merge pull request #109 from clsaa/feature_test_front_end_2’
+’dca58bc0,151250010,2019-03-31 18:02:28 +0800,use correct back end domain’
+’3563d79f,151250010,2019-03-31 17:59:33 +0800,前端新增查看执行日志功能！’
+’3e68495a,ZhitingXin,2019-03-31 16:10:59 +0800,添加前端’
+’2cd3d8ee,Zyriix,2019-03-31 16:03:56 +0800,该版本增加： 1.增加了yaml文件的内容’
+’c40bc3b9,任贵杰,2019-03-31 15:54:32 +0800,Merge pull request #106 from clsaa/feature_permission_test’
+’d35568b7,Zyriix,2019-03-31 15:52:31 +0800,该版本增加： 1.增加了yaml文件的内容z’
+’66a7c1c3,Jerry,2019-03-31 15:42:35 +0800,Update 权限接入-一些细节修改’
+’c88d4d77,任贵杰,2019-03-31 14:59:44 +0800,Merge pull request #105 from clsaa/feature_appEnvWithPipeline5’
+’753784b2,552000264,2019-03-31 14:59:24 +0800,2019.3.31 在创建数据的时候自动添加数据规则和用户数据’
+’a8c4fa32,151250010,2019-03-31 14:37:15 +0800,Merge branch 'master' into feature_test_front_end_2’
+’d65a536c,151250010,2019-03-31 14:36:22 +0800,LocalDateTime 字符串序列化，提供获取执行日志后端API’
+’0e7be3b8,Zyriix,2019-03-31 14:32:28 +0800,该版本增加： 1.修改环境详情页面的布局 2.修改了一些bug’
+’a57a6120,waszqt,2019-03-31 14:19:32 +0800,ssh’
+’e729306d,任贵杰,2019-03-31 13:21:35 +0800,dop web api’
+’ee511753,151250010,2019-03-31 13:16:05 +0800,use domain1’
+’a493c914,任贵杰,2019-03-31 13:15:35 +0800,Merge pull request #103 from clsaa/pipeline-test’
+’844706c9,任贵杰,2019-03-31 13:15:09 +0800,Merge pull request #101 from clsaa/feature_permission_test’
+’af45dacb,任贵杰,2019-03-31 13:14:36 +0800,Merge pull request #104 from clsaa/feature_test_front_end_2’
+’9afe95fd,任贵杰,2019-03-31 13:14:15 +0800,Merge pull request #102 from clsaa/feature_permission’
+’bea5b199,151250010,2019-03-31 13:11:10 +0800,custom ToStringMatcher to auto test response information’
+’d8fb0ef1,552000264,2019-03-31 12:33:46 +0800,2019.3.30 权限管理的前端修改，对权限有无做出反应’
+’2448c9de,552000264,2019-03-31 12:32:32 +0800,2019.3.30 修改PO层 唯一约束删除后的BUG’
+’bdba86ad,Jerry,2019-03-31 11:39:05 +0800,Update 权限接入.md’
+’f61cab37,zhangfuli,2019-03-31 11:19:45 +0800,待加分页’
+’932af61f,zhangfuli,2019-03-31 11:07:37 +0800,一次测试完毕’
+’f863dd72,Jerry,2019-03-31 11:03:25 +0800,Update 权限接入.md’
+’fe974510,552000264,2019-03-31 10:58:09 +0800,2019.3.30 前端页面跳转fix’
+’e9bbff8c,151250010,2019-03-31 00:29:34 +0800,执行测试用例并且记录执行日志’
+’0fd7f3df,任贵杰,2019-03-30 21:47:25 +0800,Merge pull request #100 from clsaa/feature_appEnvWithPipeline5’
+’1d86ed9d,Zyriix,2019-03-30 21:03:19 +0800,该版本增加： 1.修复了API’
+’c0e91d42,任贵杰,2019-03-30 18:31:01 +0800,Merge pull request #97 from clsaa/feature_permission_test’
+’a8f26233,任贵杰,2019-03-30 18:29:54 +0800,Merge pull request #98 from clsaa/repo’
+’4693300f,任贵杰,2019-03-30 18:29:39 +0800,Merge pull request #99 from clsaa/pipelin-deploy-test’
+’75b1af3f,zhangfuli,2019-03-30 18:23:12 +0800,测试-2’
+’c763894d,zhangfuli,2019-03-30 18:07:39 +0800,测试’
+’afef4801,ZhitingXin,2019-03-30 17:48:24 +0800,修改之前的问题’
+’cef44172,Jerry,2019-03-30 17:06:42 +0800,Update 权限接入.md’
+’8f85fb85,Jerry,2019-03-30 17:00:37 +0800,Update 权限接入.md’
+’948d9455,552000264,2019-03-30 15:56:29 +0800,Merge branch 'feature_permission' into feature_permission_test’
+’320042bb,552000264,2019-03-30 15:55:58 +0800,2019.3.30 权限管理示例代码：以角色模块为例’
+’77d19f19,552000264,2019-03-30 15:53:16 +0800,2019.3.30 权限管理示例代码：以角色模块为例’
+’e6bad28f,Jerry,2019-03-30 15:47:10 +0800,Update 权限接入.md’
+’63f323be,552000264,2019-03-30 15:45:27 +0800,2019.3.30 权限管理的示例代码：以角色管理模块为例’
+’c48a9781,151250010,2019-03-30 13:15:51 +0800,list validation’
+’325c3187,任贵杰,2019-03-30 12:04:22 +0800,Merge pull request #95 from clsaa/feature_appEnvWithPipeline5’
+’c35b43b6,任贵杰,2019-03-30 12:03:43 +0800,Merge pull request #92 from clsaa/feature_test_front_end’
+’c34128eb,Zyriix,2019-03-30 12:01:08 +0800,该版本增加： 1.修改了前端代码，调整了变量页面、环境页面、基本信息页面的布局。’
+’3b056988,Zyriix,2019-03-30 10:36:08 +0800,该版本增加： 1.修复api’
+’431e5bfa,任贵杰,2019-03-30 00:29:42 +0800,Merge pull request #93 from clsaa/feature_code’
+’b7ee6c6b,151250010,2019-03-29 22:24:04 +0800,1, add Swagger Info 2, validate param’
+’3976c5e2,waszqt,2019-03-29 22:08:05 +0800,项目设置功能’
+’89930fbc,151250010,2019-03-29 21:40:57 +0800,resolve master conflict’
+’7beb65a2,151250010,2019-03-29 21:37:04 +0800,Merge branch 'master' into feature_test_front_end’
+’e218dc9c,151250010,2019-03-29 21:33:33 +0800,finish creating test cases and display all test cases’
+’37d03a6e,任贵杰,2019-03-29 20:16:33 +0800,Merge pull request #89 from clsaa/pipeline-deploy’
+’9cb3ff9b,任贵杰,2019-03-29 20:16:13 +0800,Merge pull request #90 from clsaa/feature_appEnvWithPipeline5’
+’e225099d,ZhitingXin,2019-03-29 20:15:25 +0800,和消息服务、用户服务对接’
+’301ce816,Zyriix,2019-03-29 20:12:00 +0800,该版本增加： 1.紧急修复api’
+’8e6de93e,zhangfuli,2019-03-29 20:00:58 +0800,build 新建流水线’
+’d22ce84a,Jerry,2019-03-29 19:50:27 +0800,Create 权限接入.md’
+’3dc62e57,任贵杰,2019-03-29 19:02:04 +0800,Merge pull request #87 from clsaa/feature_permission’
+’bdb00ec9,waszqt,2019-03-29 17:40:18 +0800,项目设置 server’
+’7037635f,ZhiTingXin,2019-03-29 15:54:43 +0800,添加repofeign类’
+’05de9903,552000264,2019-03-29 14:38:13 +0800,2019.3.29 优化前端布局，左侧递进菜单’
+’ab83ca2f,ZhitingXin,2019-03-29 14:00:23 +0800,实现用户服务注册和harbor的对应’
+’de7df327,任贵杰,2019-03-29 12:09:19 +0800,Merge pull request #86 from clsaa/feature_appEnvWithPipeline5’
+’c5584365,任贵杰,2019-03-29 12:08:56 +0800,Merge pull request #85 from clsaa/feature_permission’
+’a9eaa274,Bob,2019-03-29 11:52:13 +0800,Merge branch 'feature_appEnvWithpipeline3' into feature_appEnvWithPipeline5’
+’ce2b99b1,Bob,2019-03-29 11:51:14 +0800,Merge remote-tracking branch 'origin/feature_appEnvWithpipeline3' into feature_appEnvWithpipeline3’
+’35e5cda8,Zyriix,2019-03-29 11:50:32 +0800,该版本增加： 1.添加面包屑，使层级关系分明 2.修改了流水线的跳转 3.修复了一些bug’
+’27e12901,552000264,2019-03-29 11:34:48 +0800,2019.3.29修改前端文件路径’
+’8388a9e1,waszqt,2019-03-29 11:22:19 +0800,code server 用户对接’
+’fab258d0,ZhiTingXin,2019-03-28 23:54:38 +0800,“增加消息处理和用户服务连接’
+’29ed872d,151250010,2019-03-28 23:31:55 +0800,front-end create interface scripts to develop: parent component get data from all children in creating interface scripts1’
+’03ec3035,任贵杰,2019-03-28 23:01:48 +0800,fix bug passwordEncryptByPrivateKey’
+’f7488aed,zhangfuli,2019-03-28 22:45:46 +0800,pipeline feign’
+’edd05888,zhangfuli,2019-03-28 22:25:45 +0800,token bug’
+’6dfb8921,ZhiTingXin,2019-03-28 21:12:55 +0800,添加容器镜像服务的消息消费者’
+’207c2876,任贵杰,2019-03-28 19:11:21 +0800,代码管理路由’
+’dd2dbee1,任贵杰,2019-03-28 18:46:03 +0800,Merge pull request #84 from clsaa/feature_appEnvWithpipeline3’
+’4f0740e4,任贵杰,2019-03-28 18:29:13 +0800,Merge branch 'master' into feature_appEnvWithpipeline3’
+’633c95e6,任贵杰,2019-03-28 18:28:20 +0800,Merge pull request #83 from clsaa/feature_permission’
+’b8b4eb81,Zyriix,2019-03-28 18:24:33 +0800,该版本增加： 1.修改了yaml文件传输至pipeline的方式 2.增加了占位符 3.增加了占位符的替换 4.增加了版本号的创建’
+’4b2ae88f,Zyriix,2019-03-28 16:02:16 +0800,该版本增加： 1.重构了数据结构 将imageurl移至urlInfo中 2.重构了api 3.增加了BuildTagRunningId的mapping 4.增加了相关api、service等 5.修改了相关前端’
+’234b863e,552000264,2019-03-28 11:17:30 +0800,Merge branch 'master' into feature_permission’
+’4c3585c8,552000264,2019-03-28 11:12:09 +0800,2019.3.25 解决前端路由冲突’
+’6ac4e339,任贵杰,2019-03-28 11:10:18 +0800,Merge pull request #82 from clsaa/feature_appEnvWithPipeline2’
+’ee041f12,Zyriix,2019-03-28 11:05:54 +0800,该版本增加： 1.增加了通过拥有者查询应用的api 2.使用yamlFilepath 获取文件后传输给pipeline’
+’92029a21,任贵杰,2019-03-28 10:10:58 +0800,Merge pull request #81 from clsaa/namespace’
+’d3e02f2d,ZhiTingXin,2019-03-28 09:31:55 +0800,添加遗漏代码’
+’2edbfcc5,clsaa,2019-03-27 23:14:30 +0800,Merge remote-tracking branch 'origin/master'’
+’f3b121e2,任贵杰,2019-03-27 23:14:09 +0800,提高网关超时时间’
+’a5cc2c22,任贵杰,2019-03-27 22:09:01 +0800,Merge pull request #80 from clsaa/feature_code_file1’
+’8422175b,waszqt,2019-03-27 22:00:59 +0800,Merge branch 'feature_code_file' into feature_code_file1’
+’ee9726d7,任贵杰,2019-03-27 21:49:42 +0800,Merge pull request #79 from clsaa/namespace’
+’c3066583,clsaa,2019-03-27 21:44:50 +0800,Merge branch 'feature_appEnvwithPipeline'’
+’430ebe29,151250010,2019-03-27 21:36:58 +0800,1, page query front-end 2, create ManualCase front-end’
+’52c88a17,waszqt,2019-03-27 20:11:51 +0800,修改’
+’3b1c34b8,ZhiTingXin,2019-03-27 20:04:39 +0800,完成基本的项目信息api’
+’f6b3ef4a,ZhiTingXin,2019-03-27 20:01:12 +0800,将项目依赖到harbor’
+’cc582dd3,clsaa,2019-03-27 19:35:32 +0800,Merge branch 'feature_user'’
+’7d2937dc,任贵杰,2019-03-27 19:30:31 +0800,凭证相关接口测试完毕’
+’55e4f76b,任贵杰,2019-03-27 18:19:08 +0800,根据id查询用户凭证’
+’73c27581,waszqt,2019-03-27 10:47:22 +0800,修改成使用LocalDateTime’
+’383f7fdb,waszqt,2019-03-27 00:05:39 +0800,换图标’
+’f7517764,waszqt,2019-03-26 23:34:39 +0800,在getList方法中增加对分页的处理’
+’c1efe46a,waszqt,2019-03-26 23:07:29 +0800,btn disabled when not on a branch’
+’9b71460f,waszqt,2019-03-26 22:15:26 +0800,commit browse file’
+’bc0762fb,151250010,2019-03-26 21:29:54 +0800,create test cases dialog’
+’8fb407ed,任贵杰,2019-03-26 21:14:17 +0800,修改账号密码、新建账号广播通知’
+’4857d1bc,waszqt,2019-03-26 20:41:58 +0800,查找文件功能’
+’b11c4438,waszqt,2019-03-26 19:15:43 +0800,文件列表server’
+’a20a1b7d,任贵杰,2019-03-26 16:58:04 +0800,Merge pull request #77 from clsaa/feature_pipeline’
+’fd332425,Zyriix,2019-03-26 16:35:26 +0800,该版本增加： 1.增加了Editable的input 2.为所有页面添加了加载图标 3.添加了跳转按钮 4.修复了变量页面的重大bug’
+’f8087212,zhangfuli,2019-03-26 16:34:38 +0800,Merge branch 'pipeline-deploy' into feature_pipeline’
+’2363a52d,zhangfuli,2019-03-26 16:17:36 +0800,envid相关bug’
+’8c005ca6,zhangfuli,2019-03-26 15:14:37 +0800,结果存数据库’
+’812e8664,waszqt,2019-03-26 14:44:15 +0800,将vo,po放入对应的包中’
+’c2f12ecf,waszqt,2019-03-26 14:33:08 +0800,1’
+’c5241558,Zyriix,2019-03-26 09:50:32 +0800,该版本增加： 1.现在从远程获取pipelineid 2.现在在建立服务时会一并建立ingress 3.现在在传输deployment时加入了namespace’
+’baad8c7b,Bob,2019-03-26 09:19:50 +0800,Merge branch 'feature_appEnv4' into feature_appEnvwithPipeline’
+’e02188e3,151250010,2019-03-25 21:45:54 +0800,necessary info’
+’8641bb07,151250010,2019-03-25 20:20:12 +0800,index of test cases’
+’bad7dccc,任贵杰,2019-03-25 19:22:11 +0800,Merge pull request #74 from clsaa/executeTestCases’
+’7e754b52,任贵杰,2019-03-25 19:05:17 +0800,修改API地址’
+’d81eb26e,151250010,2019-03-25 19:04:02 +0800,little fix’
+’62d2d93e,clsaa,2019-03-25 19:02:12 +0800,Merge branch 'feature_appEnv4'’
+’b0e65355,任贵杰,2019-03-25 18:51:24 +0800,暂时’
+’74d7259f,任贵杰,2019-03-25 18:37:56 +0800,Merge pull request #71 from clsaa/permission_data’
+’c1990965,552000264,2019-03-25 17:07:47 +0800,Merge branch 'permission_data'’
+’ca158c54,Zyriix,2019-03-25 16:13:55 +0800,该版本增加： 1.删除了本地的pipelineId相关依赖’
+’6769c90f,Zyriix,2019-03-25 16:02:02 +0800,该版本增加： 1.重构了后端代码，解耦了AppEnvController 2.重构了前端代码，解耦了AppEnvironmentDetail’
+’800ddc1c,任贵杰,2019-03-25 15:44:12 +0800,Merge pull request #72 from clsaa/pipeline-deploy’
+’fefdfff4,552000264,2019-03-25 15:16:26 +0800,2019.3.25 解决前端路由冲突’
+’41238daf,waszqt,2019-03-25 11:26:45 +0800,删除文件功能’
+’be86487b,waszqt,2019-03-25 10:05:08 +0800,删除文件 server’
+’db972520,Bob,2019-03-25 09:12:52 +0800,Merge branch 'feature_appEnvV3'’
+’507335cf,waszqt,2019-03-25 00:11:42 +0800,edit file 功能’
+’3b6ed170,zhangfuli,2019-03-24 21:45:40 +0800,应用管理所需接口’
+’5beb5790,任贵杰,2019-03-24 21:39:18 +0800,Merge pull request #70 from clsaa/feature_appEnvV3’
+’65e84bf6,waszqt,2019-03-24 20:06:37 +0800,查看文件内容功能’
+’e16c1f99,waszqt,2019-03-24 20:01:51 +0800,更新文件server’
+’28933c30,Zyriix,2019-03-24 16:03:23 +0800,该版本增加： 1.进一步重构了API 2.进一步重构了数据结构 3.增加了流水线绑定的功能 4.修复了一些bug’
+’96cea78e,waszqt,2019-03-24 15:58:56 +0800,读取文件内容 server’
+’c8e0d06f,zhangfuli,2019-03-24 15:31:08 +0800,路径问题’
+’32f3465d,552000264,2019-03-24 14:44:01 +0800,2019.3.24 前端：数据权限部分基本完成，优化了之前的前端 待写：一些后端附加功能的前端相应界面’
+’80c2dca1,552000264,2019-03-24 14:42:45 +0800,2019.3.24后端数据权限基本完成。 待写：下个迭代的应用和改进’
+’a8d3580d,waszqt,2019-03-24 12:34:04 +0800,1’
+’1d132ade,waszqt,2019-03-24 09:51:46 +0800,tree修改成url中获得path’
+’34106813,waszqt,2019-03-23 21:51:02 +0800,commit’
+’3131c9c9,zhangfuli,2019-03-23 21:32:57 +0800,新建流水线-stages乱跳bug’
+’7138040d,ZhiTingXin,2019-03-23 21:13:52 +0800,Merge remote-tracking branch 'origin/namespace' into namespace’
+’09acd55c,Zyriix,2019-03-23 20:18:21 +0800,该版本增加： 1.重构了API 2.重构了数据结构 3.增加了YAML信息的储存 4.更改了yaml信息生成和获取的时间’
+’47cedadf,ZhitingXin,2019-03-23 20:16:52 +0800,完善之前的功能’
+’2dd7ca81,waszqt,2019-03-23 20:14:34 +0800,file server’
+’01cc02d3,任贵杰,2019-03-23 16:55:00 +0800,Merge pull request #69 from clsaa/scm’
+’be5ee3e4,waszqt,2019-03-23 14:52:33 +0800,1’
+’e788b1d9,zhangfuli,2019-03-23 00:04:48 +0800,根据jenkinsfile生成流水线’
+’43560df9,waszqt,2019-03-22 21:29:16 +0800,branch list’
+’25fab9bf,151250010,2019-03-22 19:04:09 +0800,execute Test Cases and auto detect if a test case runs as expected’
+’adec3691,zhangfuli,2019-03-22 15:33:14 +0800,scm’
+’5daaa296,151250010,2019-03-22 10:15:38 +0800,Merge branch 'master' into executeTestCases’
+’72532f60,151250010,2019-03-22 10:13:30 +0800,commit to checkout’
+’76763c10,waszqt,2019-03-21 23:03:38 +0800,文件目录展示功能’
+’44d1d4e7,waszqt,2019-03-21 22:54:31 +0800,修改server 接口’
+’4b89c7a9,waszqt,2019-03-21 20:35:23 +0800,1’
+’34e0604c,waszqt,2019-03-21 18:38:51 +0800,tagandbranch server’
+’90c4c91e,552000264,2019-03-21 17:22:33 +0800,2019.3.21 前端：用户数据插入的前端部分，用户列表已经可以获取 下一步是结合规则ID，作用域参数值插入数据’
+’60c95daa,552000264,2019-03-21 17:20:44 +0800,2019.3.21后端改进：用户数据规则的查找删除等功能 添加了VO层。’
+’d4f3e60b,Zyriix,2019-03-21 16:39:06 +0800,该版本增加： 1.增加导入yaml路径的功能 2.重构了API 3.增加了生成YAML文件的API 4.增加了查询变量的API’
+’6521ae61,任贵杰,2019-03-21 14:19:14 +0800,Merge pull request #65 from clsaa/executeTestCases’
+’a2e1737c,任贵杰,2019-03-21 14:16:10 +0800,Merge pull request #64 from clsaa/scm’
+’ad5135d3,151250010,2019-03-20 21:50:08 +0800,fix’
+’2bb1b59b,151250010,2019-03-20 21:48:07 +0800,merge master’
+’c0b83921,151250010,2019-03-20 21:47:25 +0800,Merge branch 'master' into executeTestCases’
+’77962ff9,151250010,2019-03-20 21:45:33 +0800,增加rest-asserted依赖’
+’448a41d1,waszqt,2019-03-20 21:31:57 +0800,file tree server’
+’fcc24d93,zhangfuli,2019-03-20 19:45:11 +0800,登陆问题’
+’8a5087e6,Zyriix,2019-03-20 18:59:42 +0800,该版本增加： 1.增加了集群保存的功能 2.增加了保存配置信息的功能 3.增加了切换编辑状态的功能 4.增加了创建服务的功能 5.增加了创建服务、选择服务的切换 6.增加了命名空间-服务-部署-容器的前端联动选择’
+’11e3a966,任贵杰,2019-03-20 19:00:25 +0800,fix bug 已注册用户仍然可以 发送注册邮件’
+’3457fc98,waszqt,2019-03-20 18:56:17 +0800,修改container样式名称’
+’b0763203,任贵杰,2019-03-20 18:49:22 +0800,Merge pull request #62 from clsaa/ciadjust’
+’730172e6,waszqt,2019-03-20 18:49:17 +0800,增加file的路由’
+’6079dd7d,ThisisXueGuo,2019-03-20 18:41:02 +0800,menu’
+’67c74e38,552000264,2019-03-20 17:56:16 +0800,2019.3.20 优化了显示创建人修改人的请求方法’
+’c0b948d8,552000264,2019-03-20 17:51:14 +0800,2019.3.20  数据权限后端 初步’
+’68693caf,waszqt,2019-03-20 16:38:13 +0800,修改server接口url’
+’8554c1f9,zhangfuli,2019-03-20 14:43:47 +0800,pipeline改错’
+’ce48849e,任贵杰,2019-03-20 14:19:33 +0800,fix pipeleine->pipeline’
+’96602691,任贵杰,2019-03-20 13:36:31 +0800,Merge pull request #61 from clsaa/fix-pipeline’
+’3a528008,zhangfuli,2019-03-20 00:04:37 +0800,新建流水线’
+’8a5b11ef,任贵杰,2019-03-19 20:42:10 +0800,fix pipeline server bug’
+’88e0c0e1,clsaa,2019-03-19 20:32:07 +0800,Merge branch 'fix-pipeline'’
+’1310a16d,552000264,2019-03-19 19:06:23 +0800,Merge branch 'fix' into permission_data’
+’1c13b96c,waszqt,2019-03-19 18:43:59 +0800,将codeConfig移动到index.js’
+’1c07e55d,waszqt,2019-03-19 18:20:20 +0800,Merge pull request #56 from clsaa/feature_code’
+’c79a4c22,552000264,2019-03-19 18:02:22 +0800,2019.3.17 修改了API路径’
+’40b1f7b5,552000264,2019-03-19 18:01:31 +0800,2019.3.19  数据权限后端 初步’
+’4e0ac67e,zhangfuli,2019-03-19 16:42:05 +0800,api访问转java端’
+’26b825d9,151250010,2019-03-19 12:26:52 +0800,1, finish adding request scripts 2, use mapper to transform param to po’
+’c201c44e,waszqt,2019-03-19 02:46:02 +0800,新建项目功能’
+’1c9ad0e2,waszqt,2019-03-19 01:56:20 +0800,新建项目路由’
+’8e9f65c7,waszqt,2019-03-19 01:43:20 +0800,创建项目server’
+’808a4bda,151250010,2019-03-18 19:59:16 +0800,1, remove foreign key 2, use mapper to finish converting all po -> dto’
+’d47c8cf2,zhangfuli,2019-03-18 15:42:02 +0800,删除stage’
+’1c39898c,waszqt,2019-03-18 13:46:02 +0800,创建用户的接口’
+’9101505c,任贵杰,2019-03-18 13:33:00 +0800,fix pipeline server bug’
+’5ef027f2,任贵杰,2019-03-18 13:23:13 +0800,fix user server bug’
+’093ae52d,任贵杰,2019-03-18 12:56:38 +0800,user-server memory 512MB’
+’816c391a,任贵杰,2019-03-18 12:23:44 +0800,Merge pull request #55 from clsaa/zhangfuli-patch-1’
+’4120aae3,zhangfuli,2019-03-18 10:29:05 +0800,dockerfile’
+’d812494a,151250010,2019-03-18 09:57:45 +0800,use hibernate validator to validate input param’
+’ac9e365d,任贵杰,2019-03-18 05:20:16 +0800,处理pipeline-server的一些编译错误’
+’94471035,任贵杰,2019-03-18 05:07:58 +0800,image server CI’
+’660c9980,任贵杰,2019-03-18 05:03:09 +0800,全部服务 资源限制及各个环境配置文件’
+’2ada81ee,任贵杰,2019-03-18 04:48:28 +0800,application&audit:384~512’
+’6c0f6b29,任贵杰,2019-03-18 04:43:52 +0800,application&audit:128~256’
+’f8f538a2,任贵杰,2019-03-18 04:41:29 +0800,discovery-server:128~256’
+’850d307d,任贵杰,2019-03-18 04:36:27 +0800,discovery-server:limits’
+’9bb0f45b,任贵杰,2019-03-18 04:33:30 +0800,discovery-server:openjdk:8-jre-slim’
+’b2036ffa,任贵杰,2019-03-18 04:21:12 +0800,openjdk:8-jre-slim’
+’3ddebc4e,任贵杰,2019-03-18 04:12:09 +0800,恢复原镜像’
+’16c5ca9c,任贵杰,2019-03-18 03:50:38 +0800,adoptopenjdk/openjdk11-openj9:alpine-slim’
+’138e3221,任贵杰,2019-03-18 03:40:18 +0800,去掉所有限制’
+’b7b182a7,任贵杰,2019-03-18 03:38:02 +0800,去掉CPU限制’
+’e7c643b1,任贵杰,2019-03-18 03:35:42 +0800,1024MB’
+’51486f9c,任贵杰,2019-03-18 03:29:35 +0800,512MB’
+’ba451b1b,任贵杰,2019-03-18 03:18:52 +0800,256~512MB’
+’52a495a8,任贵杰,2019-03-18 03:13:34 +0800,JDK镜像切换’
+’e4f84097,clsaa,2019-03-18 03:08:56 +0800,删除全部资源限制’
+’61d4d061,任贵杰,2019-03-18 02:41:26 +0800,删除全部资源限制’
+’73dc153b,任贵杰,2019-03-18 02:40:02 +0800,user-server 删除资源限制’
+’58af6da6,任贵杰,2019-03-18 02:33:14 +0800,user-server 不限制查看默认占用’
+’da2a1a46,任贵杰,2019-03-18 02:29:13 +0800,user-server 内存512’
+’13e3c018,任贵杰,2019-03-18 02:23:46 +0800,user-server 内存限制提高’
+’29d05d87,任贵杰,2019-03-18 02:16:16 +0800,某几个服务k8s资源限制’
+’23d0c063,clsaa,2019-03-18 02:12:25 +0800,kubernetes资源限制’
+’74eb8fa4,任贵杰,2019-03-18 01:37:34 +0800,code-server CI’
+’cc760fb1,clsaa,2019-03-18 01:29:48 +0800,Merge remote-tracking branch 'origin/master'’
+’c3a110e4,任贵杰,2019-03-18 01:29:19 +0800,application-server CI’
+’3b34b076,waszqt,2019-03-18 00:38:09 +0800,1’
+’c2a8280f,waszqt,2019-03-18 00:34:19 +0800,搜索过滤功能’
+’742254b3,waszqt,2019-03-17 23:49:18 +0800,项目列表分页’
+’c8a55175,waszqt,2019-03-17 19:58:16 +0800,1’
+’108c6924,waszqt,2019-03-17 19:57:46 +0800,项目列表server’
+’e35a8576,zhangfuli,2019-03-17 16:54:10 +0800,新建流水线组件’
+’2a3393d4,waszqt,2019-03-17 16:50:43 +0800,项目列表 导航栏’
+’664dca18,任贵杰,2019-03-17 13:50:25 +0800,Merge pull request #54 from clsaa/fix’
+’c348496e,waszqt,2019-03-17 13:24:47 +0800,rename Project’
+’a1d82149,waszqt,2019-03-17 13:00:05 +0800,project overview’
+’9f5024b9,552000264,2019-03-17 11:19:45 +0800,2019.3.17 修改 命名不规范warning，仅修改了各函数方法名称’
+’47cc16b6,任贵杰,2019-03-17 01:15:14 +0800,解决前端代码冲突’
+’03d89f8f,任贵杰,2019-03-17 00:46:34 +0800,Merge pull request #53 from clsaa/feature_gitlabprojects’
+’f526027a,waszqt,2019-03-16 23:58:25 +0800,Merge branch 'master' into feature_gitlabprojects’
+’c2e6202f,waszqt,2019-03-16 23:19:12 +0800,star project’
+’763567bd,clsaa,2019-03-16 23:09:49 +0800,remove package-lock.json’
+’0f40e583,clsaa,2019-03-16 23:04:47 +0800,Merge branch 'web-pipeline'’
+’6c37f509,zhangfuli,2019-03-16 22:58:57 +0800,新建流水线未重构， 登陆存在小问题-token时间’
+’91f11133,任贵杰,2019-03-16 22:07:36 +0800,Merge pull request #48 from clsaa/PermissionManager’
+’9987130a,clsaa,2019-03-16 22:06:03 +0800,Merge branch 'master' into PermissionManager’
+’3170038e,任贵杰,2019-03-16 21:52:30 +0800,Merge pull request #51 from clsaa/namespace’
+’312a5020,任贵杰,2019-03-16 21:52:13 +0800,Merge pull request #50 from clsaa/222’
+’b39eff5e,任贵杰,2019-03-16 21:52:03 +0800,Merge branch 'master' into 222’
+’e1a06c89,waszqt,2019-03-16 21:40:34 +0800,整合mybatis’
+’e8f93456,任贵杰,2019-03-16 20:09:55 +0800,Merge pull request #49 from clsaa/manage-test-cases’
+’7ffb34c6,zhangfuli,2019-03-16 19:47:03 +0800,build’
+’78c92637,ZhiTingXin,2019-03-16 18:58:09 +0800,完善之前的功能’
+’c24dc8d8,Zyriix,2019-03-10 17:55:34 +0800,该版本增加： 1.增加环境管理模块（未完成） 2.增加变量管理模块 3.引入kubernetes库 4.修改了项目列表样式，使其在页面居中显示 5.修改了变量管理模块前端代码 6.修改了基本信息管理前端代码’
+’5d265a77,zhangfuli,2019-03-16 16:05:22 +0800,流水线运行结果’
+’b9a34030,151250010,2019-03-16 15:51:22 +0800,fix: wrong method name’
+’fd490580,151250010,2019-03-16 14:50:45 +0800,rename method’
+’b99b8180,552000264,2019-03-16 14:35:07 +0800,2019.3.16 前端已经完成功能点模块的创建，查询全部，删除；角色模块的创建，查询全部，查询全部功能点，删除，关联功能点；用户模块的查询全部（模拟数据），关联角色，查询全部角色，功能点功能 待写：后期根据后端功能完善做出更改’
+’2c1ad3b9,552000264,2019-03-16 14:30:47 +0800,2019.3.16 功能点，角色，用户模块的创建，删除，查询全部基本完成，完成功能点角色关联，角色用户关联功能（父功能点父角色字段考虑到后期可能会用到，现在还没想好怎么用） 待写：数据权限部分，各模块的功能拓展。’
+’740697b0,151250010,2019-03-16 14:05:12 +0800,rename mapper’
+’34f10e28,ZhiTingXin,2019-03-16 11:13:19 +0800,完善注释’
+’defcfd24,waszqt,2019-03-16 11:11:23 +0800,复制url’
+’679eb8e8,ZhiTingXin,2019-03-16 11:03:17 +0800,镜像server模块部分功能实现’
+’6c307399,zhangfuli,2019-03-16 11:01:11 +0800,注册信息提示’
+’3de1e5f6,zhangfuli,2019-03-16 10:57:52 +0800,用户信息入session’
+’7f13e526,waszqt,2019-03-16 09:42:18 +0800,增加分支数’
+’0d9e8d53,zhangfuli,2019-03-15 23:45:52 +0800,api 获取stage’
+’78764d28,waszqt,2019-03-15 21:39:16 +0800,项目总览server’
+’59128a6a,waszqt,2019-03-15 20:05:25 +0800,项目总览ui’
+’d5bb9be1,zhangfuli,2019-03-15 11:47:54 +0800,gitignore’
+’91cbce7b,zhangfuli,2019-03-15 11:41:39 +0800,eslint’
+’1be3d60f,任贵杰,2019-03-15 10:59:54 +0800,Merge pull request #45 from clsaa/pipeline’
+’57f38550,zhangfuli,2019-03-15 10:39:05 +0800,Merge branch 'master' into pipeline’
+’593112b0,552000264,2019-03-14 12:09:45 +0800,2019.3.14 前端-角色模块已完成查询，删除，创建，编辑’
+’d4c5bb51,552000264,2019-03-14 12:08:40 +0800,2019.3.12 角色模块功能完善，已完成增删改查 待完善：添加功能点已经存在的提示’
+’5e0353a2,zhangfuli,2019-03-14 10:34:10 +0800,流水线result 组建’
+’2e4a7e42,552000264,2019-03-13 17:19:15 +0800,2019.3.13 前端-角色模块已完成查询，删除，创建 待写：修改角色的功能点’
+’9483c724,552000264,2019-03-13 17:17:53 +0800,2019.3.12 角色模块功能完善，已完成增删查 待完善：与功能点关联的功能’
+’e0331bb3,waszqt,2019-03-12 22:44:51 +0800,修改路由’
+’0e025d55,151250010,2019-03-12 16:23:18 +0800,add query webapi’
+’1472bbff,waszqt,2019-03-12 15:46:42 +0800,修改requestutil’
+’a0d0bf38,151250010,2019-03-12 14:58:59 +0800,Merge branch 'master' into manage-test-cases’
+’1eecd314,waszqt,2019-03-12 13:06:12 +0800,Merge pull request #46 from clsaa/feature_code’
+’844ceafa,151250010,2019-03-11 21:39:29 +0800,finish webapi of creating interface request’
+’a3f88bf2,任贵杰,2019-03-11 19:16:33 +0800,防止feign封装错误响应’
+’98279f2b,552000264,2019-03-11 17:43:45 +0800,2019.3.11前端-角色模块进行中 待写：查询角色同时看到权限，角色的权限添加与修改，删除’
+’3506c7cc,552000264,2019-03-11 17:41:20 +0800,2019.3.11 角色模块，角色功能点关联模块后端基本完成 待写:功能补全’
+’823ba6e4,zhangfuli,2019-03-11 11:23:48 +0800,流水线jenkins相关’
+’704e137b,waszqt,2019-03-10 19:51:48 +0800,projectservice’
+’3d3e26cf,Bob,2019-03-10 17:55:06 +0800,该版本增加： 1.修改了时间格式，使后端直接传至前端的时间可用 2.增加了删除应用功能 3.增加创建应用的前后端交互功能 4.增加了获取用户ID，并使用用户ID获取用户名字，显示的功能 5.优化了用户ID获取名字的方法，增加了速度 6.添加了基本信息管理后段代码 7.增加了部分基本信息管理前端代码’
+’16de2f90,552000264,2019-03-10 17:47:32 +0800,2019.3.10 前端-功能点部分基本完成 待完成：角色前端’
+’b5f748a0,Zyriix,2019-03-10 17:47:10 +0800,该版本增加： 1.优化了用户ID获取名字的方法，加快了刷新速度 2.添加了基本信息管理后段代码 3.增加了基本信息管理前端代码’
+’22fb9d94,552000264,2019-03-10 17:46:31 +0800,2019.3.10 功能点部分基本完成（后期加入根据用户或角色搜索） 角色部分后端正在进行 待写:角色与功能点关联’
+’3d8172b5,waszqt,2019-03-10 15:50:09 +0800,发送请求工具类’
+’544d52d0,zhangfuli,2019-03-10 14:01:08 +0800,流水线信息增删改查’
+’6b687a21,waszqt,2019-03-10 10:36:14 +0800,projects’
+’705d3b45,zhangfuli,2019-03-10 00:51:11 +0800,插入流水线信息’
+’63dcd078,Bob,2019-03-09 19:07:14 +0800,该版本增加： 1.修改了时间格式，使后端直接传至前端的时间可用 2.增加了删除应用功能 3.增加创建应用的前后端交互功能 4.增加了获取用户ID，并使用用户ID获取用户名字，显示的功能 TODO: 1.新增应用内部的详细页面 2.修改项目列表样式，使其在页面居中显示’
+’ebe4386d,552000264,2019-03-09 17:56:52 +0800,前端-2019.3.9备份’
+’58720912,552000264,2019-03-09 17:53:54 +0800,2019.3.9 代码格式修改，角色模块后台一部分代码 修改了代码’
+’ecb6a83b,552000264,2019-03-09 16:25:17 +0800,2019.3.9 代码格式修改，角色模块后台一部分代码 修改了代码’
+’8333d7f1,zhangfuli,2019-03-09 16:22:21 +0800,pipeline实体类’
+’dc40ec46,Bob,2019-03-09 16:13:28 +0800,Merge remote-tracking branch 'origin/applicationManagement.projectsManagement' into master1’
+’2ee0c99b,Zyriix,2019-03-09 14:56:10 +0800,该版本增加： 1.修改了时间格式，使后端直接传至前端的时间可用 2.增加了删除应用功能 3.增加创建应用的前后端交互功能’
+’603946c8,waszqt,2019-03-09 14:55:56 +0800,增加CodeLayout’
+’8d4691dd,任贵杰,2019-03-09 08:56:42 +0800,Merge pull request #44 from clsaa/login’
+’a379bf13,151250010,2019-03-08 21:59:04 +0800,1, finish defining data struct and creating db table 2, TODO: remove column renaming on PO fileds’
+’c9256bb7,zhangfuli,2019-03-08 20:04:13 +0800,先清空一下pipeline实体类’
+’cd7fbe3b,zhangfuli,2019-03-08 20:01:18 +0800,反馈的两个问题’
+’dad0c6ed,czc,2019-03-08 19:51:11 +0800,Merge branch 'master' into manage-test-cases’
+’e1d042ac,ZhiTingXin,2019-03-07 23:01:45 +0800,添加image模块部分实体类’
+’8dffd464,Bob,2019-03-07 19:09:49 +0800,该版本增加： 1.增加了搜索功能 2.增加了应用列表的功能 3.增加了超链接，点击项目ID可以进入应用列表’
+’ae1d901a,Jerry,2019-03-07 11:28:24 +0800,前端-功能点的增删查已经完成 待完善：删除部分有错误警告，但没影响运行，之后再解决’
+’31f47fe3,Jerry,2019-03-07 11:23:12 +0800,基本完成功能点权限的增删查 待完善：等与用户服务接入后再实现其余功能’
+’9382b14e,zhangfuli,2019-03-06 23:09:27 +0800,关于登陆反馈的问题 ++’
+’3ab229d7,zhangfuli,2019-03-06 23:01:57 +0800,关于登陆反馈的问题’
+’d40932bf,任贵杰,2019-03-06 21:29:14 +0800,账号激活地址更新’
+’b2562a53,151250010,2019-03-06 20:58:27 +0800,define all entities concerned about Interface-Script Test’
+’1c77083a,zhangfuli,2019-03-06 19:39:00 +0800,pipeline实体类’
+’976ac951,151250010,2019-03-06 17:50:31 +0800,rename service interface’
+’df38e69f,zhangfuli,2019-03-06 16:23:57 +0800,登陆小问题’
+’9561f09b,151250010,2019-03-06 16:18:48 +0800,1, finish create test cases web api 2, give up integrating mapstruct for conflict between mapstruct and lombok’
+’48eccb39,任贵杰,2019-03-06 15:58:19 +0800,Merge pull request #40 from clsaa/login’
+’50e525fe,zhangfuli,2019-03-06 13:14:44 +0800,eslint’
+’d62b0950,zhangfuli,2019-03-06 13:12:59 +0800,登出及前端拦截’
+’e4a00c14,任贵杰,2019-03-06 11:20:49 +0800,登录用户查询用户信息’
+’5c09eec8,zhangfuli,2019-03-05 23:22:47 +0800,登陆’
+’7b5a9623,任贵杰,2019-03-05 22:49:06 +0800,Merge pull request #39 from clsaa/pipeline’
+’058fff40,任贵杰,2019-03-05 22:47:12 +0800,Merge pull request #38 from clsaa/zhangfuli-patch-1’
+’0285a89e,zhangfuli,2019-03-05 22:45:55 +0800,拦截’
+’e8926f4a,zhangfuli,2019-03-05 22:28:26 +0800,Update Jenkinsfile’
+’e4f5c0b1,任贵杰,2019-03-05 22:09:13 +0800,Merge pull request #37 from clsaa/pipeline’
+’6bf25478,zhangfuli,2019-03-05 22:03:23 +0800,前端发布bug deal’
+’70e9bfaa,151250010,2019-03-05 21:14:19 +0800,try to integrate mapstruct into currrent project’
+’70f8473e,ZhiTingXin,2019-03-05 20:48:51 +0800,add namespace’
+’153b6e7f,ZhiTingXin,2019-03-05 20:48:38 +0800,add namespace’
+’0816c4af,Jerry,2019-03-05 19:15:37 +0800,前端’
+’965323b7,Jerry,2019-03-05 19:08:59 +0800,Merge pull request #32 from clsaa/web-docker’
+’a4215b3e,任贵杰,2019-03-05 19:08:34 +0800,Update k8s.yaml’
+’ec9bf043,任贵杰,2019-03-05 19:04:41 +0800,Merge pull request #34 from clsaa/pipeline’
+’7d51ac5b,Jerry,2019-03-05 19:02:43 +0800,Merge pull request #32 from clsaa/web-docker’
+’ee6d7347,Bob,2019-03-05 17:44:33 +0800,该版本增加： 1.增加了前端代码，增加了项目列表、创建项目弹窗 2.增加了后端代码，完成了项目创建、项目查询功能 3.目前可在前端增加项目，并实时刷新。’
+’590e98d4,151250010,2019-03-05 17:38:24 +0800,1, data structure defined 2, todo: mappstruct import’
+’ee6766b9,zhangfuli,2019-03-05 15:02:30 +0800,前端发布bug’
+’071c742c,任贵杰,2019-03-05 13:10:33 +0800,Merge pull request #33 from clsaa/dop-web-docker’
+’924f256e,zhangfuli,2019-03-05 13:05:27 +0800,拦截登陆’
+’85c4f94b,151250010,2019-03-04 21:40:14 +0800,local run successfully’
+’214d0183,zhangfuli,2019-03-04 11:29:46 +0800,侧边栏图标’
+’15b5505a,任贵杰,2019-03-03 23:05:20 +0800,Merge pull request #32 from clsaa/web-docker’
+’500e9d45,任贵杰,2019-03-03 23:05:09 +0800,Merge pull request #31 from clsaa/ciadjust’
+’7662d8b7,zhangfuli,2019-03-03 23:00:41 +0800,modifypwd’
+’1b55fe93,ThisisXueGuo,2019-03-03 21:00:33 +0800,ci adjust’
+’174ecae0,任贵杰,2019-03-03 16:30:03 +0800,Merge pull request #30 from clsaa/login’
+’d80e137c,zhangfuli,2019-03-03 15:03:04 +0800,修改密码’
+’a6f5ec4e,zhangfuli,2019-03-03 13:34:01 +0800,注册完成’
+’8c939cab,zhangfuli,2019-03-03 12:25:56 +0800,登陆完成’
+’806d9d60,任贵杰,2019-03-02 11:16:51 +0800,如何调用、调试接口’
+’93395487,任贵杰,2019-03-02 11:16:03 +0800,服务端部署启动参数设置为production’
+’22939dbf,任贵杰,2019-03-02 11:05:34 +0800,服务端部署启动参数设置为production’
+’29744f5e,任贵杰,2019-03-02 02:34:20 +0800,Merge pull request #29 from clsaa/login’
+’de956e76,clsaa,2019-03-01 22:36:10 +0800,Merge remote-tracking branch 'origin/master'’
+’efecb7a8,任贵杰,2019-03-01 22:35:17 +0800,对象字段规范’
+’deffaaba,zhangfuli,2019-03-01 20:37:43 +0800,默认http头’
+’77a9a05e,任贵杰,2019-03-01 15:24:15 +0800,Merge pull request #28 from clsaa/test_git’
+’bb586caa,zhangfuli,2019-03-01 15:20:46 +0800,test_git’
+’0ea50294,任贵杰,2019-03-01 15:18:08 +0800,Update routerConfig.js’
+’284286d5,任贵杰,2019-03-01 15:17:07 +0800,Merge pull request #26 from clsaa/login’
+’937cf775,任贵杰,2019-03-01 14:43:28 +0800,Merge pull request #27 from clsaa/feature_joy_login’
+’0d57c92b,zhangfuli,2019-03-01 14:41:37 +0800,pipline->pipeline’
+’4d519084,zhangfuli,2019-03-01 12:58:40 +0800,路由配置’
+’8178cbe7,zhangfuli,2019-02-28 21:22:29 +0800,登陆注册前端’
+’e29a3abe,任贵杰,2019-02-28 08:55:00 +0800,Merge pull request #17 from clsaa/lizhiying’
+’1b4d8a1e,任贵杰,2019-02-28 08:54:32 +0800,Merge pull request #24 from clsaa/TestModuleRequirement’
+’b338fc5a,任贵杰,2019-02-28 08:54:15 +0800,Merge pull request #25 from clsaa/wangsy’
+’af4a16d5,任贵杰,2019-02-28 08:53:30 +0800,第二次迭代分工’
+’d6c14cbf,waszqt,2019-02-27 16:24:23 +0800,add space’
+’e5d73840,151250010,2019-02-27 09:23:01 +0800,Test module requirement documentation’
+’67643fdc,clsaa,2019-02-27 08:55:29 +0800,Merge branch 'master' of https://github.com/clsaa/dop’
+’0acf5b32,clsaa,2019-02-27 08:53:31 +0800,任务分配未讨论版’
+’6472a254,任贵杰,2019-02-27 07:54:49 +0800,Merge pull request #22 from clsaa/wangsy’
+’c0583774,任贵杰,2019-02-27 07:53:48 +0800,Merge pull request #23 from clsaa/zhengbowen’
+’31e461b6,任贵杰,2019-02-26 22:29:03 +0800,编码规范’
+’183889b9,Jerry,2019-02-26 20:23:49 +0800,Update Authority Management.md’
+’ef27a8bc,Jerry,2019-02-26 20:21:44 +0800,Update Authority Management.md’
+’a8025043,Jerry,2019-02-26 20:18:23 +0800,Update Authority Management.md’
+’b6db5319,Jerry,2019-02-26 19:51:37 +0800,Update Authority Management.md’
+’9c40b666,Zyriix,2019-02-26 19:39:00 +0800,Update applicationManagement.md’
+’f254adb3,Zyriix,2019-02-26 19:38:05 +0800,Update applicationManagement.md’
+’125a5c5e,Zyriix,2019-02-26 19:37:44 +0800,Update applicationManagement.md’
+’07af2f3c,Zyriix,2019-02-26 19:36:36 +0800,Update applicationManagement.md’
+’85113c98,Zyriix,2019-02-26 19:35:53 +0800,Update applicationManagement.md’
+’b2a05f4d,waszqt,2019-02-26 19:32:46 +0800,modified code requirement doc’
+’fd8859ba,clsaa,2019-02-26 18:54:09 +0800,Merge remote-tracking branch 'origin/master'’
+’6582f88a,任贵杰,2019-02-26 18:53:39 +0800,login jenkins file’
+’cf8cd00a,Zyriix,2019-02-26 18:39:26 +0800,Update applicationManagement.md’
+’c7aff5a0,Zyriix,2019-02-26 11:38:48 +0800,Update applicationManagement.md’
+’5b2a871b,Zyriix,2019-02-26 11:30:32 +0800,Update applicationManagement.md’
+’0a78c734,Zyriix,2019-02-26 10:31:43 +0800,Update applicationManagement.md’
+’f2695829,任贵杰,2019-02-26 10:06:01 +0800,本项目涉及的工具url地址更新’
+’82ef6692,任贵杰,2019-02-26 09:53:50 +0800,Merge pull request #18 from clsaa/zhanfuli’
+’3b9592f3,任贵杰,2019-02-26 09:53:40 +0800,Merge branch 'master' into zhanfuli’
+’704fa0c5,waszqt,2019-02-25 18:48:08 +0800,code requirement doc’
+’ef285ee4,zhangfuli,2019-02-25 12:31:48 +0800,自定义脚本’
+’5066be7f,Zyriix,2019-02-25 10:52:26 +0800,Update applicationManagement.md’
+’1ebccfb4,Zyriix,2019-02-25 10:31:56 +0800,Update applicationManagement.md’
+’86f3b13c,Zyriix,2019-02-25 10:29:06 +0800,Update applicationManagement.md’
+’5476af33,任贵杰,2019-02-25 01:19:19 +0800,完成登录认证流程’
+’996b0a69,任贵杰,2019-02-25 00:04:27 +0800,登入登出代码实现与测试’
+’88790770,zhangfuli,2019-02-24 19:07:50 +0800,loading，提示’
+’9cfeae65,Jerry,2019-02-24 15:29:59 +0800,Update Authority Management.md’
+’40071163,Zyriix,2019-02-24 15:29:32 +0800,Update applicationManagement.md’
+’f2802aef,Zyriix,2019-02-24 15:14:18 +0800,Update applicationManagement.md’
+’d37b83f9,Zyriix,2019-02-24 15:00:31 +0800,Update applicationManagement.md’
+’5ef424ad,Jerry,2019-02-24 14:46:19 +0800,Update Authority Management.md’
+’91d06c7e,Zyriix,2019-02-24 14:27:54 +0800,Update applicationManagement.md’
+’7879f2cc,Zyriix,2019-02-24 14:22:35 +0800,Update applicationManagement.md’
+’8ec0b598,Zyriix,2019-02-24 14:18:14 +0800,Update applicationManagement.md’
+’b9022330,Zyriix,2019-02-24 13:59:53 +0800,Update applicationManagement.md’
+’cb64e57f,Zyriix,2019-02-24 13:35:33 +0800,Update applicationManagement.md’
+’f6e15910,Jerry,2019-02-24 12:49:08 +0800,Update and rename Authority Management to Authority Management.md’
+’8fcedb51,Zyriix,2019-02-24 12:40:33 +0800,Update applicationManagement.md’
+’fed9fd96,Zyriix,2019-02-24 12:32:17 +0800,Update applicationManagement.md’
+’9d74ebd4,Zyriix,2019-02-24 12:31:12 +0800,Update applicationManagement.md’
+’16ffb1cd,Zyriix,2019-02-24 12:18:33 +0800,Update applicationManagement.md’
+’4f4ce33d,Zyriix,2019-02-24 12:17:59 +0800,Update applicationManagement.md’
+’eeca5f7d,Zyriix,2019-02-24 12:17:34 +0800,Update applicationManagement.md’
+’30f1bbb3,Zyriix,2019-02-24 12:03:46 +0800,Update applicationManagement.md’
+’615c7802,Zyriix,2019-02-24 11:57:19 +0800,Update applicationManagement.md’
+’17c55cd3,Jerry,2019-02-24 11:47:27 +0800,Update Authority Management’
+’2749b45e,Jerry,2019-02-24 11:42:06 +0800,Update Authority Management’
+’7a7ada5a,Zyriix,2019-02-24 11:30:34 +0800,Update applicationManagement.md’
+’c0141c06,任贵杰,2019-02-24 07:05:26 +0800,用户注册、修改密码测试完成’
+’24f294fd,任贵杰,2019-02-24 06:32:50 +0800,test1 2’
+’c586cf42,任贵杰,2019-02-24 06:31:04 +0800,尝试服务器400原因’
+’5950e9c5,任贵杰,2019-02-24 06:06:44 +0800,打印一些日志’
+’20abc544,任贵杰,2019-02-24 05:58:56 +0800,controller’
+’c9db3e0f,任贵杰,2019-02-24 05:50:11 +0800,163邮箱被封，暂时更换为QQ邮箱’
+’ff816879,任贵杰,2019-02-24 05:32:20 +0800,消息队列从尾部开始消费’
+’ee1fe363,任贵杰,2019-02-24 05:27:15 +0800,修改MQ消费模式’
+’9cfbeebe,任贵杰,2019-02-24 05:06:34 +0800,邮件端口改为465’
+’b49d8dff,任贵杰,2019-02-24 04:00:12 +0800,swagger 配置’
+’ff5bf261,任贵杰,2019-02-24 02:53:27 +0800,API网关聚合文档’
+’f5f67d03,任贵杰,2019-02-24 02:24:29 +0800,configuration’
+’9d991b22,任贵杰,2019-02-24 02:03:04 +0800,API gateway server-snippet’
+’a0ebbf88,任贵杰,2019-02-24 01:54:33 +0800,API gateway configuration-snippet’
+’f196ba9a,任贵杰,2019-02-24 01:49:12 +0800,Merge pull request #16 from clsaa/feature_signin&up’
+’53042063,任贵杰,2019-02-24 01:48:38 +0800,swagger base URL调整’
+’090d69fc,任贵杰,2019-02-24 00:02:27 +0800,修复email发送数据格式错误’
+’5ca45e13,任贵杰,2019-02-23 23:01:59 +0800,完成注册和修改流程’
+’5739094a,Zyriix,2019-02-23 21:07:41 +0800,Update applicationManagement.md’
+’dad31959,Zyriix,2019-02-23 21:06:10 +0800,Create applicationManagement.md’
+’6a10566b,zhangfuli,2019-02-23 19:16:18 +0800,iframe’
+’ba912f06,zhangfuli,2019-02-22 11:38:14 +0800,有bug’
+’eaafafbf,任贵杰,2019-02-22 04:29:27 +0800,message-server jenkins file’
+’8a84bbcc,任贵杰,2019-02-22 04:20:27 +0800,audit&message server pipeline’
+’114aa5ab,任贵杰,2019-02-22 04:08:32 +0800,audit server pipeline’
+’65115783,任贵杰,2019-02-22 04:01:43 +0800,user server pipeline’
+’efe3571d,任贵杰,2019-02-22 03:49:46 +0800,yaml错误修复’
+’74fb7328,任贵杰,2019-02-22 03:47:46 +0800,更新yaml镜像地址’
+’12552948,任贵杰,2019-02-22 03:43:05 +0800,registry.dop.clsaa.com’
+’b7653921,任贵杰,2019-02-22 03:16:29 +0800,yaml：vpc’
+’fbf7f98b,任贵杰,2019-02-22 03:16:04 +0800,host ：registry-vpc’
+’8fb19654,任贵杰,2019-02-22 03:14:08 +0800,registry-vpc.cn-hangzhou.aliyuncs.com’
+’a6e6650b,clsaa,2019-02-22 03:11:50 +0800,docker registry 登录’
+’47cee0ed,任贵杰,2019-02-22 03:07:47 +0800,registry-internal.cn-hangzhou.aliyuncs.com’
+’6eaaa6b1,任贵杰,2019-02-22 02:54:20 +0800,docker file 更新’
+’5341780a,任贵杰,2019-02-22 02:49:06 +0800,调整完全部目录问题’
+’c7b8df2f,任贵杰,2019-02-22 02:44:05 +0800,dir 变量’
+’54c3046e,任贵杰,2019-02-22 02:41:24 +0800,dir()’
+’8a5163eb,任贵杰,2019-02-22 02:38:00 +0800,dir name’
+’8aba9c40,任贵杰,2019-02-22 02:36:31 +0800,cd dir’
+’b84ea96a,任贵杰,2019-02-22 02:28:49 +0800,jenkinsfile 根目录错误修复’
+’7c92f422,任贵杰,2019-02-22 02:26:27 +0800,测试jenkins file’
+’49b7c00d,任贵杰,2019-02-22 02:15:05 +0800,Merge pull request #15 from clsaa/feature_user’
+’9b52c173,任贵杰,2019-02-22 02:14:35 +0800,discovery jenkins file’
+’17eccc8a,任贵杰,2019-02-22 01:59:58 +0800,redis localdatetime序列化等配置’
+’f0ae084a,任贵杰,2019-02-20 21:50:20 +0800,用户及用户组织架构数据模型确定’
+’2ae80130,任贵杰,2019-02-19 16:01:43 +0800,Merge pull request #14 from clsaa/feature_audit’
+’f968b0fc,任贵杰,2019-02-16 00:22:59 +0800,操作审计服务接口完成’
+’2ef5e741,zhangfuli,2019-02-16 00:03:56 +0800,查看流水线运行’
+’53e4e3a1,zhangfuli,2019-02-15 22:01:53 +0800,中间阶段’
+’3e8cd28d,任贵杰,2019-02-15 20:52:21 +0800,Merge pull request #13 from clsaa/feature_email’
+’49b48bc7,zhangfuli,2019-02-15 20:47:58 +0800,编辑流水线’
+’9db4af25,任贵杰,2019-02-15 20:44:31 +0800,完善注释’
+’039a85f8,任贵杰,2019-02-15 06:47:18 +0800,消息发送接入消息队列’
+’757528b5,任贵杰,2019-02-15 02:17:31 +0800,发送邮件代码优化’
+’863dfffc,任贵杰,2019-02-14 21:00:56 +0800,添加swagger-snapshot maven Repository’
+’7fc34be4,任贵杰,2019-02-02 12:01:25 +0800,ci-adjust-server’
+’5c50d976,任贵杰,2019-01-28 20:28:56 +0800,Merge pull request #12 from clsaa/zhanfuli’
+’b649de92,zhangfuli,2019-01-24 14:48:16 +0800,修改bug’
+’787fe815,zhangfuli,2019-01-23 18:43:27 +0800,新建pipeline前端’
+’9ae088dc,Jerry,2019-01-18 16:50:17 +0800,Create Authority Management’
+’059fdb25,任贵杰,2019-01-14 00:31:11 +0800,Merge pull request #10 from clsaa/zhanfuli’
+’5b156666,任贵杰,2019-01-14 00:30:58 +0800,Merge pull request #11 from clsaa/xinzhiting’
+’6a0c7c54,ZhiTingXin,2019-01-13 23:00:29 +0800,Delete DOP容器镜像管理需求文档.md’
+’376b83fd,ZhiTingXin,2019-01-13 22:54:21 +0800,容器镜像管理requirements修改’
+’1cbf2525,zhangfuli,2019-01-13 17:27:00 +0800,功能点更改’
+’10a0e5fa,任贵杰,2019-01-13 16:32:23 +0800,Merge pull request #9 from clsaa/辛志庭’
+’ebbb8657,ZhiTingXin,2019-01-13 16:24:39 +0800,容器镜像管理requirements’
+’ee323c59,任贵杰,2019-01-12 14:58:31 +0800,Merge pull request #8 from clsaa/zhanfuli’
+’8ca57a11,zhangfuli,2019-01-12 14:51:11 +0800,流水线管理requirements’
+’5acea50b,zhangfuli,2019-01-10 20:31:14 +0800,流水线管理要实现的需求’
+’c4464fee,任贵杰,2019-01-05 15:24:58 +0800,Merge pull request #6 from clsaa/feature_globalCORS’
+’37113d23,任贵杰,2019-01-05 15:22:47 +0800,Merge pull request #5 from clsaa/zhanfuli’
+’2cd8979a,任贵杰,2019-01-05 15:17:07 +0800,k8s timezone’
+’dd855d01,zhangfuli,2019-01-05 10:06:52 +0800,拿access_token访问服务’
+’055df62b,任贵杰,2019-01-05 03:30:43 +0800,print time’
+’f9184260,clsaa,2019-01-05 03:28:58 +0800,gateway cors’
+’eaa3a9a5,任贵杰,2019-01-05 03:12:34 +0800,zuul ignored-headers’
+’3a1d496c,任贵杰,2019-01-05 02:40:09 +0800,docker images registry’
+’f18408b8,任贵杰,2019-01-05 02:37:16 +0800,localtime’
+’52ec3c93,任贵杰,2019-01-05 02:33:07 +0800,defaultZone’
+’11dfbb0f,任贵杰,2019-01-05 02:31:09 +0800,cors filter’
+’84cb4ffa,任贵杰,2019-01-05 02:06:56 +0800,image version and pull policy’
+’1df2f2bc,任贵杰,2019-01-05 01:59:48 +0800,docker image registry’
+’9875b7ea,任贵杰,2019-01-05 01:55:48 +0800,global cors’
+’fbbb255d,任贵杰,2019-01-04 23:30:12 +0800,Merge pull request #4 from clsaa/zhanfuli’
+’cd3d68bd,zhangfuli,2019-01-04 23:20:02 +0800,迭代循环子组件，补充’
+’66386123,zhangfuli,2019-01-04 23:13:11 +0800,获取access_token’
+’2593ed41,任贵杰,2019-01-04 11:24:28 +0800,Merge pull request #3 from clsaa/前端代码规范’
+’2ed5d0e7,zhangfuli,2019-01-03 21:43:00 +0800,前端代码规范-迭代循环子组件’
+’9ec3a24c,任贵杰,2019-01-03 19:17:39 +0800,Merge pull request #2 from clsaa/前端代码规范’
+’a18115d0,zhangfuli,2019-01-03 13:42:30 +0800,Merge branch 'master' of https://github.com/clsaa/dop’
+’7235e838,eggyer,2018-12-30 01:53:45 +0800,Merge pull request #1 from clsaa/feature_oauth2’
+’9bc6bdec,任贵杰,2018-12-30 01:47:54 +0800,api-docs放行’
+’f6b5a166,任贵杰,2018-12-30 01:42:31 +0800,api gateway使用方法’
+’ca4c7de8,任贵杰,2018-12-30 01:35:07 +0800,OAuth接入文档’
+’726b5619,任贵杰,2018-12-29 22:42:55 +0800,eureka’
+’30a137d9,任贵杰,2018-12-29 14:03:58 +0800,oauth2’
+’8a9b6592,zhangfuli,2018-12-27 17:12:05 +0800,前端代码规范-http请求’
+’72ccb833,zhangfuli,2018-12-25 09:37:01 +0800,Merge branch 'master' of https://github.com/clsaa/dop’
+’4163ba1f,zhangfuli,2018-12-25 09:30:11 +0800,no message’
+’b0c4b41c,clsaa,2018-12-25 00:35:37 +0800,rest api url’
+’147d0483,clsaa,2018-12-25 00:34:09 +0800,项目目录基本信息’
+’05c3d16c,任贵杰,2018-12-25 00:29:23 +0800,更新编码规范’
+’611e5156,clsaa,2018-12-24 04:14:19 +0800,项目配置’
+’7ad42c79,任贵杰,2018-12-24 04:00:15 +0800,all server project’
+’17946764,任贵杰,2018-12-23 23:41:59 +0800,修改编码规范’
+’69bd3702,clsaa,2018-12-23 23:37:00 +0800,delete iml’
+’6779965c,clsaa,2018-12-23 23:31:46 +0800,delete log’
+’ce9e93e6,clsaa,2018-12-23 23:30:04 +0800,server project demo’
+’8b94c17f,zhangfuli,2018-12-23 19:52:22 +0800,@withRouter修改’
+’c6cdba00,zhangfuli,2018-12-23 18:26:24 +0800,路由测试’
+’fc9ccf42,zhangfuli,2018-12-23 18:01:43 +0800,关于icon’
+’9e12fbd6,zhangfuli,2018-12-21 18:46:02 +0800,答题选择了，一点小小改动’
+’7eda9cc9,clsaa,2018-12-21 17:36:38 +0800,编码规范完整版’
+’2e3c6f1a,zhangfuli,2018-12-21 16:00:54 +0800,.idea误提交，已删除’
+’9ed22479,zhangfuli,2018-12-21 15:58:10 +0800,前端代码规范’
+’57218056,clsaa,2018-12-20 20:48:31 +0800,work’
+’4e9446de,clsaa,2018-12-20 11:31:13 +0800,编码规范’
+’b8013d2f,clsaa,2018-12-20 11:22:03 +0800,编码规范’
+’53114227,clsaa,2018-12-20 10:25:26 +0800,doc->pdf’
+’c40c7d22,zhangfuli,2018-12-18 10:29:26 +0800,react前端基本框架’
+’10b06d88,clsaa,2018-12-18 10:02:45 +0800,coding doc’
+’a2076d16,clsaa,2018-12-17 09:46:21 +0800,待确认问题’
+’4cf673bf,clsaa,2018-12-16 12:26:35 +0800,上午会议’
+’7f222aa9,clsaa,2018-12-16 01:39:01 +0800,domain’
+’84bd162c,clsaa,2018-12-16 01:36:36 +0800,modify’
+’371c43db,clsaa,2018-12-15 23:11:23 +0800,2018-12-16 meeting’
+’0fd8da72,clsaa,2018-12-15 16:18:05 +0800,first commit’
