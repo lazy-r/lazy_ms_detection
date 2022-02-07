@@ -144,6 +144,7 @@ public class FZJSvcTransformer extends Transformer{
 
     private List<FZJApiInfo> getFuncAPI(CtClass ctClass, String prefixPath) {
         CtMethod[] methods = ctClass.getMethods();
+        System.out.println(ctClass.getName());
         List<FZJApiInfo> apiInfos = new ArrayList<>();
         for (CtMethod m : methods) {
             FZJApiInfo apiInfo = new FZJApiInfo();
@@ -167,30 +168,34 @@ public class FZJSvcTransformer extends Transformer{
             String method = "";
 
             if (requestMapping != null) {
-                RequestMethod rm = requestMapping.method()[0];
-                if (rm == RequestMethod.GET) {
-                    method = "GET";
-                }
-                if (rm == RequestMethod.PATCH) {
-                    method = "PATCH";
-                }
-                if (rm == RequestMethod.PUT) {
-                    method = "PUT";
-                }
-                if (rm == RequestMethod.DELETE) {
-                    method = "DELETE";
-                }
-                if (rm == RequestMethod.POST) {
-                    method = "POST";
-                }
-                if (rm == RequestMethod.OPTIONS) {
-                    method = "OPTIONS";
-                }
-                if (rm == RequestMethod.TRACE) {
-                    method = "TRACE";
-                }
-                if (rm == RequestMethod.HEAD) {
-                    method = "HEAD";
+                if (requestMapping.method() == null || requestMapping.method().length == 0) {
+                    method = "ALL";
+                } else {
+                    RequestMethod rm = requestMapping.method()[0];
+                    if (rm == RequestMethod.GET) {
+                        method = "GET";
+                    }
+                    if (rm == RequestMethod.PATCH) {
+                        method = "PATCH";
+                    }
+                    if (rm == RequestMethod.PUT) {
+                        method = "PUT";
+                    }
+                    if (rm == RequestMethod.DELETE) {
+                        method = "DELETE";
+                    }
+                    if (rm == RequestMethod.POST) {
+                        method = "POST";
+                    }
+                    if (rm == RequestMethod.OPTIONS) {
+                        method = "OPTIONS";
+                    }
+                    if (rm == RequestMethod.TRACE) {
+                        method = "TRACE";
+                    }
+                    if (rm == RequestMethod.HEAD) {
+                        method = "HEAD";
+                    }
                 }
                 path = requestMapping.value()[0];
             }
@@ -238,7 +243,6 @@ public class FZJSvcTransformer extends Transformer{
     }
 
 
-
     private List<FZJCallInfo> buildCallInfo(String srcName, CtClass ctClass, Node targetFuncNode, Graph funcGraph) {
         List<FZJCallInfo> callInfos = new ArrayList<>();
 
@@ -264,30 +268,34 @@ public class FZJSvcTransformer extends Transformer{
                 String path = "";
                 String method = "";
                 if (requestMapping != null) {
-                    RequestMethod rm = requestMapping.method()[0];
-                    if (rm == RequestMethod.GET) {
-                        method = "GET";
-                    }
-                    if (rm == RequestMethod.PATCH) {
-                        method = "PATCH";
-                    }
-                    if (rm == RequestMethod.PUT) {
-                        method = "PUT";
-                    }
-                    if (rm == RequestMethod.DELETE) {
-                        method = "DELETE";
-                    }
-                    if (rm == RequestMethod.POST) {
-                        method = "POST";
-                    }
-                    if (rm == RequestMethod.OPTIONS) {
-                        method = "OPTIONS";
-                    }
-                    if (rm == RequestMethod.TRACE) {
-                        method = "TRACE";
-                    }
-                    if (rm == RequestMethod.HEAD) {
-                        method = "HEAD";
+                    if (requestMapping.method() == null || requestMapping.method().length == 0) {
+                        method = "ALL";
+                    } else {
+                        RequestMethod rm = requestMapping.method()[0];
+                        if (rm == RequestMethod.GET) {
+                            method = "GET";
+                        }
+                        if (rm == RequestMethod.PATCH) {
+                            method = "PATCH";
+                        }
+                        if (rm == RequestMethod.PUT) {
+                            method = "PUT";
+                        }
+                        if (rm == RequestMethod.DELETE) {
+                            method = "DELETE";
+                        }
+                        if (rm == RequestMethod.POST) {
+                            method = "POST";
+                        }
+                        if (rm == RequestMethod.OPTIONS) {
+                            method = "OPTIONS";
+                        }
+                        if (rm == RequestMethod.TRACE) {
+                            method = "TRACE";
+                        }
+                        if (rm == RequestMethod.HEAD) {
+                            method = "HEAD";
+                        }
                     }
                     path = requestMapping.value()[0];
                 }
@@ -435,7 +443,6 @@ public class FZJSvcTransformer extends Transformer{
         }
         if (restController != null) {
             prefixPath = restController.value();
-//            System.out.println(prefixPath);
         }
 
         if (requestMapping != null) {

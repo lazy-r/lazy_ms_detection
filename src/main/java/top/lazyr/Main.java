@@ -22,7 +22,7 @@ public class Main {
 
     public static void main(String[] args) throws ClassNotFoundException {
         // 这里填写编译后项目的绝对路径
-        buildFZJ("/Users/lazyr/Work/projects/devops/test/data/dop");
+        buildFZJ("/Users/lazyr/Work/projects/devops/test/data/Nacos");
     }
 
     public static void buildFZJ(String projectPath) {
