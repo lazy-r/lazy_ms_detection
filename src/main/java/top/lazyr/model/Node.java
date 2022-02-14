@@ -4,10 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import top.lazyr.model.smell.CDInfo;
-import top.lazyr.model.smell.GCInfo;
-import top.lazyr.model.smell.I;
-import top.lazyr.model.smell.UDInfo;
 
 import java.util.ArrayList;
 import java.util.List;

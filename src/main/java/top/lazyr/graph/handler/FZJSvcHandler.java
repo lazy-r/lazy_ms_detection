@@ -33,7 +33,6 @@ public class FZJSvcHandler extends Handler{
         for (FZJCallInfo call : calls) {
             Node targetNode = findNode(call.getTargetServiceName());
             if (targetNode != null && call.getWeight() > 0 /* && !callSvcNode.getName().equals(svcNode.getName()) */) {
-//                System.out.println(svcInfo.getSvcName() + " => " + call.getTargetServiceName() + " : " + call.getTargetAPIPath() + "(" + call.getWeight() + ")");
                 srcNode.addEdge(srcNode.getName(), targetNode, "depend", call.getWeight());
             } else {
                 logger.info("the node(" + call.getTargetServiceName() + ") of dependency is not exist");

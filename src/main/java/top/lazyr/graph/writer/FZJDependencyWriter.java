@@ -19,6 +19,7 @@ public class FZJDependencyWriter extends Writer{
         this.fileName = fileName;
     }
 
+
     @Override
     public void write(List<Node> nodes) {
         List<List<String>> infos = new ArrayList<>();
@@ -42,7 +43,6 @@ public class FZJDependencyWriter extends Writer{
                 infos.add(info);
             }
         }
-//        ExcelUtil.write2Excel("fzj_2.xlsx", "数据", infos);
         ExcelUtil.write2Excel(fileName, "数据", infos);
     }
 }

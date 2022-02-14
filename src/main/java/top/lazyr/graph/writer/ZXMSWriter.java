@@ -22,6 +22,10 @@ public class ZXMSWriter extends Writer{
         this("dop.xlsx", "数据");
     }
 
+    public ZXMSWriter(String workbookName) {
+        this(workbookName, "数据");
+    }
+
     public ZXMSWriter(String workbookName, String sheetName) {
         this.workbookName = workbookName;
         this.sheetName = sheetName;

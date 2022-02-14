@@ -1,5 +1,6 @@
 package top.lazyr.graph.transformer;
 
+import cn.hutool.core.util.StrUtil;
 import javassist.CtClass;
 import javassist.CtMethod;
 import javassist.NotFoundException;
@@ -12,9 +13,6 @@ import top.lazyr.graph.Graph;
 import top.lazyr.graph.filter.Filter;
 import top.lazyr.graph.handler.FuncHandler;
 import top.lazyr.graph.handler.Handler;
-import top.lazyr.graph.writer.ConsoleWriter;
-import top.lazyr.graph.writer.DependencyWriter;
-import top.lazyr.graph.writer.NodeWriter;
 import top.lazyr.graph.writer.Writer;
 import top.lazyr.model.*;
 
@@ -28,7 +26,6 @@ import java.util.*;
 public class FZJSvcTransformer extends Transformer{
     private static Logger logger = LoggerFactory.getLogger(FZJSvcTransformer .class);
     private Map<String, Node> nodesMap;
-
 
     @Override
     public List<Node> transform(String projectPath) {
@@ -51,6 +48,7 @@ public class FZJSvcTransformer extends Transformer{
             }
             // 构建一个服务的func粒度的Node
             Graph funcGraph = buildFuncGraph(svcCatalog.getAbsolutePath());
+            // 以目录名为微服务名
             Node svcNode = buildSvcNode(svcCatalog.getName(), funcGraph);
             svcNodes.add(svcNode);
         }
@@ -60,19 +58,10 @@ public class FZJSvcTransformer extends Transformer{
 
     private Graph buildFuncGraph(String svcAbsolutePath) {
         List<Filter> filters = new ArrayList<>();
-//        filters.add(new InnerClassFilter());
-//        filters.add(new ProjectFilter());
         List<Writer> writers = new ArrayList<>();
-        writers.add(new ConsoleWriter());
-        writers.add(new DependencyWriter());
-        writers.add(new NodeWriter());
-
-
 
         Handler handler = new FuncHandler();
         List<Filter> handlerFilters = new ArrayList<>();
-//        handlerFilters.add(new InnerClassFilter());
-//        handlerFilters.add(new ProjectFilter());
         handler.setFilters(handlerFilters);
         Graph graph = Graph.builder()
                 .transformer(new FuncTransformer())
@@ -85,6 +74,14 @@ public class FZJSvcTransformer extends Transformer{
         return graph;
     }
 
+    /**
+     * 构建一个服务粒度的Node，这个Node记录如下信息
+     * - 对外暴露的接口，controller层（RequestMapping、GetMapping、...）
+     * - 调用关系，FeignClient数据
+     * @param svcName
+     * @param funcGraph
+     * @return
+     */
     public Node buildSvcNode(String svcName, Graph funcGraph) {
         List<Node> nodes = funcGraph.getNodes();
         this.nodesMap = nodes2Map(nodes);
@@ -99,11 +96,12 @@ public class FZJSvcTransformer extends Transformer{
         for (Node node : nodes) {
             CtClass ctClass = (CtClass) node.getNodeInfo();
             if (isFeign(ctClass)) { // 若为Feign接口
-                String feignName = buildFeignName(ctClass);
-                List<FZJCallInfo> nodeCassInfo = buildCallInfo(feignName, ctClass, node, funcGraph);
+                String feignName = getFeignName(ctClass);
+                String feignPrefix = getFeignPrefix(ctClass);
+                // 获取svcName调用的其他服务
+                List<FZJCallInfo> nodeCassInfo = buildCallInfo(feignName, feignPrefix, ctClass, node, funcGraph);
                 callInfos.addAll(nodeCassInfo);
             }
-
             ctClasses.add(ctClass);
         }
 
@@ -119,8 +117,6 @@ public class FZJSvcTransformer extends Transformer{
         svcInfo.setCalls(callInfos);
         svcInfo.setSvcName(svcName);
         svcInfo.setFuncGraph(funcGraph);
-//        System.out.println("apiInfos => " + apiInfos);
-//        System.out.println("callInfos => " + callInfos);
 
 
         svcNode.setNodeInfo(svcInfo);
@@ -131,22 +127,47 @@ public class FZJSvcTransformer extends Transformer{
         return svcNode;
     }
 
+    /**
+     * 若ctClass有@FeignClient注解，则返回注解中path属性的值
+     * 若ctClass无@FeignClient注解，则返回""
+     * @param ctClass
+     * @return
+     */
+    private String getFeignPrefix(CtClass ctClass) {
+        FeignClient feignClient = null;
+        String prefix = "";
+        try {
+            feignClient = (FeignClient) ctClass.getAnnotation(FeignClient.class);
+        } catch (ClassNotFoundException e) {
+            logger.error("pares class feign annotation failed: " + e.getMessage());
+        }
+        if (feignClient == null) { // 若该类无FeignClient注解
+            return "";
+        }
+        prefix = feignClient.path();
+        return prefix;
+    }
+
+    /**
+     *
+     * @param ctClass
+     * @return
+     */
     private List<FZJApiInfo> buildSvcAPI(CtClass ctClass) {
         boolean isAPI = isAPI(ctClass);
         String prefixPath = "";
         List<FZJApiInfo> apis = new ArrayList<>();
         if (isAPI) {
-            prefixPath = buildPrefixPath(ctClass);
+            prefixPath = buildControllerPrefix(ctClass);
             apis.addAll(getFuncAPI(ctClass, prefixPath));
         }
         return apis;
     }
 
     private List<FZJApiInfo> getFuncAPI(CtClass ctClass, String prefixPath) {
-        CtMethod[] methods = ctClass.getMethods();
-        System.out.println(ctClass.getName());
+        CtMethod[] ctMethods = ctClass.getMethods();
         List<FZJApiInfo> apiInfos = new ArrayList<>();
-        for (CtMethod m : methods) {
+        for (CtMethod ctMethod : ctMethods) {
             FZJApiInfo apiInfo = new FZJApiInfo();
             RequestMapping requestMapping = null;
             GetMapping getMapping = null;
@@ -155,95 +176,72 @@ public class FZJSvcTransformer extends Transformer{
             DeleteMapping deleteMapping = null;
             PatchMapping patchMapping = null;
             try {
-                requestMapping = (RequestMapping) m.getAnnotation(RequestMapping.class);
-                getMapping = (GetMapping)m.getAnnotation(GetMapping.class);
-                postMapping = (PostMapping)m.getAnnotation(PostMapping.class);
-                putMapping = (PutMapping)m.getAnnotation(PutMapping.class);
-                deleteMapping = (DeleteMapping)m.getAnnotation(DeleteMapping.class);
-                patchMapping = (PatchMapping) m.getAnnotation(PatchMapping.class);
+                requestMapping = (RequestMapping) ctMethod.getAnnotation(RequestMapping.class);
+                getMapping = (GetMapping)ctMethod.getAnnotation(GetMapping.class);
+                postMapping = (PostMapping)ctMethod.getAnnotation(PostMapping.class);
+                putMapping = (PutMapping)ctMethod.getAnnotation(PutMapping.class);
+                deleteMapping = (DeleteMapping)ctMethod.getAnnotation(DeleteMapping.class);
+                patchMapping = (PatchMapping) ctMethod.getAnnotation(PatchMapping.class);
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             }
             String path = "";
-            String method = "";
-
+            Set<String> methods = new HashSet<>();
+            /**
+             * 若为RequestMapping
+             *  method属性可以不设置，也可以设置多个
+             *  value属性也可以不设置
+             */
             if (requestMapping != null) {
-                if (requestMapping.method() == null || requestMapping.method().length == 0) {
-                    method = "ALL";
-                } else {
-                    RequestMethod rm = requestMapping.method()[0];
-                    if (rm == RequestMethod.GET) {
-                        method = "GET";
-                    }
-                    if (rm == RequestMethod.PATCH) {
-                        method = "PATCH";
-                    }
-                    if (rm == RequestMethod.PUT) {
-                        method = "PUT";
-                    }
-                    if (rm == RequestMethod.DELETE) {
-                        method = "DELETE";
-                    }
-                    if (rm == RequestMethod.POST) {
-                        method = "POST";
-                    }
-                    if (rm == RequestMethod.OPTIONS) {
-                        method = "OPTIONS";
-                    }
-                    if (rm == RequestMethod.TRACE) {
-                        method = "TRACE";
-                    }
-                    if (rm == RequestMethod.HEAD) {
-                        method = "HEAD";
-                    }
-                }
-                path = requestMapping.value()[0];
+                methods = getMethodsFromRequestMapping(requestMapping);
+                path = buildPath(prefixPath, requestMapping.value());
             }
             if (getMapping != null) {
-                method = "GET";
-                path = (prefixPath + "/" + getMapping.value()[0]).replace("//", "/");
+                methods.add("GET");
+                path = buildPath(prefixPath, getMapping.value());
             }
             if (postMapping != null) {
-                method = "POST";
-                path = (prefixPath + "/" + postMapping.value()[0]).replace("//", "/");
+                methods.add("POST");
+                path = buildPath(prefixPath, postMapping.value());
             }
             if (putMapping != null) {
-                method = "PUT";
-                path = (prefixPath + "/" + putMapping.value()[0]).replace("//", "/");
+                methods.add("PUT");
+                path = buildPath(prefixPath, putMapping.value());
             }
             if (deleteMapping != null) {
-                path = "DELETE=>" + (prefixPath + "/" + deleteMapping.value()[0]).replace("//", "/");
+                methods.add("DELETE");
+                path = buildPath(prefixPath, deleteMapping.value());
             }
             if (patchMapping != null) {
-                method = "PATCH";
-                path = (prefixPath + "/" + deleteMapping.value()[0]).replace("//", "/");
+                methods.add("PATCH");
+                path = buildPath(prefixPath, patchMapping.value());
             }
             if (path.equals("")) {
                 continue;
             }
-            apiInfo.setMethod(method);
+            apiInfo.setMethods(methods);
             apiInfo.setPath(path);
             apiInfo.setType("HTTP");
 
 
-            String funcName = extractMethodName(m.getLongName());
-            List<String> params = extractParams(m.getLongName());
+            String funcName = extractMethodName(ctMethod.getLongName());
+            List<String> params = extractParams(ctMethod.getLongName());
             apiInfo.setFuncName(funcName);
             apiInfo.setParams(params);
             try {
-                apiInfo.setReturnName(m.getReturnType().getName());
+                apiInfo.setReturnName(ctMethod.getReturnType().getName());
             } catch (NotFoundException e) {
 //                logger.error("set return name failed, err: " + e.getMessage());
                 apiInfo.setReturnName(e.getMessage());
             }
-            apiInfo.setClassName(extractClassName(m.getLongName()));
+            apiInfo.setClassName(extractClassName(ctMethod.getLongName()));
             apiInfos.add(apiInfo);
         }
         return apiInfos;
     }
 
 
-    private List<FZJCallInfo> buildCallInfo(String srcName, CtClass ctClass, Node targetFuncNode, Graph funcGraph) {
+    private List<FZJCallInfo> buildCallInfo(String srcName, String feignPrefix, CtClass ctClass, Node targetFuncNode, Graph funcGraph) {
         List<FZJCallInfo> callInfos = new ArrayList<>();
 
         for (CtMethod ctMethod : ctClass.getMethods()) {
@@ -266,67 +264,37 @@ public class FZJSvcTransformer extends Transformer{
                     e.printStackTrace();
                 }
                 String path = "";
-                String method = "";
+                Set<String> methods = new HashSet<>();
                 if (requestMapping != null) {
-                    if (requestMapping.method() == null || requestMapping.method().length == 0) {
-                        method = "ALL";
-                    } else {
-                        RequestMethod rm = requestMapping.method()[0];
-                        if (rm == RequestMethod.GET) {
-                            method = "GET";
-                        }
-                        if (rm == RequestMethod.PATCH) {
-                            method = "PATCH";
-                        }
-                        if (rm == RequestMethod.PUT) {
-                            method = "PUT";
-                        }
-                        if (rm == RequestMethod.DELETE) {
-                            method = "DELETE";
-                        }
-                        if (rm == RequestMethod.POST) {
-                            method = "POST";
-                        }
-                        if (rm == RequestMethod.OPTIONS) {
-                            method = "OPTIONS";
-                        }
-                        if (rm == RequestMethod.TRACE) {
-                            method = "TRACE";
-                        }
-                        if (rm == RequestMethod.HEAD) {
-                            method = "HEAD";
-                        }
-                    }
-                    path = requestMapping.value()[0];
+                    methods = getMethodsFromRequestMapping(requestMapping);
+                    path = buildPath(feignPrefix, requestMapping.value());
                 }
                 if (getMapping != null) {
-                    method = "GET";
-                    path = getMapping.value()[0];
+                    methods.add("GET");
+                    path = buildPath(feignPrefix, getMapping.value());
                 }
                 if (postMapping != null) {
-                    method = "POST";
-                    path = postMapping.value()[0];
+                    methods.add("POST");
+                    path = buildPath(feignPrefix, postMapping.value());
                 }
                 if (putMapping != null) {
-                    method = "PUT";
-                    path = putMapping.value()[0];
+                    methods.add("PUT");
+                    path = buildPath(feignPrefix, putMapping.value());
                 }
                 if (deleteMapping != null) {
-                    method = "DELETE";
-                    path = deleteMapping.value()[0];
+                    methods.add("DELETE");
+                    path = buildPath(feignPrefix, deleteMapping.value());
                 }
                 if (patchMapping != null) {
-                    method = "PATCH";
-                    path = patchMapping.value()[0];
+                    methods.add("PATCH");
+                    path = buildPath(feignPrefix, patchMapping.value());
                 }
 
-//                System.out.println(ctClass.getName() + " => path = " + path);
                 if (path.equals("")) {
                     continue;
                 }
 
                 List<Node> srcNodes = funcGraph.getPreNodes(targetFuncNode);
-//                System.out.println("srcNodes => " + srcNodes);
                 for (Node srcNode : srcNodes) {
                     FZJCallInfo callInfo = new FZJCallInfo();
                     List<Edge> edges = srcNode.getEdges();
@@ -340,7 +308,7 @@ public class FZJSvcTransformer extends Transformer{
                     callInfo.setTargetAPIPath(path);
                     callInfo.setTargetServiceName(srcName);
                     callInfo.setWeight(weight);
-                    callInfo.setTargetAPIMethod(method);
+                    callInfo.setTargetAPIMethods(methods);
 
 
                     FZJApiInfo srcAPIInfo = new FZJApiInfo();
@@ -360,6 +328,67 @@ public class FZJSvcTransformer extends Transformer{
         return callInfos;
     }
 
+    /**
+     * prefix = a, values[0] = b, 返回 /a/b
+     * prefix = a, values[0] = b/, 返回 /a/b
+     * prefix = /a, values[0] = /b, 返回 /a/b
+     * prefix = , values[0] = b, 返回 b
+     * prefix = , values[0] = , 返回 /
+     *
+     * @param prefixPath
+     * @param values
+     * @return
+     */
+    private String buildPath(String prefixPath, String[] values) {
+        String path = prefixPath;
+        if (values != null && values.length != 0) {
+            path = ("/" + prefixPath + "/" + values[0]).replace("//", "/");
+        }
+        path = "/" + StrUtil.strip(path, "/", "/");
+        return path;
+    }
+
+    private Set<String> getMethodsFromRequestMapping(RequestMapping requestMapping) {
+        Set<String> methods = new HashSet<>();
+        if (requestMapping.method() == null || requestMapping.method().length == 0) {
+            methods = allMethods();
+        } else {
+            for (RequestMethod rm : requestMapping.method()) {
+                if (rm == RequestMethod.GET) {
+                    methods.add("GET");
+                }
+                if (rm == RequestMethod.PATCH) {
+                    methods.add("PATCH");
+                }
+                if (rm == RequestMethod.PUT) {
+                    methods.add("PUT");
+                }
+                if (rm == RequestMethod.DELETE) {
+                    methods.add("DELETE");
+                }
+                if (rm == RequestMethod.POST) {
+                    methods.add("POST");
+                }
+            }
+        }
+        return methods;
+    }
+
+    private Set<String> allMethods() {
+        Set<String> allMethods = new HashSet<>();
+        allMethods.add("GET");
+        allMethods.add("PATCH");
+        allMethods.add("PUT");
+        allMethods.add("DELETE");
+        allMethods.add("POST");
+        return allMethods;
+    }
+
+    /**
+     * 判断ctClass是否有@FeignClient注解
+     * @param ctClass
+     * @return
+     */
     private boolean isFeign(CtClass ctClass) {
         if (ctClass == null) {
             return false;
@@ -431,7 +460,13 @@ public class FZJSvcTransformer extends Transformer{
         return paramList;
     }
 
-    private String buildPrefixPath(CtClass ctClass) {
+    /**
+     * 若ctClass有@RestController或@RequestMapping注解，则返回注解中value属性的值
+     * 若ctClass无@RestController或@RequestMapping注解，则返回""
+     * @param ctClass
+     * @return
+     */
+    private String buildControllerPrefix(CtClass ctClass) {
         RestController restController = null;
         RequestMapping requestMapping = null;
         String prefixPath = "";
@@ -459,18 +494,22 @@ public class FZJSvcTransformer extends Transformer{
 
     }
 
-    private String buildFeignName(CtClass ctClass) {
+    /**
+     * 若ctClass有@FeignClient注解，则返回注解中name属性或value属性的值
+     * 若ctClass无@FeignClient注解，则返回""
+     * @param ctClass
+     * @return
+     */
+    private String getFeignName(CtClass ctClass) {
         FeignClient feignClient = null;
         String feignName = "";
-
-
-
         try {
+
             feignClient = (FeignClient) ctClass.getAnnotation(FeignClient.class);
         } catch (ClassNotFoundException e) {
             logger.error("pares class feign annotation failed: " + e.getMessage());
         }
-        if (feignClient == null) {
+        if (feignClient == null) { // 若该类无FeignClient注解
             return "";
         }
         feignName = feignClient.value();
