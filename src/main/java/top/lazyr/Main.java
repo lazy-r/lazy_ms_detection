@@ -19,10 +19,11 @@ public class Main {
     public static void main(String[] args) throws ClassNotFoundException {
         // 这里填写编译后项目的绝对路径
         String absoluteMSPath = "/Users/lazyr/Work/projects/devops/test/data/Nacos";
-        String msName = "Nacos";
-        printInternalCall(absoluteMSPath, msName); // 打印每个服务内部纯方法调用关系
-        printInternalAllCall(absoluteMSPath, msName); // 打印每个服务内部所有调用关系
-        printMSCall(absoluteMSPath, msName); // 打印微服务间调用关系
+//        String absoluteMSPath = "/Users/lazyr/Work/projects/devops/test/data/dop";
+        String msName = "nacos";
+//        printInternalCall(absoluteMSPath, msName); // 打印每个服务内部纯方法调用关系
+//        printInternalAllCall(absoluteMSPath, msName); // 打印每个服务内部所有调用关系
+//        printMSCall(absoluteMSPath, msName); // 打印微服务间调用关系
         printFileInfo(absoluteMSPath, msName); // 打印每个服务内的文件信息
     }
 
@@ -121,7 +122,7 @@ public class Main {
 
     /**
      * 打印每个服务内的文件信息
-     * 输出文件名: [msName]服务内部文件信息.xlsx.xlsx
+     * 输出文件名: [msName]服务内部文件信息.xls
      * @param msPath
      * @param msName
      */
@@ -137,7 +138,7 @@ public class Main {
             InternalGraph graph = service.getGraph();
             List<FileNode> fileNodes = graph.getAllFileNodes();
             for (FileNode fileNode : fileNodes) {
-                infos.add(Arrays.asList(fileNode.getName(), fileNode.getFrom(), fileNode.getType()));
+                infos.add(Arrays.asList(fileNode.getName(), fileNode.getType(), fileNode.getFrom()));
             }
             ExcelUtil.append2Excel(msName + "服务内部文件信息.xlsx", svcName, infos);
         }

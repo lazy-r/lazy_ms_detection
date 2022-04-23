@@ -250,7 +250,7 @@ public class InternalGraph {
         List<FileNode> fileNodes = new ArrayList<>();
         fileNodes.addAll(apiFiles);
         fileNodes.addAll(cellFiles);
-        fileNodes.addAll(fileNodes);
+        fileNodes.addAll(feignFiles);
         return fileNodes;
     }
 }
