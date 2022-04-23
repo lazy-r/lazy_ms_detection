@@ -88,4 +88,40 @@ public class FileUtil {
         }
         return content;
     }
+
+    public static File[] getSubCatalogs(String catalogPath) {
+        File catalog = new File(catalogPath);
+        if (!catalog.isDirectory()) {
+            return null;
+        }
+        return catalog.listFiles(new FileFilter() {
+            @Override
+            public boolean accept(File file) {
+                return file.isDirectory();
+            }
+        });
+    }
+
+    public static List<String> getSubCatalogPaths(String catalogPath) {
+        File[] subCatalogs = getSubCatalogs(catalogPath);
+        if (subCatalogs == null) {
+            return null;
+        }
+        List<String> subCatalogPaths = new ArrayList<>();
+        for (File subCatalog : subCatalogs) {
+            if (StringUtil.getCurrentCatalog(subCatalog.getAbsolutePath()).indexOf(".") != 0) {
+                subCatalogPaths.add(subCatalog.getAbsolutePath());
+            }
+
+        }
+        return subCatalogPaths;
+    }
+
+
+    public static void deleteFile(String filePath) {
+        File file = new File(filePath);
+        if (file.exists() && file.isFile()) {
+            file.delete();
+        }
+    }
 }

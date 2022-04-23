@@ -2,16 +2,12 @@ package top.lazyr;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import top.lazyr.graph.Graph;
-import top.lazyr.graph.filter.Filter;
-import top.lazyr.graph.filter.InnerClassFilter;
-import top.lazyr.graph.filter.ProjectFilter;
-import top.lazyr.graph.handler.*;
-import top.lazyr.graph.transformer.*;
-import top.lazyr.graph.writer.*;
+import top.lazyr.microservice.*;
+import top.lazyr.model.Api;
+import top.lazyr.util.ExcelUtil;
+import top.lazyr.util.FileUtil;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author lazyr
@@ -22,71 +18,130 @@ public class Main {
 
     public static void main(String[] args) throws ClassNotFoundException {
         // 这里填写编译后项目的绝对路径
-        buildFZJ("/Users/lazyr/Work/projects/devops/test/data/Nacos", "Nacos");
+        String absoluteMSPath = "/Users/lazyr/Work/projects/devops/test/data/Nacos";
+        String msName = "Nacos";
+        printInternalCall(absoluteMSPath, msName); // 打印每个服务内部纯方法调用关系
+        printInternalAllCall(absoluteMSPath, msName); // 打印每个服务内部所有调用关系
+        printMSCall(absoluteMSPath, msName); // 打印微服务间调用关系
+        printFileInfo(absoluteMSPath, msName); // 打印每个服务内的文件信息
     }
 
-    public static void buildFZJ(String projectPath, String projectName) {
-        List<Filter> filters = new ArrayList<>();
-        List<Writer> writers = new ArrayList<>();
-        writers.add(new FZJSvcInfoWriter(projectName + "接口信息.xlsx"));
-        writers.add(new ZXMSWriter(projectName + "依赖权重信息.xlsx"));
-        writers.add(new FZJDependencyWriter(projectName + "依赖详细信息.xlsx"));
-        Handler handler = new FZJSvcHandler();
-        List<Filter> handlerFilters = new ArrayList<>();
-        handler.setFilters(handlerFilters);
-        Graph graph = Graph.builder()
-                .transformer(new FZJSvcTransformer())
-                .filters(filters)
-                .handler(handler)
-                .writers(writers)
-                .build();
-        graph.createGraph(projectPath);
-        graph.write();
+    /**
+     * 打印每个服务内部纯方法调用关系
+     * 输出文件名: [msName]服务内部纯方法调用依赖关系.xlsx
+     * @param msPath
+     * @param msName
+     */
+    private static void printInternalCall(String msPath, String msName) {
+        FileUtil.deleteFile("src/main/resources/" + msName + "服务内部纯方法调用依赖关系.xlsx");
+        MSParser msParser = new MSParser();
+        Microservices ms = msParser.parse(msPath);
+        List<Service> services = ms.getServices();
+        for (Service service : services) {
+            List<List<String>> infos = new ArrayList<>();
+            infos.add(Arrays.asList("源文件名", "被依赖文件名", "权重"));
+            String svcName = service.getName();
+            InternalGraph graph = service.getGraph();
+            List<FileNode> fileNodes = graph.getAllFileNodes();
+            for (FileNode fileNode : fileNodes) {
+                List<Edge> callEdges = fileNode.getCallEdges();
+                for (Edge callEdge : callEdges) {
+                    int methodCallWeight = callEdge.getWeightOfType(Edge.METHOD_CALL);
+                    if (methodCallWeight != 0) {
+                        infos.add(Arrays.asList(callEdge.getInFile(), callEdge.getOutFile(), methodCallWeight + ""));
+                    }
+                }
+            }
+            ExcelUtil.append2Excel(msName + "服务内部纯方法调用依赖关系.xlsx", svcName, infos);
+        }
     }
 
-    public static void buildZX(String projectPath) {
-        List<Filter> filters = new ArrayList<>();
-//        filters.add(new InnerClassFilter());
-//        filters.add(new ProjectFilter());
-        List<Writer> writers = new ArrayList<>();
-        writers.add(new ZXMSWriter());
-        Handler handler = new SvcHandler();
-        List<Filter> handlerFilters = new ArrayList<>();
-//        handlerFilters.add(new InnerClassFilter());
-//        handlerFilters.add(new ProjectFilter());
-        handler.setFilters(handlerFilters);
-        Graph graph = Graph.builder()
-                .transformer(new SvcTransformer())
-                .filters(filters)
-                .handler(handler)
-                .writers(writers)
-                .build();
-        graph.createGraph(projectPath);
-        graph.write();
+    /**
+     * 打印每个服务内部所有调用关系
+     * 输出文件名: [msName]服务内部全部调用依赖关系.xlsx
+     * @param msPath
+     * @param msName
+     */
+    private static void printInternalAllCall(String msPath, String msName) {
+        FileUtil.deleteFile("src/main/resources/" + msName + "服务内部全部调用依赖关系.xlsx");
+        MSParser msParser = new MSParser();
+        Microservices ms = msParser.parse(msPath);
+        List<Service> services = ms.getServices();
+        for (Service service : services) {
+            List<List<String>> infos = new ArrayList<>();
+            infos.add(Arrays.asList("源文件名", "被依赖文件名", "权重信息", "总权重"));
+            String svcName = service.getName();
+            InternalGraph graph = service.getGraph();
+            List<FileNode> fileNodes = graph.getAllFileNodes();
+            for (FileNode fileNode : fileNodes) {
+                List<Edge> callEdges = fileNode.getCallEdges();
+                for (Edge callEdge : callEdges) {
+                    Map<String, Integer> callWeight = callEdge.getCallWeight();
+                    StringBuilder allCallWeight = new StringBuilder();
+                    for (String callType : callWeight.keySet()) {
+                        allCallWeight.append(callType + " : " + callWeight.get(callType) + "\n");
+                    }
+
+                    infos.add(Arrays.asList(callEdge.getInFile(), callEdge.getOutFile(), allCallWeight.toString(), callEdge.getTotalWeight() + ""));
+                }
+            }
+            ExcelUtil.append2Excel(msName + "服务内部全部调用依赖关系.xlsx", svcName, infos);
+        }
+    }
+
+    /**
+     * 打印微服务间调用关系
+     * 输出文件名: [msName]服务间调用依赖关系.xlsx
+     * @param msPath
+     * @param msName
+     */
+    public static void printMSCall(String msPath, String msName) {
+        FileUtil.deleteFile("src/main/resources/" + msName + "服务间调用依赖关系.xlsx");
+        List<List<String>> infos = new ArrayList<>();
+        infos.add(Arrays.asList("源服务名", "源文件名", "被依赖服务名", "被依赖文件名", "权重"));
+        MSParser msParser = new MSParser();
+        Microservices ms = msParser.parse(msPath);
+        List<Service> services = ms.getServices();
+        for (Service service : services) {
+            List<LogicEdge> logicCallEdges = service.getLogicCallEdges();
+            if (logicCallEdges.size() == 0) {
+                continue;
+            }
+            for (LogicEdge logicCallEdge : logicCallEdges) {
+                infos.add(Arrays.asList(logicCallEdge.getInSvcName(),
+                                        logicCallEdge.getInFileName(),
+                                        logicCallEdge.getOutSvcName(),
+                                        logicCallEdge.getOutFileName(),
+                                        logicCallEdge.getWeight() + ""));
+            }
+        }
+        ExcelUtil.write2Excel(msName + "服务间调用依赖关系.xlsx", "data",infos);
+
+    }
+
+    /**
+     * 打印每个服务内的文件信息
+     * 输出文件名: [msName]服务内部文件信息.xlsx.xlsx
+     * @param msPath
+     * @param msName
+     */
+    public static void printFileInfo(String msPath, String msName) {
+        FileUtil.deleteFile("src/main/resources/" + msName + "服务内部文件信息.xlsx");
+        MSParser msParser = new MSParser();
+        Microservices ms = msParser.parse(msPath);
+        List<Service> services = ms.getServices();
+        for (Service service : services) {
+            List<List<String>> infos = new ArrayList<>();
+            infos.add(Arrays.asList("文件名", "类型", "来源"));
+            String svcName = service.getName();
+            InternalGraph graph = service.getGraph();
+            List<FileNode> fileNodes = graph.getAllFileNodes();
+            for (FileNode fileNode : fileNodes) {
+                infos.add(Arrays.asList(fileNode.getName(), fileNode.getFrom(), fileNode.getType()));
+            }
+            ExcelUtil.append2Excel(msName + "服务内部文件信息.xlsx", svcName, infos);
+        }
     }
 
 
-
-    public static void buildFuncGraph(String svcAbsolutePath) {
-        List<Filter> filters = new ArrayList<>();
-        List<Writer> writers = new ArrayList<>();
-//        writers.add(new ConsoleWriter());
-        writers.add(new DependencyWriter());
-//        writers.add(new NodeWriter());
-
-
-
-        Handler handler = new FuncHandler();
-        List<Filter> handlerFilters = new ArrayList<>();
-        handler.setFilters(handlerFilters);
-        Graph graph = Graph.builder()
-                .transformer(new FuncTransformer())
-                .filters(filters)
-                .handler(handler)
-                .writers(writers)
-                .build();
-
-        graph.createGraph(svcAbsolutePath);
-        graph.write();
-    }
 }
