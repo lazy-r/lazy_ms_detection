@@ -182,7 +182,7 @@ public class MSParser {
             Set<Api> apis = func2Api.get(longFuncName);
 
             // 5、获取outSvc中api对应的Api文件
-            String outFileName = microservices.getOutFileByApiAndSvc(outSvcName, apis.iterator().next());
+            String outFileName = microservices.getOutFileByApiAndSvc(outSvcName, apis);
             if (outFileName == null) {
                 logger.error(apis + " of " + outSvcName + " is not existed.");
                 return;

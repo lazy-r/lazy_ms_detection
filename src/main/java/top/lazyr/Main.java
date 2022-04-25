@@ -2,6 +2,7 @@ package top.lazyr;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import top.lazyr.constant.Printer;
 import top.lazyr.microservice.*;
 import top.lazyr.model.Api;
 import top.lazyr.util.ExcelUtil;
@@ -24,7 +25,22 @@ public class Main {
 //        printInternalCall(absoluteMSPath, msName); // 打印每个服务内部纯方法调用关系
 //        printInternalAllCall(absoluteMSPath, msName); // 打印每个服务内部所有调用关系
 //        printMSCall(absoluteMSPath, msName); // 打印微服务间调用关系
-        printFileInfo(absoluteMSPath, msName); // 打印每个服务内的文件信息
+//        printFileInfo(absoluteMSPath, msName); // 打印每个服务内的文件信息
+        printApi(absoluteMSPath, msName); // 打印每个服务的api信息到控制台
+    }
+
+    private static void printApi(String msPath, String msName) {
+        MSParser msParser = new MSParser();
+        Microservices ms = msParser.parse(msPath);
+        List<Service> services = ms.getServices();
+        for (Service service : services) {
+            Printer.printTitle(service.getName());
+            Map<Api, String> api2FileName = service.getApi2FileName();
+            for (Api api : api2FileName.keySet()) {
+                System.out.println(api + " => " + api2FileName.get(api));
+            }
+        }
+
     }
 
     /**

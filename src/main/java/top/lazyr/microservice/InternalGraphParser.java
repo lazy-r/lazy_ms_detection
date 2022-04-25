@@ -166,7 +166,7 @@ public class InternalGraphParser {
                 dependClassName =  TypeManager.unboxing(a.getComponentType().getName());
             } catch (NotFoundException e) {
                 dependClassName = e.getMessage();
-                logger.error("init array failed: err = " + e.getMessage());
+                logger.info("init array({}) of non_system.", e.getMessage());
             }
 //            logger.debug("class({}) new array({}).", inFileName, dependClassName);
             buildCall(dependClassName, Edge.NEW_ARRAY);

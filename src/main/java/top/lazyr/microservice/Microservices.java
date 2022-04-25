@@ -9,10 +9,7 @@ import org.slf4j.LoggerFactory;
 import top.lazyr.model.Api;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author lazyr
@@ -67,12 +64,22 @@ public class Microservices {
         return services.add(service);
     }
 
-    public String getOutFileByApiAndSvc(String svcName, Api api) {
+    public String getOutFileByApiAndSvc(String svcName, Set<Api> apis) {
         Service service = svcMap.get(svcName);
         if (service == null) {
+            logger.error("{} is not exist.", svcName);
             return null;
         }
-        return service.getApiFileName(api);
+
+        for (Api api : apis) {
+            String apiFileName = service.getApiFileName(api);
+            if (apiFileName != null) {
+                return apiFileName;
+            }
+        }
+
+
+        return null;
     }
 
     public List<Service> getServices() {
