@@ -1,10 +1,12 @@
 package top.lazyr.microservice;
 
 import org.junit.Test;
+import top.lazyr.microservice.graph.ms.Microservices;
+import top.lazyr.microservice.graph.ms.Service;
+import top.lazyr.microservice.parser.MSParser;
+import top.lazyr.microservice.writer.SvcWriter;
 
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 public class MSParserTest {
 

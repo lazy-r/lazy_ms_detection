@@ -2,10 +2,11 @@ package top.lazyr.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import top.lazyr.constant.Printer;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.nio.channels.FileChannel;
+import java.util.*;
 
 /**
  * @author lazyr
@@ -42,7 +43,6 @@ public class FileUtil {
             filesAbsolutePath.add(file.getAbsolutePath());
         }
     }
-
 
     public static void append2File(String filePath, String content) {
         write2File(filePath, content, true);
@@ -109,7 +109,7 @@ public class FileUtil {
         }
         List<String> subCatalogPaths = new ArrayList<>();
         for (File subCatalog : subCatalogs) {
-            if (StringUtil.getCurrentCatalog(subCatalog.getAbsolutePath()).indexOf(".") != 0) {
+            if (PathUtil.getCurrentCatalog(subCatalog.getAbsolutePath()).indexOf(".") != 0) {
                 subCatalogPaths.add(subCatalog.getAbsolutePath());
             }
 
@@ -117,11 +117,46 @@ public class FileUtil {
         return subCatalogPaths;
     }
 
-
     public static void deleteFile(String filePath) {
         File file = new File(filePath);
         if (file.exists() && file.isFile()) {
             file.delete();
         }
     }
+
+
+    public static void deleteFileOrDirectory(String path) {
+        File file = new File(path);
+        if (null != file) {
+            if (!file.exists()) {
+                return;
+            }
+            int i;
+            // file 是文件
+            if (file.isFile()) {
+                boolean result = file.delete();
+                // 限制循环次数，避免死循环
+                for(i = 0; !result && i++ < 10; result = file.delete()) {
+                    // 垃圾回收
+                    System.gc();
+                }
+                return;
+            }
+            // file 是目录
+            File[] files = file.listFiles();
+            if (null != files) {
+                for(i = 0; i < files.length; ++i) {
+                    deleteFileOrDirectory(files[i].getPath());
+                }
+            }
+            file.delete();
+        }
+    }
+
+
+
+
+
+
+
 }

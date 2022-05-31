@@ -2,13 +2,15 @@ package top.lazyr.microservice;
 
 import javassist.CtClass;
 import org.junit.Test;
-import top.lazyr.util.FileUtil;
+import top.lazyr.util.SCUtil;
+import top.lazyr.microservice.graph.svc.InternalGraph;
+import top.lazyr.manager.CtClassManager;
+import top.lazyr.microservice.parser.InternalGraphParser;
+import top.lazyr.microservice.writer.GraphWriter;
 
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
-import static org.junit.Assert.*;
 
 public class InternalGraphParserTest {
 
@@ -29,7 +31,7 @@ public class InternalGraphParserTest {
     private Set<String> extractFeignFileNames(List<CtClass> ctClasses) {
         Set<String> feignFileNames = new HashSet<>();
         for (CtClass ctClass : ctClasses) {
-            if (TypeManager.isFeign(ctClass)) {
+            if (SCUtil.isFeign(ctClass)) {
                 feignFileNames.add(ctClass.getName());
             }
         }

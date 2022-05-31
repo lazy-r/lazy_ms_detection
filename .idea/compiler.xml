@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="lazy_ms_detection" target="8" />
+      <module name="lazy_ms_detection" target="9" />
     </bytecodeTargetLevel>
   </component>
 </project>
