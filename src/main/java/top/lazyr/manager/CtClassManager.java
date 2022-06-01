@@ -4,6 +4,7 @@ import javassist.ClassPool;
 import javassist.CtClass;
 import javassist.CtMethod;
 import javassist.NotFoundException;
+import javassist.bytecode.Descriptor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import top.lazyr.util.FileUtil;
@@ -24,6 +25,8 @@ public class CtClassManager {
     private static CtClassManager manager;
     // TODO: 代优化单例模式
     private static ClassPool classPool = new ClassPool(true);
+
+
 
     public static CtClassManager getCtClassManager() {
         if (manager == null) {
@@ -112,33 +115,50 @@ public class CtClassManager {
 
         String methodName = ctMethod.getName();
 
+
+        String paramStr = Descriptor.toString(ctMethod.getSignature());
+        paramStr = paramStr.substring(1, paramStr.length() - 1);
+        String[] paramSplit = paramStr.split(",");
         StringBuilder paramClassNames = new StringBuilder();
         paramClassNames.append("(");
-        try {
-            CtClass[] paramClasses = ctMethod.getParameterTypes();
-            if (VarValidator.notEmpty(paramClasses)) {
-                for (int i = 0; i < paramClasses.length; i++) {
-                    CtClass paramClass = paramClasses[i];
-                    paramClassNames.append(TypeUtil.unbox(paramClass.getName()));
-                    if (i != paramClasses.length - 1){
-                        paramClassNames.append(",");
-                    }
-                }
-            }
-        } catch (NotFoundException e) { // 参数为项目外类
-//            throw new RuntimeException(e);
-            String[] nonSystemParamClassNames = e.getMessage().split(",");
-            if (VarValidator.notEmpty(nonSystemParamClassNames)) {
-                for (int i = 0; i < nonSystemParamClassNames.length; i++) {
-                    String nonSystemParamClassName = nonSystemParamClassNames[i];
-                    paramClassNames.append(nonSystemParamClassName);
-                    if (i != nonSystemParamClassNames.length - 1){
-                        paramClassNames.append(",");
-                    }
+        if (VarValidator.notEmpty(paramSplit)) {
+            for (int i = 0; i < paramSplit.length; i++) {
+                paramClassNames.append(TypeUtil.unbox(paramSplit[i]));
+                if (i != paramSplit.length - 1) {
+                    paramClassNames.append(",");
                 }
             }
         }
         paramClassNames.append(")");
+
+
+
+//        paramClassNames.append("(");
+//        try {
+//            CtClass[] paramClasses = ctMethod.getParameterTypes();
+//            if (VarValidator.notEmpty(paramClasses)) {
+//                for (int i = 0; i < paramClasses.length; i++) {
+//                    CtClass paramClass = paramClasses[i];
+//                    paramClassNames.append(TypeUtil.unbox(paramClass.getName()));
+//                    if (i != paramClasses.length - 1){
+//                        paramClassNames.append(",");
+//                    }
+//                }
+//            }
+//        } catch (NotFoundException e) { // 参数为项目外类
+////            throw new RuntimeException(e);
+//            String[] nonSystemParamClassNames = e.getMessage().split(",");
+//            if (VarValidator.notEmpty(nonSystemParamClassNames)) {
+//                for (int i = 0; i < nonSystemParamClassNames.length; i++) {
+//                    String nonSystemParamClassName = nonSystemParamClassNames[i];
+//                    paramClassNames.append(nonSystemParamClassName);
+//                    if (i != nonSystemParamClassNames.length - 1){
+//                        paramClassNames.append(",");
+//                    }
+//                }
+//            }
+//        }
+//        paramClassNames.append(")");
 
         return methodName + paramClassNames.toString();
     }

@@ -32,6 +32,7 @@ public class MethodNode {
     private String id;
 
     public MethodNode(String belongClassName, CtMethod ctMethod, boolean isSystem, boolean isApiClass, boolean isApiFunc) {
+
         this.belongClassName = belongClassName;
         this.completeMethodName = CtClassManager.buildCompleteMethodName(ctMethod);
         this.isSystem = isSystem;
@@ -40,6 +41,7 @@ public class MethodNode {
         this.callEdges = new ArrayList<>();
         this.afferentWeight = 0;
         this.id = this.belongClassName + "." + this.completeMethodName;
+
     }
 
     public MethodNode(String belongClassName, String completeMethodName, boolean isSystem, boolean isApiClass, boolean isApiFunc) {

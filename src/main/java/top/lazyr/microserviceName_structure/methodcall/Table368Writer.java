@@ -38,7 +38,7 @@ public class Table368Writer {
 
     /**
      * ⼦表3记录微服务中所有⽅法层级的依赖关系：
-     * 源类名（source_class）；源⽅法名（source_method）；⽬标类名（destination_class）；⽬标⽅法名（destination_method）；权重（weight)
+     * 源类名（source_class）；源⽅法签名（source_method）；⽬标类名（destination_class）；⽬标⽅法签名（destination_method）；权重（weight)
      * @param svcPath
      * @param prefix
      */
@@ -67,6 +67,10 @@ public class Table368Writer {
                     if (outMethodNode == null || outMethodNode.isApiClass()) { // 只输出 实体类 -> 实体类 中的调用关系
                         continue;
                     }
+
+//                    if (outClassName.contains("CustomAuthenticationSuccessHandler") && outCompleteMethodName.contains("insertLoginLog")) {
+//                        System.out.println("id -> " + outCompleteMethodName);
+//                    }
 
                     List<String> info = new ArrayList<>();
                     info.add(inMethodNode.getBelongClassName());

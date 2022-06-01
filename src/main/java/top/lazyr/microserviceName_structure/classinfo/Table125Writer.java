@@ -53,7 +53,6 @@ public class Table125Writer {
                 List<String> info = new ArrayList<>();
                 info.add(methodInfo.getBelongClassName());
                 info.add(methodInfo.getMethodName() + "(" + StrUtil.list2Csv(methodInfo.getParamClassNames()) + ")");
-//                info.add(methodInfo.getMethodModifier().equals("public") ? "true" : "false");
                 info.add(methodInfo.getMethodModifier());
                 info.add(methodInfo.getReturnClassName());
                 infos.add(info);
@@ -82,7 +81,6 @@ public class Table125Writer {
                 List<String> info = new ArrayList<>();
                 info.add(methodInfo.getBelongClassName());
                 info.add(methodInfo.getMethodName() + "(" + StrUtil.list2Csv(methodInfo.getParamClassNames()) + ")");
-//                info.add(methodInfo.getMethodModifier().equals("public") ? "true" : "false");
                 info.add(methodInfo.getMethodModifier());
                 info.add(methodInfo.getReturnClassName());
                 infos.add(info);
@@ -112,7 +110,6 @@ public class Table125Writer {
                 List<String> info = new ArrayList<>();
                 info.add(fieldInfo.getBelongClassName());
                 info.add(fieldInfo.getFieldName());
-//                info.add(fieldInfo.getModifier().equals("public") ? "true" : "false");
                 info.add(fieldInfo.getModifier());
                 info.add(fieldInfo.getClassName());
                 infos.add(info);
@@ -125,7 +122,7 @@ public class Table125Writer {
 
 
     public static void main(String[] args) {
-        String msPath = "/Users/lazyr/Work/projects/devops/test/data/dop";
+        String msPath = "/Users/lazyr/School/laboratory/OSMicroservicesCollection-all/OSMicroservicesCollection-lazyr-fix/131-mall-cloud-alibaba";
         Table125Writer.writeTable125(msPath);
     }
 }

@@ -4,6 +4,7 @@ import javassist.CtClass;
 import javassist.CtField;
 import javassist.CtMethod;
 import javassist.NotFoundException;
+import javassist.bytecode.Descriptor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import top.lazyr.constant.Printer;
@@ -112,6 +113,8 @@ public class ClassInfoParser {
             if (methodInfo == null) {
                 continue;
             }
+
+
             methodInfos.add(methodInfo);
         }
         return methodInfos;
@@ -132,19 +135,35 @@ public class ClassInfoParser {
         MethodInfo methodInfo = null;
         List<String> paramTypes = new ArrayList<>();
         String typeName = "";
-        try {
-            CtClass[] paramClasses = ctMethod.getParameterTypes();
-            if (VarValidator.notEmpty(paramClasses)) {
-                for (CtClass paramClass : paramClasses) {
-                    paramTypes.add(TypeUtil.unbox(paramClass.getName()));
-                }
-            }
-        } catch (NotFoundException e) { // 参数为项目外类
-            String[] paramClassNames = e.getMessage().split(",");
-            for (String paramClassName : paramClassNames) {
-                paramTypes.add(paramClassName);
+//        String methodName = ctMethod.getName();
+//        if (methodName.contains("getUseIntegrationAmount")) {
+//            System.out.println("getUseIntegrationAmount => " + Descriptor.toString(ctMethod.getSignature()));
+//        }
+
+        // 根据方法参数签名来获取参数列表
+        String paramStr = Descriptor.toString(ctMethod.getSignature());
+        paramStr = paramStr.substring(1, paramStr.length() - 1);
+        String[] paramSplit = paramStr.split(",");
+        if (VarValidator.notEmpty(paramSplit)) {
+            for (String param : paramSplit) {
+                paramTypes.add(TypeUtil.unbox(param));
             }
         }
+
+//        try {
+//            CtClass[] paramClasses = ctMethod.getParameterTypes();
+//            if (VarValidator.notEmpty(paramClasses)) {
+//                for (CtClass paramClass : paramClasses) {
+//                    paramTypes.add(TypeUtil.unbox(paramClass.getName()));
+//                }
+//            }
+//        } catch (NotFoundException e) { // 参数为项目外类
+//            String[] paramClassNames = e.getMessage().split(",");
+//            for (String paramClassName : paramClassNames) {
+//                paramTypes.add(paramClassName);
+//            }
+//        }
+
         try {
             typeName = ctMethod.getReturnType().getName();
         } catch (NotFoundException e) { // 返回值为项目外类

@@ -10,7 +10,7 @@ import top.lazyr.microserviceName_structure.methodcall.Table368Writer;
  */
 public class Main {
     public static void main(String[] args) {
-        String msPath = "/Users/lazyr/Work/projects/devops/test/data/dop";
+        String msPath = "/Users/lazyr/School/laboratory/ms_result/123-madao_service";
         writeStructure(msPath);
     }
 

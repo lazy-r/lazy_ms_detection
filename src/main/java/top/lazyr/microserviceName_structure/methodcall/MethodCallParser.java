@@ -8,6 +8,7 @@ import javassist.expr.ExprEditor;
 import javassist.expr.MethodCall;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import top.lazyr.constant.Printer;
 import top.lazyr.manager.ClassInfoManager;
 import top.lazyr.manager.CtClassManager;
 import top.lazyr.microserviceName_structure.methodcall.model.MethodCallGraph;
@@ -57,6 +58,7 @@ public class MethodCallParser {
             }
             for (CtMethod ctMethod : ctMethods) {
                 boolean isApiFunc = SCUtil.isApiFunc(ctMethod);
+
                 MethodNode methodNode = new MethodNode(ctClass.getName(), ctMethod, isSystem, isApiClass, isApiFunc);
                 this.graph.addMethodNode(methodNode);
             }
@@ -122,15 +124,19 @@ public class MethodCallParser {
                 logger.error("the in method is not exist.");
                 return;
             }
+
+
             // 一定非空
 //            MethodNode outMethodNode = extractMethodNode(outClassName, outCompleteMethodName);
             MethodNode outMethodNode = graph.findMethodNodeById(outClassName + "." + outCompleteMethodName);
             if (outMethodNode == null) { // 若outMethodNode为项目外方法，则不做处理
                 return;
             }
+
             if (outMethodNode.equals(this.inMethodNode)) { // 若自己依赖自己，则不做处理
                 return;
             }
+
             graph.addCall(inMethodNode, outMethodNode);
         }
 
