@@ -5,17 +5,14 @@ import javassist.CtClass;
 import javassist.CtMethod;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import top.lazyr.constant.Printer;
 import top.lazyr.manager.CtClassManager;
 import top.lazyr.microservice.model.Api;
 import top.lazyr.microservice_structure.model.Operation;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * SpringCloud相关功能
@@ -34,16 +31,15 @@ public class SCUtil {
         if (ctClass == null) {
             return false;
         }
-
-        FeignClient feignClient = null;
-
+        org.springframework.cloud.openfeign.FeignClient openFeignClient = null;
+        org.springframework.cloud.netflix.feign.FeignClient netflixFeignClient = null;
         try {
-            feignClient = (FeignClient) ctClass.getAnnotation(FeignClient.class);
+            openFeignClient = (org.springframework.cloud.openfeign.FeignClient) ctClass.getAnnotation(org.springframework.cloud.openfeign.FeignClient.class);
+            netflixFeignClient = (org.springframework.cloud.netflix.feign.FeignClient) ctClass.getAnnotation(org.springframework.cloud.netflix.feign.FeignClient.class);
         } catch (ClassNotFoundException e) {
             logger.error("pares class feign annotation failed: " + e.getMessage());
         }
-
-        return feignClient != null;
+        return openFeignClient != null || netflixFeignClient != null;
     }
 
     /**
@@ -68,7 +64,6 @@ public class SCUtil {
         } catch (ClassNotFoundException e) {
             logger.error("pares class api annotation failed: " + e.getMessage());
         }
-
         return controller != null || restController != null || responseBody != null || requestMapping != null;
     }
 
@@ -79,21 +74,36 @@ public class SCUtil {
      * @return
      */
     public static String extractSvcName(CtClass ctClass) {
-        FeignClient feignClient = null;
+        org.springframework.cloud.openfeign.FeignClient openFeignClient = null;
+        org.springframework.cloud.netflix.feign.FeignClient netflixFeignClient = null;
+
         String svcName = "";
         try {
-            feignClient = (FeignClient) ctClass.getAnnotation(FeignClient.class);
+            openFeignClient = (org.springframework.cloud.openfeign.FeignClient) ctClass.getAnnotation(org.springframework.cloud.openfeign.FeignClient.class);
+            netflixFeignClient = (org.springframework.cloud.netflix.feign.FeignClient) ctClass.getAnnotation(org.springframework.cloud.netflix.feign.FeignClient.class);
+
         } catch (ClassNotFoundException e) {
             logger.error("pares class feign annotation failed: " + e.getMessage());
         }
-        if (feignClient == null) { // 若该类无FeignClient注解
+        if (openFeignClient == null && netflixFeignClient == null) { // 若该类无FeignClient注解
             return "";
         }
-        svcName = feignClient.value();
-        if (svcName.equals("")) {
-            svcName = feignClient.name();
+
+        if (openFeignClient != null) {
+            svcName = openFeignClient.value();
+            if (svcName.equals("")) {
+                svcName = openFeignClient.name();
+            }
         }
-        return svcName.replace(":", "_");
+
+        if (netflixFeignClient != null) {
+            svcName = netflixFeignClient.value();
+            if (svcName.equals("")) {
+                svcName = netflixFeignClient.name();
+            }
+        }
+
+        return svcName;
     }
 
     /**
@@ -102,17 +112,30 @@ public class SCUtil {
      * @return
      */
     public static String extractFeignPrefix(CtClass ctClass) {
-        FeignClient feignClient = null;
+        org.springframework.cloud.openfeign.FeignClient openFeignClient = null;
+        org.springframework.cloud.netflix.feign.FeignClient netflixFeignClient = null;
+
         String prefix = "";
         try {
-            feignClient = (FeignClient) ctClass.getAnnotation(FeignClient.class);
+            openFeignClient = (org.springframework.cloud.openfeign.FeignClient) ctClass.getAnnotation(org.springframework.cloud.openfeign.FeignClient.class);
+            netflixFeignClient = (org.springframework.cloud.netflix.feign.FeignClient) ctClass.getAnnotation(org.springframework.cloud.netflix.feign.FeignClient.class);
         } catch (ClassNotFoundException e) {
             logger.error("pares class feign annotation failed: " + e.getMessage());
         }
-        if (feignClient == null) { // 若该类无FeignClient注解
+
+        if (openFeignClient == null && netflixFeignClient == null) { // 若该类无FeignClient注解
             return "/";
         }
-        prefix = "/" + feignClient.path();
+
+        if (openFeignClient != null) {
+            prefix = "/" + openFeignClient.path();
+        }
+
+        if (netflixFeignClient != null) {
+            prefix = "/" + netflixFeignClient.path();
+        }
+        String prefixController = extractApiPrefix(ctClass); // 可能会使用controller相关的注解作为前缀
+        prefix = prefixController + "/" + prefix;
         return uniqueBackslash(prefix);  // 将 // 替换为 /
     }
 
@@ -122,7 +145,10 @@ public class SCUtil {
      * @return
      */
     private static String uniqueBackslash(String url) {
-        return url.replaceAll("//", "/");
+        while (url.contains("//")) {
+            url = url.replaceAll("//", "/");
+        }
+        return url;
     }
 
     /**
@@ -159,10 +185,10 @@ public class SCUtil {
      * 将ctMethod转换为Api
      * - 若ctMethod非API方法，则返回size=0的Api集合
      * @param ctMethod
-     * @param feignPrefix
+     * @param prefixUrl
      * @return
      */
-    public static Set<Api> extractApiFromCtMethod(CtMethod ctMethod, String feignPrefix) {
+    public static Set<Api> extractApiFromCtMethod(CtMethod ctMethod, String prefixUrl) {
         Set<Api> apis = new HashSet<>();
         if (!isApiFunc(ctMethod)) {
             return apis;
@@ -188,30 +214,38 @@ public class SCUtil {
         Set<String> methods = new HashSet<>();
         if (requestMapping != null) {
             methods = getMethodsFromRequestMapping(requestMapping);
-            url = buildUrl(feignPrefix, requestMapping.value());
+            url = buildUrl(prefixUrl, requestMapping.value().length != 0 ? requestMapping.value() : requestMapping.path());
         }
         if (getMapping != null) {
             methods.add(Api.GET);
-            url = buildUrl(feignPrefix, getMapping.value());
+            url = buildUrl(prefixUrl, getMapping.value().length != 0 ? getMapping.value() : getMapping.path());
         }
         if (postMapping != null) {
             methods.add(Api.POST);
-            url = buildUrl(feignPrefix, postMapping.value());
+            url = buildUrl(prefixUrl, postMapping.value().length != 0 ? postMapping.value() : postMapping.path());
         }
         if (putMapping != null) {
             methods.add(Api.PUT);
-            url = buildUrl(feignPrefix, putMapping.value());
+            url = buildUrl(prefixUrl, putMapping.value().length != 0 ? putMapping.value() : putMapping.path());
         }
         if (deleteMapping != null) {
             methods.add(Api.DELETE);
-            url = buildUrl(feignPrefix, deleteMapping.value());
+            url = buildUrl(prefixUrl, deleteMapping.value().length != 0 ? deleteMapping.value() : deleteMapping.path());
         }
         if (patchMapping != null) {
             methods.add(Api.PATCH);
-            url = buildUrl(feignPrefix, patchMapping.value());
+            url = buildUrl(prefixUrl, patchMapping.value().length != 0 ? patchMapping.value() : patchMapping.path());
         }
 
+
+//        String[] zuulPrefixes = new String[]{"/depository-agent", "/depository", "/account", "/consumer", "/search"};
+
         for (String method : methods) {
+//            url = uniqueBackslash(url);
+//            for (String zuulPrefix : zuulPrefixes) {
+//                url = url.replace(zuulPrefix, "");
+//            }
+
             Api api = Api.builder().url(uniqueBackslash(url)).method(method).build();
             apis.add(api);
         }
@@ -281,7 +315,7 @@ public class SCUtil {
             url = ("/" + prefix + "/" + values[0]).replace("//", "/");
         }
         url = "/" + StrUtil.strip(url, "/", "/");
-        return url;
+        return uniqueBackslash(url);
     }
 
     /**

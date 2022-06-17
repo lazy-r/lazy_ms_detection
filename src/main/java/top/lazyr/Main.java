@@ -19,13 +19,13 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
         // 存放所有微服务项目的目录
-        List<String> msPaths = FileUtil.getSubCatalogPaths("/Users/lazyr/School/laboratory/OSMicroservicesCollection-all/OSMicroservicesCollection-lazyr-fix");
-        for (String msPath : msPaths) {
-            writeData(msPath);
-        }
+//        List<String> msPaths = FileUtil.getSubCatalogPaths("/Users/lazyr/School/laboratory/ms_result/today");
+//        for (String msPath : msPaths) {
+//            writeData(msPath);
+//        }
         // msPath：具体的一个微服务目录
-//        String msPath = "/Users/lazyr/School/laboratory/OSMicroservicesCollection-all/OSMicroservicesCollection-lazyr-fix/190-wanxin-p2p";
-//        writeData(msPath);
+        String msPath = "/Users/lazyr/School/laboratory/ms_result/today/Gitee-20-grocery-micro-service";
+        writeData(msPath);
     }
 
     /**
@@ -38,8 +38,8 @@ public class Main {
         if (!file.exists()) {
             file.mkdirs();
         }
-        writeStructureOfSvc(msPath);
-        writeAttributeOfSvc(msPath);
+//        writeStructureOfSvc(msPath);
+//        writeAttributeOfSvc(msPath);
         writeStructureOfMs(msPath);
     }
 

@@ -44,6 +44,7 @@ public class MsParser {
     public MS parse(String msPath) {
         // 1、初始化项目中所有Feign文件
         initAgencies(msPath);
+        Printer.printTitle("Feign类");
         Printer.printMap(agencyMap);
         // 2、初始化MS
         this.ms = new MS();
@@ -98,6 +99,7 @@ public class MsParser {
                     if (SCUtil.isApiFunc(ctMethod)) {
                         Set<Operation> ops = SCUtil.extractOpFromCtMethod(ctClass.getName(), ctMethod, prefix);
                         svc.addOps(ops);
+
                     }
                 }
             }
@@ -203,7 +205,7 @@ public class MsParser {
             // 4、获取outSvc中agency对应的Api文件
             Operation outOp = ms.getOutOpByApiAndSvc(outSvcName, agency);
             if (outOp == null) {
-                logger.error("func({}) of svc({}) is not existed.", agency.getId(), outSvcName);
+                logger.error("ops({}) of svc({}) is not existed.", agency.getOps(), outSvcName);
                 return;
             }
 
